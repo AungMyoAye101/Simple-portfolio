@@ -24,13 +24,13 @@ const Hero = () => {
           Let Get In Touch
         </a>
       </div>
-      <div className="w-full md:w-[40vw] bg-red-200">
-        <div className="relative size-96">
+      <div className="w-full md:w-[40vw]">
+        <div className="relative size-72 md:size-96 rounded-full">
           <Image
             src={"/"}
-            width={400}
-            height={400}
+            fill
             alt="Aung Myo Aye's profile photo"
+            className="object-cover object-center bg-slate-700 rounded-full"
           />
         </div>
       </div>
