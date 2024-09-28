@@ -3,9 +3,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="h-screen flex justify-center items-center p-10">
-      <div className="w-full md:w-[50vw]  flex flex-col gap-6 items-start">
-        <h4 className="font-lora text-sm md:text-base">
+    <section className="min-h-screen flex flex-col md:flex-row justify-center items-center gap-10  p-10">
+      <div className="w-full md:w-[50vw]  flex flex-col gap-4 md:gap-6 items-start">
+        <h4 className="font-lora text-base md:text-lg font-medium">
           Hi! I am Aung Myo Aye
         </h4>
         <h1 className="font-lora text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
