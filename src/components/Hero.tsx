@@ -17,20 +17,28 @@ const Hero = () => {
           modi sapiente doloremque quisquam minima animi quas quos labore, ad
           quae.
         </p>
-        <a
-          href="mailto:aungmyoaye101@gmail.com"
-          className="px-6 py-2 font-poppin rounded-lg shadow-lg"
-        >
-          Let Get In Touch
-        </a>
+        <div className="flex gap-4">
+          <a
+            href="mailto:aungmyoaye101@gmail.com"
+            className="px-4 py-3 font-poppin rounded-lg shadow-lg bg-yellow-400"
+          >
+            Get In Touch
+          </a>
+          <a
+            href="mailto:aungmyoaye101@gmail.com"
+            className="px-4 py-3 font-poppin rounded-lg shadow-lg border border-yellow-400"
+          >
+            Download My Resume
+          </a>
+        </div>
       </div>
-      <div className="w-full md:w-[40vw]">
-        <div className="relative size-72 md:size-96 rounded-full">
+      <div className="w-full md:w-[40vw] ">
+        <div className="relative size-72 sm:size-80 md:size-96 rounded-full mx-auto">
           <Image
             src={"/"}
             fill
             alt="Aung Myo Aye's profile photo"
-            className="object-cover object-center bg-slate-700 rounded-full"
+            className="object-cover object-center bg-yellow-400 rounded-full"
           />
         </div>
       </div>
