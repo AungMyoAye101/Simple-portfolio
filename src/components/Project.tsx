@@ -7,7 +7,7 @@ const Project = () => {
       <h1 className="font-lora text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center ">
         My Recent Projects
       </h1>
-      <main className="grid sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-8">
+      <main className="grid sm:grid-cols-2 md:grid-cols-3 place-items-center gap-8">
         {projects.map((project, i) => (
           <div key={i} className="border border-gray-300 rounded-md shadow-md ">
             <div className="w-full bg-gray-300 h-48"></div>
