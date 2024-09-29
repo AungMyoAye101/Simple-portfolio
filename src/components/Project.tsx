@@ -2,10 +2,38 @@ import React from "react";
 
 const Project = () => {
   return (
-    <section>
-      <h1 className="font-lora text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center py-20">
+    <section className="py-20 px-10 space-y-12">
+      <h1 className="font-lora text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center ">
         My Recent Projects
       </h1>
+      <main>
+        <div className="border border-gray-300 rounded-md shadow-md w-96">
+          <div className="w-full bg-gray-300 h-40"></div>
+          <div className="p-4 space-y-2">
+            <h1 className="font-serif text-xl md:text-2xl  font-semibold">
+              My Project Name
+            </h1>
+            <p className="text-sm md:text-base font-light font-lora line-clamp-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+              quidem vitae, quas libero dolor ea laudantium? Eius voluptatum
+            </p>
+            <div className="flex justify-between items-center text-xs md:text-sm font-poppin py-2">
+              <a
+                href="#"
+                className="px-2 py-1 border border-gray-300 rounded shadow-md"
+              >
+                View Source Code
+              </a>
+              <a
+                href="#"
+                className="px-2 py-1 border border-gray-300 rounded shadow-md"
+              >
+                Check Live Site
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
     </section>
   );
 };
