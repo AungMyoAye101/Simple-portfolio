@@ -11,24 +11,22 @@ const Hero = () => {
         <h1 className="font-lora text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
           A Full Stack Web Developer And UI/UX Desinger From Myanmar
         </h1>
-        <p className="font-poppin text-base md:text-xl font-light ">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod,
-          expedita fugit. Ut eius iste eligendi culpa expedita perspiciatis in
-          modi sapiente doloremque quisquam minima animi quas quos labore, ad
-          quae.
+        <p className="font-poppin text-balance w-[90%] text-base md:text-xl font-light ">
+          I bring ideas to life through clean and user-friendly interfaces.
+          Let's create something extraordinary together!
         </p>
         <div className="flex gap-4">
           <a
             href="mailto:aungmyoaye101@gmail.com"
-            className="px-4 py-3 font-poppin rounded-lg shadow-lg bg-yellow-400"
+            className="px-4 py-3 font-poppin rounded-lg shadow-lg bg-yellow-400 "
           >
             Get In Touch
           </a>
           <a
             href="mailto:aungmyoaye101@gmail.com"
-            className="px-4 py-3 font-poppin rounded-lg shadow-lg border border-yellow-400"
+            className="px-4 py-3 font-poppin rounded-lg shadow-lg border border-yellow-400 shadow-yellow-100"
           >
-            Download My Resume
+            Download Resume
           </a>
         </div>
       </div>
