@@ -14,8 +14,7 @@ const Project = () => {
               My Project Name
             </h1>
             <p className="text-sm md:text-base font-light font-lora line-clamp-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-              quidem vitae, quas libero dolor ea laudantium? Eius voluptatum
+              Eius voluptatum
             </p>
             <div className="flex items-center ">
               <div className="size-10 border-[0.5px] border-gray-300 rounded-full  "></div>
