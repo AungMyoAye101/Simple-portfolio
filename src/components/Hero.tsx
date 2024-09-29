@@ -33,7 +33,7 @@ const Hero = () => {
       <div className="w-full md:w-[40vw] ">
         <div className="relative size-72 sm:size-80 md:size-96 rounded-full mx-auto">
           <Image
-            src={"/"}
+            src={"/profile.png"}
             fill
             alt="Aung Myo Aye's profile photo"
             className="object-cover object-center bg-yellow-400 rounded-full"
