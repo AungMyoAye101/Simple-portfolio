@@ -3,7 +3,7 @@ import { projects } from "@/data";
 
 const Project = () => {
   return (
-    <section className="py-20 px-10 space-y-12">
+    <section className="py-20 px-10 space-y-12 min-h-screen">
       <h1 className="font-lora text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center ">
         My Recent Projects
       </h1>
