@@ -4,11 +4,11 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col md:flex-row justify-center items-center gap-10  p-10">
-      <div className="w-full md:w-[50vw]  flex flex-col gap-4 md:gap-6 items-start">
+      <div className="w-full md:w-[50vw]  flex flex-col gap-4 items-start">
         <h4 className="font-lora text-base md:text-lg font-medium">
           Hi! I am Aung Myo Aye
         </h4>
-        <h1 className="font-lora text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+        <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
           A Full Stack Web Developer And UI/UX Desinger From Myanmar
         </h1>
         <p className="font-poppin text-balance w-[90%] text-base md:text-xl font-light ">

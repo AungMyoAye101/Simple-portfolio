@@ -21,6 +21,7 @@ const Project = () => {
               <div className="flex items-center ">
                 {project.iconList.map((icon, index) => (
                   <div
+                    key={index}
                     className={`size-10 border-[0.5px] border-gray-300 rounded-full ${
                       index > 0 && "-ml-2"
                     }`}
