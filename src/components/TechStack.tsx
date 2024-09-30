@@ -16,7 +16,7 @@ const TechStack = () => {
       </div>
 
       <main>
-        <div className="flex w-[60vw] bg-transparent  p-4 gap-4 rounded-md shadow-md border border-gray-300">
+        <div className="flex w-[60vw] bg-gray-100  p-4 gap-4 rounded-md shadow-md border border-gray-300">
           <div className="bg-gray-200 w-[40%]  rounded-md shadow-md">
             <Image
               src={"/profile.png"}
@@ -109,12 +109,20 @@ const TechStack = () => {
       </main>
 
       {/* orbit */}
-      <div className="absolute -right-40 top-[35%] -z-10">
+      <div className="absolute -right-32 top-[30%] -z-10">
         <div className="p-20 rounded-full border border-gray-400 relative animate-spin-slow">
-          <div className="size-14 rounded-full z-20 bg-green-500 absolute -bottom-6 left-[50%]"></div>
-          <div className="size-14 rounded-full z-20 bg-red-500 absolute -top-6 right-[50%]"></div>
-          <div className="size-14 rounded-full z-20 bg-cyan-400 absolute bottom-[50%] -left-6"></div>
-          <div className="size-14 rounded-full z-20 bg-orange-400 absolute bottom-[50%] -right-6"></div>
+          <div className="p-2 rounded-full z-20 bg-gray-100 absolute -bottom-6 left-[50%] border border-gray-200/50 shadow-sm">
+            <Image src={"/react.svg"} width={40} height={40} alt="icons" />
+          </div>
+          <div className="p-2 rounded-full z-20 bg-gray-100 absolute -top-6 right-[50%] border border-gray-200/50 shadow-sm">
+            <Image src={"/nextJs.svg"} width={40} height={40} alt="icons" />
+          </div>
+          <div className="p-2 rounded-full z-20 bg-gray-100 absolute bottom-[50%] -left-6 border border-gray-200/50 shadow-sm">
+            <Image src={"/nodeJs.svg"} width={40} height={40} alt="icons" />
+          </div>
+          <div className="p-2 rounded-full z-20 bg-gray-100 absolute bottom-[50%] -right-6 border border-gray-200/50 shadow-sm">
+            <Image src={"/mongodb.svg"} width={40} height={40} alt="icons" />
+          </div>
           <div className="p-14  rounded-full relative border border-gray-400 animate-spin-slow">
             <div className="size-14 rounded-full z-20 bg-yellow-400 absolute -bottom-6 left-[50%]"></div>
             <div className="size-14 rounded-full z-20 bg-violet-500 absolute -top-6 right-[40%]"></div>
