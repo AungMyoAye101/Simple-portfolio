@@ -14,47 +14,54 @@ const TechStack = () => {
           <span>Database & Others </span>
         </div>
       </div>
-      <main className="flex gap-10">
-        <div className="flex flex-col gap-4 items-center hover:bg-cyan-400">
-          <div className="p-4 rounded-md shadow-md border border-gray-700/5 bg-slate-50">
-            <Image src={"/react.svg"} width={60} height={60} alt="react icon" />
+
+      <main>
+        <div className="flex w-[70vw] bg-green-300  p-4 gap-4 rounded-md shadow-md">
+          <div className="bg-gray-400 w-[40%]  rounded-md shadow-md">
+            <Image
+              src={"/profile.png"}
+              width={400}
+              height={400}
+              alt="profile"
+            />
           </div>
-          <p className="font-lora font-semibold text-sm">React Js</p>
-        </div>
-        <div className="flex flex-col gap-4 items-center">
-          <div className="p-4 rounded-md shadow-md border border-gray-700/5">
-            <Image src={"/react.svg"} width={60} height={60} alt="react icon" />
+          <div className="bg-gray-400 w-full py-4 px-6 flex flex-col gap-2">
+            <div className="flex items-center justify-center gap-2">
+              <div className="bg-slate-100 px-1 py-2 rounded-md ">
+                <Image src={"/react.svg"} width={40} height={40} alt="react" />
+              </div>
+              <div className="w-full h-2 bg-amber-400 rounded"></div>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <div className="bg-slate-100 px-1 py-2 rounded-md ">
+                <Image src={"/react.svg"} width={40} height={40} alt="react" />
+              </div>
+              <div className="w-full h-2 bg-amber-400 rounded"></div>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <div className="bg-slate-100 px-1 py-2 rounded-md ">
+                <Image src={"/react.svg"} width={40} height={40} alt="react" />
+              </div>
+              <div className="w-full h-2 bg-amber-400 rounded"></div>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <div className="bg-slate-100 px-1 py-2 rounded-md ">
+                <Image src={"/react.svg"} width={40} height={40} alt="react" />
+              </div>
+              <div className="w-full h-2 bg-amber-400 rounded"></div>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <div className="bg-slate-100 px-1 py-2 rounded-md ">
+                <Image src={"/react.svg"} width={40} height={40} alt="react" />
+              </div>
+              <div className="w-full h-2 bg-amber-400 rounded"></div>
+            </div>
           </div>
-          <p className="font-lora font-semibold text-sm">React Js</p>
-        </div>
-        <div className="flex flex-col gap-4 items-center">
-          <div className="p-4 rounded-md shadow-md border border-gray-700/5">
-            <Image src={"/react.svg"} width={60} height={60} alt="react icon" />
-          </div>
-          <p className="font-lora font-semibold text-sm">React Js</p>
-        </div>
-        <div className="flex flex-col gap-4 items-center">
-          <div className="p-4 rounded-md shadow-md border border-gray-700/5">
-            <Image src={"/react.svg"} width={60} height={60} alt="react icon" />
-          </div>
-          <p className="font-lora font-semibold text-sm">React Js</p>
-        </div>
-        <div className="flex flex-col gap-4 items-center">
-          <div className="p-4 rounded-md shadow-md border border-gray-700/5">
-            <Image src={"/react.svg"} width={60} height={60} alt="react icon" />
-          </div>
-          <p className="font-lora font-semibold text-sm">React Js</p>
-        </div>
-        <div className="flex flex-col gap-4 items-center">
-          <div className="p-4 rounded-md shadow-md border border-gray-700/5">
-            <Image src={"/react.svg"} width={60} height={60} alt="react icon" />
-          </div>
-          <p className="font-lora font-semibold text-sm">React Js</p>
         </div>
       </main>
 
       {/* orbit */}
-      <div className="absolute -right-40 top-[30%] -z-10">
+      <div className="absolute -right-40 top-[35%] -z-10">
         <div className="p-20 rounded-full border border-gray-400 relative animate-spin-slow">
           <div className="size-14 rounded-full z-20 bg-green-500 absolute -bottom-6 left-[50%]"></div>
           <div className="size-14 rounded-full z-20 bg-red-500 absolute -top-6 right-[50%]"></div>
