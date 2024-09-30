@@ -14,7 +14,7 @@ const TechStack = () => {
           <span>Database & Others </span>
         </div>
       </div>
-      {/* <main className="flex gap-10">
+      <main className="flex gap-10">
         <div className="flex flex-col gap-4 items-center hover:bg-cyan-400">
           <div className="p-4 rounded-md shadow-md border border-gray-700/5 bg-slate-50">
             <Image src={"/react.svg"} width={60} height={60} alt="react icon" />
@@ -51,7 +51,9 @@ const TechStack = () => {
           </div>
           <p className="font-lora font-semibold text-sm">React Js</p>
         </div>
-      </main> */}
+      </main>
+
+      {/* orbit */}
       <div className="absolute -right-40 top-[30%] -z-10">
         <div className="p-20 rounded-full border border-gray-400 relative animate-spin-slow">
           <div className="size-14 rounded-full z-20 bg-green-500 absolute -bottom-6 left-[50%]"></div>
