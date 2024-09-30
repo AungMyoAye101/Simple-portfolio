@@ -16,8 +16,8 @@ const TechStack = () => {
       </div>
 
       <main>
-        <div className="flex w-[70vw] bg-green-300  p-4 gap-4 rounded-md shadow-md">
-          <div className="bg-gray-400 w-[40%]  rounded-md shadow-md">
+        <div className="flex w-[60vw] bg-transparent  p-4 gap-4 rounded-md shadow-md border border-gray-300">
+          <div className="bg-gray-200 w-[40%]  rounded-md shadow-md">
             <Image
               src={"/profile.png"}
               width={400}
@@ -25,7 +25,7 @@ const TechStack = () => {
               alt="profile"
             />
           </div>
-          <div className="bg-gray-400 w-full py-4 px-6 flex flex-col gap-2">
+          <div className="bg-gray-200 w-full py-4 px-6 flex flex-col gap-2 rounded-md">
             <div className="flex items-center justify-center gap-2">
               <div className="bg-slate-100 px-1 py-2 rounded-md ">
                 <Image src={"/react.svg"} width={40} height={40} alt="react" />
