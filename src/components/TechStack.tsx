@@ -27,34 +27,82 @@ const TechStack = () => {
           </div>
           <div className="bg-gray-200 w-full py-4 px-6 flex flex-col gap-2 rounded-md">
             <div className="flex items-center justify-center gap-2">
-              <div className="bg-slate-100 px-1 py-2 rounded-md ">
-                <Image src={"/react.svg"} width={40} height={40} alt="react" />
+              <div className="flex items-center gap-2">
+                <Image
+                  src={"/react.svg"}
+                  width={40}
+                  height={60}
+                  alt="react"
+                  className="bg-slate-100 px-1 py-2 rounded-md "
+                />
+                <p>ReactJs</p>
               </div>
-              <div className="w-full h-2 bg-amber-400 rounded"></div>
+              <div className="flex-1 h-2 bg-amber-400 rounded"></div>
             </div>
             <div className="flex items-center justify-center gap-2">
-              <div className="bg-slate-100 px-1 py-2 rounded-md ">
-                <Image src={"/react.svg"} width={40} height={40} alt="react" />
+              <div className="flex items-center gap-2">
+                <Image
+                  src={"/react.svg"}
+                  width={40}
+                  height={60}
+                  alt="react"
+                  className="bg-slate-100 px-1 py-2 rounded-md "
+                />
+                <p>ReactJs</p>
               </div>
-              <div className="w-full h-2 bg-amber-400 rounded"></div>
+              <div className="flex-1 h-2 bg-amber-400 rounded"></div>
             </div>
             <div className="flex items-center justify-center gap-2">
-              <div className="bg-slate-100 px-1 py-2 rounded-md ">
-                <Image src={"/react.svg"} width={40} height={40} alt="react" />
+              <div className="flex items-center gap-2">
+                <Image
+                  src={"/react.svg"}
+                  width={40}
+                  height={60}
+                  alt="react"
+                  className="bg-slate-100 px-1 py-2 rounded-md "
+                />
+                <p>ReactJs</p>
               </div>
-              <div className="w-full h-2 bg-amber-400 rounded"></div>
+              <div className="flex-1 h-2 bg-amber-400 rounded"></div>
             </div>
             <div className="flex items-center justify-center gap-2">
-              <div className="bg-slate-100 px-1 py-2 rounded-md ">
-                <Image src={"/react.svg"} width={40} height={40} alt="react" />
+              <div className="flex items-center gap-2">
+                <Image
+                  src={"/react.svg"}
+                  width={40}
+                  height={60}
+                  alt="react"
+                  className="bg-slate-100 px-1 py-2 rounded-md "
+                />
+                <p>ReactJs</p>
               </div>
-              <div className="w-full h-2 bg-amber-400 rounded"></div>
+              <div className="flex-1 h-2 bg-amber-400 rounded"></div>
             </div>
             <div className="flex items-center justify-center gap-2">
-              <div className="bg-slate-100 px-1 py-2 rounded-md ">
-                <Image src={"/react.svg"} width={40} height={40} alt="react" />
+              <div className="flex items-center gap-2">
+                <Image
+                  src={"/react.svg"}
+                  width={40}
+                  height={60}
+                  alt="react"
+                  className="bg-slate-100 px-1 py-2 rounded-md "
+                />
+                <p>ReactJs</p>
               </div>
-              <div className="w-full h-2 bg-amber-400 rounded"></div>
+              <div className="flex-1 h-2 bg-amber-400 rounded"></div>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center gap-2">
+                <Image
+                  src={"/react.svg"}
+                  width={40}
+                  height={60}
+                  alt="react"
+                  className="bg-slate-100 px-1 py-2 rounded-md "
+                />
+                <p>ReactJs</p>
+              </div>
+              <div className="flex-1 h-2 bg-amber-400 rounded"></div>
             </div>
           </div>
         </div>
