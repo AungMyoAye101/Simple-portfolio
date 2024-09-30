@@ -17,7 +17,7 @@ const config: Config = {
         lora: "Lora",
       },
       animation: {
-        "spin-slow": "spin 15s linear infinite",
+        "spin-slow": "spin 50s linear infinite",
       },
       keyframes: {
         wiggle: {

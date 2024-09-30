@@ -53,8 +53,12 @@ const TechStack = () => {
         </div>
       </main> */}
       <div>
-        <div className="p-16 bg-sky-200 rounded-full">
-          <div className="p-20  rounded-full relative border border-red-400 animate-spin-slow">
+        <div className="p-16 rounded-full border border-gray-400 relative animate-spin-slow">
+          <div className="size-12 rounded-full z-20 bg-purple-400 absolute bottom-0 left-[50%]"></div>
+          <div className="size-12 rounded-full z-20 bg-red-400 absolute top-0 right-[50%]"></div>
+          <div className="size-12 rounded-full z-20 bg-green-400 absolute bottom-[50%] left-0"></div>
+          <div className="size-12 rounded-full z-20 bg-sky-400 absolute bottom-[50%] right-0"></div>
+          <div className="p-20  rounded-full relative border border-gray-400 animate-spin-slow">
             <div className="size-12 rounded-full z-20 bg-purple-400 absolute bottom-0 left-[50%]"></div>
             <div className="size-12 rounded-full z-20 bg-red-400 absolute top-0 right-[50%]"></div>
             <div className="size-12 rounded-full z-20 bg-green-400 absolute bottom-[50%] left-0"></div>
