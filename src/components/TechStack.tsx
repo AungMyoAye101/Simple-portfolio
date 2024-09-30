@@ -53,16 +53,16 @@ const TechStack = () => {
         </div>
       </main> */}
       <div>
-        <div className="p-16 rounded-full border border-gray-400 relative animate-spin-slow">
-          <div className="size-12 rounded-full z-20 bg-purple-400 absolute bottom-0 left-[50%]"></div>
-          <div className="size-12 rounded-full z-20 bg-red-400 absolute top-0 right-[50%]"></div>
-          <div className="size-12 rounded-full z-20 bg-green-400 absolute bottom-[50%] left-0"></div>
-          <div className="size-12 rounded-full z-20 bg-sky-400 absolute bottom-[50%] right-0"></div>
-          <div className="p-20  rounded-full relative border border-gray-400 animate-spin-slow">
-            <div className="size-12 rounded-full z-20 bg-purple-400 absolute bottom-0 left-[50%]"></div>
-            <div className="size-12 rounded-full z-20 bg-red-400 absolute top-0 right-[50%]"></div>
-            <div className="size-12 rounded-full z-20 bg-green-400 absolute bottom-[50%] left-0"></div>
-            <div className="size-12 rounded-full z-20 bg-sky-400 absolute bottom-[50%] right-0"></div>
+        <div className="p-20 rounded-full border border-gray-400 relative animate-spin-slow">
+          <div className="size-14 rounded-full z-20 bg-purple-400 absolute -bottom-6 left-[50%]"></div>
+          <div className="size-14 rounded-full z-20 bg-red-400 absolute -top-6 right-[50%]"></div>
+          <div className="size-14 rounded-full z-20 bg-green-400 absolute bottom-[50%] -left-6"></div>
+          <div className="size-14 rounded-full z-20 bg-sky-400 absolute bottom-[50%] -right-6"></div>
+          <div className="p-14  rounded-full relative border border-gray-400 animate-spin-slow">
+            <div className="size-14 rounded-full z-20 bg-purple-400 absolute -bottom-6 left-[50%]"></div>
+            <div className="size-14 rounded-full z-20 bg-red-400 absolute -top-6 right-[40%]"></div>
+            <div className="size-14 rounded-full z-20 bg-green-400 absolute bottom-[50%] -left-6"></div>
+            <div className="size-14 rounded-full z-20 bg-sky-400 absolute bottom-[40%] -right-6"></div>
             <div className="size-40 bg-green-200 rounded-full"></div>
           </div>
         </div>

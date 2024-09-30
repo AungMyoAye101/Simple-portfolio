@@ -18,26 +18,44 @@ const Hero = () => {
         <div className="flex gap-4">
           <a
             href="mailto:aungmyoaye101@gmail.com"
-            className="px-4 py-3 font-poppin rounded-lg shadow-lg bg-yellow-400 "
+            className="px-4 py-3 font-poppin rounded-lg shadow-lg bg-yellow-400 animate-pulse"
           >
             Get In Touch
           </a>
           <a
             href="mailto:aungmyoaye101@gmail.com"
-            className="px-4 py-3 font-poppin rounded-lg shadow-lg border border-yellow-400 shadow-yellow-100"
+            className="px-4 py-3 font-poppin rounded-lg shadow-lg border border-yellow-400 shadow-yellow-100 "
           >
             Download Resume
           </a>
         </div>
       </div>
       <div className="w-full md:w-[40vw] ">
-        <div className="relative size-72 sm:size-80 md:size-96 rounded-full mx-auto">
+        <div className="relative size-64 sm:size-72 md:size-96 rounded-full mx-auto">
           <Image
             src={"/profile.png"}
             fill
             alt="Aung Myo Aye's profile photo"
             className="object-cover object-center bg-yellow-400 rounded-full"
           />
+          <div className="p-2 rounded-lg z-20 shadow-md border border-gray-300  absolute -left-20 top-[45%] animate-pulse">
+            <Image
+              src={"/mongodb.svg"}
+              width={40}
+              height={60}
+              alt="icon "
+              className=" object-cover "
+            />
+          </div>
+          <div className="p-2 rounded-lg z-20 shadow-md border border-gray-300  absolute -right-20 top-[45%]  animate-pulse">
+            <Image
+              src={"/react.svg"}
+              width={40}
+              height={60}
+              alt="icon "
+              className=" object-cover "
+            />
+          </div>
         </div>
       </div>
     </section>
