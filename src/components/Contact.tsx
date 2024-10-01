@@ -16,7 +16,7 @@ const Contact = () => {
       </div>
 
       {/* form */}
-      <div className=" w-full md:w-[50%] sm:grid flex flex-col gap-4 md:gap-6">
+      <div className=" w-full md:w-[60%] sm:grid  flex flex-col gap-4 md:gap-6">
         <div className="flex flex-col gap-1">
           <label
             htmlFor="FirstName"
@@ -71,9 +71,12 @@ const Contact = () => {
           <textarea
             id="text"
             placeholder="I value your opinion"
-            className="input-style h-32"
+            className="input-style h-40 "
           />
         </div>
+        <button className="px-6 py-2 rounded-lg shadow-md border border-purple-400 col-span-2 font-lora text-lg hover:scale-105 hover:shadow-lg transition-all ease-out duration-200 ">
+          Send
+        </button>
       </div>
     </section>
   );
