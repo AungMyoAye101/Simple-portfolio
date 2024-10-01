@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
 
 export const metadata: Metadata = {
   title: "Aung Myo Aye's Portfolio",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth 	snap-mandatory">
-      <body className={` antialiased`}>{children}</body>
+      <body className={` antialiased`}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
