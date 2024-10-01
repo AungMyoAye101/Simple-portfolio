@@ -31,12 +31,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-full md:w-[40vw] ">
-        <div className="relative size-64 sm:size-72 md:size-96 rounded-full mx-auto bg-yellow-400">
+        <div className="relative size-64 sm:size-72 md:size-96  mx-auto ">
           <Image
             src={"/profile.png"}
             fill
             alt="Aung Myo Aye's profile photo"
-            className="object-cover object-center  rounded-full"
+            className="object-cover object-center  rounded-full bg-yellow-400 animate-pulse"
           />
           <div className="p-2 rounded-lg z-20 shadow-md border border-gray-300  absolute -left-20 top-[45%] animate-pulse">
             <Image
