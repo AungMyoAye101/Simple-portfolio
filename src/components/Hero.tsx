@@ -31,12 +31,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-full md:w-[40vw] ">
-        <div className="relative size-64 sm:size-72 md:size-96 rounded-full mx-auto">
+        <div className="relative size-64 sm:size-72 md:size-96 rounded-full mx-auto bg-yellow-400">
           <Image
             src={"/profile.png"}
             fill
             alt="Aung Myo Aye's profile photo"
-            className="object-cover object-center bg-yellow-400 rounded-full"
+            className="object-cover object-center  rounded-full"
           />
           <div className="p-2 rounded-lg z-20 shadow-md border border-gray-300  absolute -left-20 top-[45%] animate-pulse">
             <Image
@@ -44,7 +44,7 @@ const Hero = () => {
               width={40}
               height={60}
               alt="icon "
-              className=" object-cover "
+              className=" object-cover object-center "
             />
           </div>
           <div className="p-2 rounded-lg z-20 shadow-md border border-gray-300  absolute -right-20 top-[45%]  animate-pulse">
