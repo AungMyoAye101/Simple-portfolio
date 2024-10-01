@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row justify-center items-center gap-10  p-10">
+    <section className="min-h-screen flex flex-col-reverse md:flex-row justify-center items-center gap-10  p-10">
       <div className="w-full md:w-[50vw]  flex flex-col gap-4 items-start">
         <h4 className="font-lora text-base md:text-lg font-medium">
           Hi! I am Aung Myo Aye
@@ -24,7 +24,7 @@ const Hero = () => {
           </a>
           <a
             href="mailto:aungmyoaye101@gmail.com"
-            className="px-4 py-3 font-poppin rounded-lg shadow-lg border border-yellow-400 shadow-yellow-100 "
+            className="px-4 py-3 font-poppin rounded-lg shadow-lg border border-yellow-400  "
           >
             Download Resume
           </a>

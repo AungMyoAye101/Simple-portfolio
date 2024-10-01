@@ -7,7 +7,7 @@ const About = () => {
       <h1 className="font-poppin font-bold text-2xl sm:text3xl md:text-4xl lg:text-5xl text-center">
         About Me
       </h1>
-      <div className="flex flex-col md:flex-row justify-center  gap-10 mt-10  p-8 mx-auto">
+      <div className="flex flex-col md:flex-row justify-center items-center  gap-10 mt-10  p-8 mx-auto">
         <div className="">
           <Image
             src={"/profile.png"}
@@ -17,7 +17,7 @@ const About = () => {
             className="size-96 border-4 border-gray-400 rounded-xl"
           />
         </div>
-        <div className="w-[40%] flex flex-col gap-4 items-start">
+        <div className=" w-full md:w-[40%] flex flex-col gap-4 items-start">
           <h2 className="font-lora text-xl md:text-2xl font-semibold">
             Hi! I am Aung Myo Aye{" "}
           </h2>

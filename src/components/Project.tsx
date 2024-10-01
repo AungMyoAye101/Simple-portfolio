@@ -3,13 +3,19 @@ import { projects } from "@/data";
 
 const Project = () => {
   return (
-    <section className="py-16 px-10 space-y-12 min-h-screen" id="project">
+    <section
+      className="py-16 px-4 md:px-10 space-y-12 min-h-screen"
+      id="project"
+    >
       <h1 className="font-lora text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center ">
         My Recent Projects
       </h1>
-      <main className="grid sm:grid-cols-2 md:grid-cols-3 place-items-center gap-8">
+      <main className="grid md:grid-cols-2 lg:grid-cols-3 place-items-center gap-8">
         {projects.map((project, i) => (
-          <div key={i} className="border border-gray-300 rounded-md shadow-md ">
+          <div
+            key={i}
+            className="border border-gray-300 rounded-md shadow-md min-w-80"
+          >
             <div className="w-full bg-gray-300 h-48"></div>
             <div className="p-4 space-y-2">
               <h1 className="font-serif text-xl md:text-2xl  font-semibold">
