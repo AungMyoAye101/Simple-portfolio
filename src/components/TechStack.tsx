@@ -109,7 +109,7 @@ const TechStack = () => {
       </main>
 
       {/* orbit */}
-      <div className="absolute -right-32 top-[30%] -z-10">
+      <div className="absolute -right-36 top-[30%] -z-10">
         <div className="p-20 rounded-full border border-gray-400 relative animate-spin-slow">
           <div className="p-2 rounded-full z-20 bg-gray-100 absolute -bottom-6 left-[50%] border border-gray-200/50 shadow-sm">
             <Image src={"/react.svg"} width={40} height={40} alt="icons" />
@@ -123,12 +123,21 @@ const TechStack = () => {
           <div className="p-2 rounded-full z-20 bg-gray-100 absolute bottom-[50%] -right-6 border border-gray-200/50 shadow-sm">
             <Image src={"/mongodb.svg"} width={40} height={40} alt="icons" />
           </div>
-          <div className="p-14  rounded-full relative border border-gray-400 animate-spin-slow">
-            <div className="size-14 rounded-full z-20 bg-yellow-400 absolute -bottom-6 left-[50%]"></div>
-            <div className="size-14 rounded-full z-20 bg-violet-500 absolute -top-6 right-[40%]"></div>
-            <div className="size-14 rounded-full z-20 bg-rose-400 absolute bottom-[50%] -left-6"></div>
-            <div className="size-14 rounded-full z-20 bg-teal-500 absolute bottom-[40%] -right-6"></div>
-            <div className="size-40 bg-blue-500 rounded-full"></div>
+          <div className="p-12  rounded-full relative border border-gray-400 animate-spin-slow">
+            <div className="p-2 rounded-full z-20 bg-gray-50 absolute -bottom-6 left-[50%] border border-gray-300 shadow-sm">
+              <Image src={"/react.svg"} width={40} height={40} alt="icons" />
+            </div>
+            <div className="p-2 rounded-full z-20 bg-gray-50 absolute -top-6 right-[50%] border border-gray-300 shadow-sm">
+              <Image src={"/nextJs.svg"} width={40} height={40} alt="icons" />
+            </div>
+            <div className="p-2 rounded-full z-20 bg-gray-50 absolute bottom-[50%] -left-6 border border-gray-300 shadow-sm ">
+              <Image src={"/nodeJs.svg"} width={40} height={40} alt="icons" />
+            </div>
+            <div className="p-2 rounded-full z-20 bg-gray-50 absolute bottom-[50%] -right-6 border border-gray-300 shadow-sm ">
+              <Image src={"/mongodb.svg"} width={40} height={40} alt="icons" />
+            </div>
+
+            <div className="size-36 bg-blue-500 rounded-full"></div>
           </div>
         </div>
       </div>
