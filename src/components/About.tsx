@@ -7,7 +7,7 @@ const About = () => {
       <h1 className="font-poppin font-bold text-2xl sm:text3xl md:text-4xl lg:text-5xl text-center">
         About Me
       </h1>
-      <div className="flex justify-center  gap-8 mt-10  p-8 mx-auto">
+      <div className="flex flex-col md:flex-row justify-center  gap-10 mt-10  p-8 mx-auto">
         <div className="">
           <Image
             src={"/profile.png"}

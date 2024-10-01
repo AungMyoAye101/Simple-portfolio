@@ -8,7 +8,7 @@ const Hero = () => {
         <h4 className="font-lora text-base md:text-lg font-medium">
           Hi! I am Aung Myo Aye
         </h4>
-        <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+        <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-loose">
           A Full Stack Web Developer And UI/UX Desinger From Myanmar
         </h1>
         <p className="font-poppin text-balance w-[90%] text-base md:text-xl font-light ">
@@ -36,7 +36,7 @@ const Hero = () => {
             src={"/profile.png"}
             fill
             alt="Aung Myo Aye's profile photo"
-            className="object-cover object-center  rounded-full bg-yellow-400 "
+            className="object-cover object-center  rounded-xl border border-gray-300 "
           />
           <div className="p-2 rounded-lg z-20 shadow-md border border-gray-300  absolute -left-20 top-[45%] animate-pulse">
             <Image
