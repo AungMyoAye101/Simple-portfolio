@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.input-style {
+  @apply border-2 border-purple-400 rounded-md shadow-md py-2 px-4 focus:outline-none focus:scale-105 focus:shadow-lg transition-transform ease-out duration-200;
+}

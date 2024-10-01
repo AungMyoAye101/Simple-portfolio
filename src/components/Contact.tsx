@@ -18,12 +18,17 @@ const Contact = () => {
       {/* form */}
       <div className=" w-full md:w-[50%] sm:grid flex flex-col gap-4 md:gap-6">
         <div className="flex flex-col gap-1">
-          <label htmlFor="FirstName">First Name</label>
+          <label
+            htmlFor="FirstName"
+            className="text-sm md:text-base font-lora "
+          >
+            First Name
+          </label>
           <input
             type="text"
             id="FirstName"
             placeholder="Enter your First Name"
-            className="border border-purple-400 rounded-md shadow-md py-2 px-4"
+            className="input-style"
           />
         </div>
         <div className="flex flex-col gap-1">
@@ -32,7 +37,7 @@ const Contact = () => {
             type="text"
             id="LastName"
             placeholder="Enter your Last Name"
-            className="border border-purple-400 rounded-md shadow-md py-2 px-4"
+            className="input-style"
           />
         </div>
 
@@ -42,27 +47,31 @@ const Contact = () => {
             type="email"
             id="email"
             placeholder="Enter your mail address"
-            className="border border-purple-400 rounded-md shadow-md py-2 px-4"
+            className="input-style"
           />
         </div>
         <div className="flex flex-col gap-1">
-          <label htmlFor="Description">Description</label>
+          <label
+            htmlFor="Description"
+            className="text-sm md:text-base font-lora "
+          >
+            Description
+          </label>
           <input
             type="text"
             id="Description"
             placeholder="Enter your Description"
-            className="border border-purple-400 rounded-md shadow-md py-2 px-4"
+            className="input-style"
           />
         </div>
         <div className="flex flex-col gap-1 col-span-2 ">
-          <label htmlFor="text">
-            What are your thoughts on my website? I'd love to hear your
-            feedback, whether it's positive or constructive.
+          <label htmlFor="text" className="text-sm md:text-base font-lora ">
+            What are your thoughts on my website?
           </label>
           <textarea
             id="text"
             placeholder="I value your opinion"
-            className="border border-purple-400 rounded-md shadow-md py-2 px-4 h-32"
+            className="input-style h-32"
           />
         </div>
       </div>
