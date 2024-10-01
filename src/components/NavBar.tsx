@@ -7,11 +7,12 @@ const NavBar = () => {
         <div>
           <h1 className="text-2xl md:text-3xl">AMA-Protfolio</h1>
         </div>
-        <div className="flex items-center gap-2 text-xl ">
+        <div className="flex items-center gap-3 text-xl font-lora font-semibold ">
           <a href="#">Home</a>
-          <a href="#">Home</a>
-          <a href="#">Home</a>
-          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#skill">Skills</a>
+          <a href="#project">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
     </div>
