@@ -36,7 +36,7 @@ const Hero = () => {
             src={"/profile.png"}
             fill
             alt="Aung Myo Aye's profile photo"
-            className="object-cover object-center  rounded-full bg-yellow-400 animate-pulse"
+            className="object-cover object-center  rounded-full bg-yellow-400 "
           />
           <div className="p-2 rounded-lg z-20 shadow-md border border-gray-300  absolute -left-20 top-[45%] animate-pulse">
             <Image
