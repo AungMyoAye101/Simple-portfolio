@@ -13,8 +13,10 @@ const Footer = () => {
       <a href="#" className="bg-gray-700 p-3 rounded-full animate-bounce ">
         <FaArrowUp className="text-lg text-white " />
       </a>
-      <footer className="border-t border-t-gray-300 w-full py-12 px-4 md:px-10 flex justify-between bg-gray-600">
-        <div>Aung Myo Aye - Portfolio</div>
+      <footer className="border-t border-t-gray-300 w-full py-12 px-4 md:px-10 flex items-center justify-between bg-gray-600">
+        <div className="text-xl font-poppin font-semibold text-white">
+          Aung Myo Aye - Portfolio
+        </div>
         {/* <ul className="flex gap-2">
           <li>
             <a href="#">Home</a>
@@ -33,18 +35,34 @@ const Footer = () => {
           </li>
         </ul> */}
         <div className="flex gap-4">
-          <div className="p-3 bg-blue-100 rounded-full shadow-md">
+          <a
+            href="https://github.com/AungMyoAye101"
+            target="_blank"
+            className="p-3 bg-blue-100 rounded-full shadow-md"
+          >
             <FaGithub className="text-xl " />
-          </div>
-          <div className="p-3 bg-green-100 rounded-full shadow-md">
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61556195843942"
+            target="_blank"
+            className="p-3 bg-green-100 rounded-full shadow-md"
+          >
             <FaFacebookF className="text-xl  " />
-          </div>
-          <div className="p-3 bg-green-100 rounded-full shadow-md">
+          </a>
+          <a
+            href=""
+            target="_blank"
+            className="p-3 bg-green-100 rounded-full shadow-md"
+          >
             <FaLinkedin className="text-xl  " />
-          </div>
-          <div className="p-3 bg-green-100 rounded-full shadow-md">
+          </a>
+          <a
+            href="https://www.instagram.com/aungmyoaye404/"
+            target="_blank"
+            className="p-3 bg-green-100 rounded-full shadow-md"
+          >
             <FaInstagram className="text-xl  " />
-          </div>
+          </a>
         </div>
         <a
           href="mailto:aungmyoaye101@gmail.com"
