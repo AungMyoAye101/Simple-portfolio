@@ -16,6 +16,7 @@ const Skills = () => {
       <div className="flex flex-wrap justify-center gap-4">
         <div className="max-w-80 px-4 py-6 rounded-xl shadow-md border-2 border-gray-300 ">
           <Image src={"/react.svg"} width={40} height={40} alt="icons" />
+
           <div className="space-y-2 mt-2">
             <h1 className="font-poppin text-lg md:text-xl font-semibold">
               Fornt-End Development
