@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col-reverse md:flex-row justify-center items-center gap-10  p-10">
-      <div className="w-full md:w-[50vw]  flex flex-col gap-4 items-start">
+      <div className="w-full md:w-[50vw]  flex flex-col gap-4 items-center text-center md:text-start md:items-start ">
         <h4 className="font-lora text-base md:text-lg font-medium">
           Hi! I am Aung Myo Aye
         </h4>
@@ -15,7 +15,7 @@ const Hero = () => {
           I bring ideas to life through clean and user-friendly interfaces.
           Let's create something extraordinary together!
         </p>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4 justify-center">
           <a
             href="mailto:aungmyoaye101@gmail.com"
             className="px-4 py-3 font-poppin rounded-lg shadow-lg bg-yellow-400 animate-pulse"
