@@ -1,5 +1,7 @@
 import React from "react";
 import { projects } from "@/data";
+import Image from "next/image";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const Project = () => {
   return (
@@ -23,17 +25,23 @@ const Project = () => {
               </h1>
               <div className="flex justify-between items-center mb-3">
                 <div className="flex ">
-                  <div className="size-9 rounded-full border border-green-500 "></div>
-                  <div className="size-9 rounded-full border border-green-500 -ml-2"></div>
-                  <div className="size-9 rounded-full border border-green-500 -ml-2"></div>
-                  <div className="size-9 rounded-full border border-green-500 -ml-2"></div>
-                  <div className="size-9 rounded-full border border-green-500 -ml-2"></div>
+                  {project.iconList.map((icon, idx) => (
+                    <div
+                      key={idx}
+                      className={`size-10 flex justify-center items-center rounded-full border border-gray-500 ${
+                        idx > 0 && "-ml-2"
+                      }`}
+                    >
+                      <Image src={icon} width={25} height={25} alt="icons" />
+                    </div>
+                  ))}
                 </div>
                 <a
                   href="#"
-                  className="text-lora font-medium text-sm md:text-base "
+                  className="text-lora font-medium text-sm md:text-base flex items-center gap-1 "
                 >
-                  Live Site
+                  <span> Check Live Site</span>
+                  <FaLocationArrow />
                 </a>
               </div>
             </div>

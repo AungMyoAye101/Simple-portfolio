@@ -7,7 +7,7 @@ export const projects = [
     sourceCode: "example.com",
     siteLink: "example.com",
 
-    iconList: ["1", "2", "3", "4", "5", "4", "5"],
+    iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
   },
   {
     image: "example",
@@ -16,7 +16,7 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
     sourceCode: "example.com",
     siteLink: "example.com",
-    iconList: ["1", "2", "3", "4", "5"],
+    iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
   },
   {
     image: "example",
@@ -25,7 +25,7 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
     sourceCode: "example.com",
     siteLink: "example.com",
-    iconList: ["1", "2", "3", "4", "5"],
+    iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
   },
   {
     image: "example",
@@ -34,7 +34,7 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
     sourceCode: "example.com",
     siteLink: "example.com",
-    iconList: ["1", "2", "3", "4", "5"],
+    iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
   },
   {
     image: "example",
@@ -43,7 +43,7 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
     sourceCode: "example.com",
     siteLink: "example.com",
-    iconList: ["1", "2", "3", "4", "5"],
+    iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
   },
   {
     image: "example",
@@ -52,6 +52,6 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
     sourceCode: "example.com",
     siteLink: "example.com",
-    iconList: ["1", "2", "3", "4", "5"],
+    iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
   },
 ];
