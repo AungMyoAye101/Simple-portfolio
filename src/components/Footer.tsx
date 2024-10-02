@@ -1,5 +1,11 @@
 import React from "react";
-import { FaArrowUp } from "react-icons/fa6";
+import {
+  FaArrowUp,
+  FaDownLeftAndUpRightToCenter,
+  FaInstagram,
+} from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaLocationArrow } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -7,7 +13,7 @@ const Footer = () => {
       <a href="#" className="bg-gray-700 p-3 rounded-full animate-bounce ">
         <FaArrowUp className="text-lg text-white " />
       </a>
-      <footer className="border-t border-t-gray-300 w-full py-12 px-4 md:px-10 flex justify-between">
+      <footer className="border-t border-t-gray-300 w-full py-12 px-4 md:px-10 flex justify-between bg-gray-600">
         <div>Aung Myo Aye - Portfolio</div>
         {/* <ul className="flex gap-2">
           <li>
@@ -26,15 +32,27 @@ const Footer = () => {
             <a href="#">Contact</a>
           </li>
         </ul> */}
-        <div className="flex gap-2">
-          <div className="size-10 bg-purple-400 rounded-full shadow-md"></div>
-          <div className="size-10 bg-purple-400 rounded-full shadow-md"></div>
-          <div className="size-10 bg-purple-400 rounded-full shadow-md"></div>
-          <div className="size-10 bg-purple-400 rounded-full shadow-md"></div>
+        <div className="flex gap-4">
+          <div className="p-3 bg-blue-100 rounded-full shadow-md">
+            <FaGithub className="text-xl " />
+          </div>
+          <div className="p-3 bg-green-100 rounded-full shadow-md">
+            <FaFacebookF className="text-xl  " />
+          </div>
+          <div className="p-3 bg-green-100 rounded-full shadow-md">
+            <FaLinkedin className="text-xl  " />
+          </div>
+          <div className="p-3 bg-green-100 rounded-full shadow-md">
+            <FaInstagram className="text-xl  " />
+          </div>
         </div>
-        <div className="px-4 py-2 bg-purple-400 rounded-lg shadow-md">
-          Contact Me
-        </div>
+        <a
+          href="mailto:aungmyoaye101@gmail.com"
+          className="flex gap-1 items-center font-medium font-poppin text-white px-4 py-2 rounded-lg shadow-md  bg-purple-600"
+        >
+          <span> Contact Me</span>
+          <FaLocationArrow />
+        </a>
       </footer>
     </section>
   );
