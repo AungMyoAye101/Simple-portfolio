@@ -3,15 +3,18 @@ import { projects } from "@/data";
 
 const Project = () => {
   return (
-    <section className="py-16 px-4 md:px-10  min-h-screen " id="project">
+    <section
+      className="py-16 px-4 md:px-10  min-h-screen flex flex-col items-center gap-8 "
+      id="project"
+    >
       <h1 className="font-lora text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center ">
         My Recent Projects
       </h1>
-      <main className="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-8 mt-10">
+      <main className="grid md:grid-cols-2 lg:grid-cols-3 w-full gap-8 ">
         {projects.map((project, i) => (
           <div
             key={i}
-            className=" border border-gray-400 rounded-lg shadow-md overflow-hidden min-w-80 "
+            className=" border border-gray-400 rounded-lg shadow-md overflow-hidden min-w-80 md:w-full mx-auto"
           >
             <div className="bg-green-300 w-full h-48"></div>
             <div className="p-2">
@@ -37,6 +40,10 @@ const Project = () => {
           </div>
         ))}
       </main>
+
+      <button className="border border-gray-400 rounded-md shadow-md px-6 py-3 font-poppin text-base font-medium">
+        Load More
+      </button>
     </section>
   );
 };
