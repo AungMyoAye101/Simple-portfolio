@@ -1,13 +1,11 @@
 import React from "react";
+import { FaArrowUp } from "react-icons/fa6";
 
 const Footer = () => {
   return (
     <section className="flex flex-col items-center gap-4">
-      <a
-        href="#"
-        className="size-10 rounded-full bg-purple-400 text-gray-100 animate-bounce "
-      >
-        l
+      <a href="#" className="bg-gray-700 p-3 rounded-full animate-bounce ">
+        <FaArrowUp className="text-lg text-white " />
       </a>
       <footer className="border-t border-t-gray-300 w-full py-12 px-4 md:px-10 flex justify-between">
         <div>Aung Myo Aye - Portfolio</div>
