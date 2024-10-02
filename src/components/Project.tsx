@@ -18,7 +18,9 @@ const Project = () => {
             key={i}
             className=" border border-gray-400 rounded-lg shadow-md overflow-hidden min-w-80 md:w-full mx-auto"
           >
-            <div className="bg-green-300 w-full h-48"></div>
+            <div className="relative bg-gray-600 w-full h-60">
+              <Image src={project.image} fill alt="project name" className="" />
+            </div>
             <div className="p-2">
               <h1 className="text-balance md:text-lg font-lora font-semibold my-1">
                 My Project

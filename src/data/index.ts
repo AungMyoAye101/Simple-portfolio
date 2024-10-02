@@ -1,6 +1,6 @@
 export const projects = [
   {
-    image: "example",
+    image: "/p1.svg",
     title: "My Project Name",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
@@ -10,7 +10,7 @@ export const projects = [
     iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
   },
   {
-    image: "example",
+    image: "p2.svg",
     title: "My Project Name",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
@@ -19,7 +19,7 @@ export const projects = [
     iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
   },
   {
-    image: "example",
+    image: "p3.svg",
     title: "My Project Name",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
@@ -28,7 +28,7 @@ export const projects = [
     iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
   },
   {
-    image: "example",
+    image: "/p4.svg",
     title: "My Project Name",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
@@ -37,7 +37,7 @@ export const projects = [
     iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
   },
   {
-    image: "example",
+    image: "/p1.svg",
     title: "My Project Name",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
@@ -46,7 +46,7 @@ export const projects = [
     iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
   },
   {
-    image: "example",
+    image: "/p2.svg",
     title: "My Project Name",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
