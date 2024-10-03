@@ -55,3 +55,81 @@ export const projects = [
     iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
   },
 ];
+
+export const frontEnd = {
+  title: "Front End Development",
+  skills: [
+    {
+      icon: "/react.svg",
+      name: "JavaScript",
+      count: "80%",
+    },
+    {
+      icon: "/react.svg",
+      name: "Vue Js",
+      count: "80%",
+    },
+    {
+      icon: "/react.svg",
+      name: "React Js",
+      count: "80%",
+    },
+    {
+      icon: "/react.svg",
+      name: "React Js",
+      count: "80%",
+    },
+  ],
+};
+
+export const backEnd = {
+  title: "Back End Development",
+  skills: [
+    {
+      icon: "/nodejs.svg",
+      name: "Node Js",
+      count: "60%",
+    },
+    {
+      icon: "/nextjs.svg",
+      name: "Next Js",
+      count: "80%",
+    },
+    {
+      icon: "/react.svg",
+      name: "React Js",
+      count: "80%",
+    },
+    {
+      icon: "/react.svg",
+      name: "React Js",
+      count: "80%",
+    },
+  ],
+};
+
+export const others = {
+  title: "Database and Others",
+  skills: [
+    {
+      icon: "/mongodb.svg",
+      name: "Mongo DB",
+      count: "60%",
+    },
+    {
+      icon: "/react.svg",
+      name: "React Js",
+      count: "80%",
+    },
+    {
+      icon: "/react.svg",
+      name: "React Js",
+      count: "80%",
+    },
+    {
+      icon: "/react.svg",
+      name: "React Js",
+      count: "80%",
+    },
+  ],
+};

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import TechSkills from "./TechSkills";
+import { backEnd, frontEnd, others } from "@/data";
 
 const Skills = () => {
   return (
@@ -60,9 +61,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <TechSkills />
-      <TechSkills />
-      <TechSkills />
+      <TechSkills title={frontEnd.title} skill={frontEnd.skills} />
     </section>
   );
 };
