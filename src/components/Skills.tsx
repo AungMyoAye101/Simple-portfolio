@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import TechSkills from "./TechSkills";
 
 const Skills = () => {
   return (
@@ -59,34 +60,7 @@ const Skills = () => {
         </div>
       </div>
 
-      {/* orbit */}
-      {/* <div className="absolute -right-36 top-[30%] -z-10">
-        <div className="p-20 rounded-full border border-gray-400 relative animate-spin-slow">
-          <div className="p-2 rounded-full z-20 bg-gray-100 absolute -bottom-6 left-[50%] border border-gray-200/50 shadow-sm">
-            <Image src={"/react.svg"} width={40} height={40} alt="icons" />
-          </div>
-          <div className="p-2 rounded-full z-20 bg-gray-100 absolute -top-6 right-[50%] border border-gray-200/50 shadow-sm">
-            <Image src={"/nextJs.svg"} width={40} height={40} alt="icons" />
-          </div>
-          <div className="p-2 rounded-full z-20 bg-gray-100 absolute bottom-[50%] -left-6 border border-gray-200/50 shadow-sm">
-            <Image src={"/nodeJs.svg"} width={40} height={40} alt="icons" />
-          </div>
-          <div className="p-2 rounded-full z-20 bg-gray-100 absolute bottom-[50%] -right-6 border border-gray-200/50 shadow-sm">
-            <Image src={"/mongodb.svg"} width={40} height={40} alt="icons" />
-          </div>
-          <div className="p-10  rounded-full relative border border-gray-400 animate-spin-slow">
-            <div className="p-2 rounded-full z-20 bg-gray-50 absolute -bottom-6 left-[50%] border border-gray-300 shadow-sm">
-              <Image src={"/react.svg"} width={20} height={20} alt="icons" />
-            </div>
-
-            <div className="p-2 rounded-full z-20 bg-gray-50 absolute bottom-[50%] -left-6 border border-gray-300 shadow-sm ">
-              <Image src={"/nodeJs.svg"} width={20} height={20} alt="icons" />
-            </div>
-
-            <div className="size-20 bg-blue-500 rounded-full"></div>
-          </div>
-        </div>
-      </div> */}
+      <TechSkills />
     </section>
   );
 };
