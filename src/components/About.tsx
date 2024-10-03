@@ -22,11 +22,11 @@ const About = () => {
             Hi &#33; I am Aung Myo Aye{" "}
           </h2>
           <p className="font-poppin text-lg md:text-xl">
-            A full stack developer and UI/UX Desinger from Myanmar.I'm currenty
-            learning python and dijango. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Nisi, ab assumenda aliquid sed quas harum
-            molestiae distinctio tenetur debitis in accusamus, iure eum numquam
-            deserunt libero voluptate esse, exercitationem minima.
+            A full stack developer and UI/UX Desinger from Myanmar.I&apos;m
+            currenty learning python and dijango. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Nisi, ab assumenda aliquid sed quas
+            harum molestiae distinctio tenetur debitis in accusamus, iure eum
+            numquam deserunt libero voluptate esse, exercitationem minima.
           </p>
           <p className="text-xs md:text-sm font-poppin">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,

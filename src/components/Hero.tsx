@@ -13,7 +13,7 @@ const Hero = () => {
         </h1>
         <p className="font-poppin text-balance w-[90%] text-base md:text-xl font-light ">
           I bring ideas to life through clean and user-friendly interfaces.
-          Let's create something extraordinary together!
+          Let&apos;s create something extraordinary together!
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <a
