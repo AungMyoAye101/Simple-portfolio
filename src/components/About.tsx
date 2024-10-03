@@ -19,7 +19,7 @@ const About = () => {
         </div>
         <div className=" w-full md:w-[40%] flex flex-col gap-4 items-start">
           <h2 className="font-lora text-xl md:text-2xl font-semibold">
-            Hi! I am Aung Myo Aye{" "}
+            Hi &apos; I am Aung Myo Aye{" "}
           </h2>
           <p className="font-poppin text-lg md:text-xl">
             A full stack developer and UI/UX Desinger from Myanmar.I'm currenty

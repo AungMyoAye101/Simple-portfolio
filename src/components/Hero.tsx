@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="min-h-screen flex flex-col-reverse md:flex-row justify-center items-center gap-10  p-10">
       <div className="w-full md:w-[50vw]  flex flex-col gap-4 items-center text-center md:text-start md:items-start ">
         <h4 className="font-lora text-base md:text-lg font-medium">
-          Hi! I am Aung Myo Aye
+          Hi&#8226; I am Aung Myo Aye
         </h4>
         <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-loose">
           A Full Stack Web Developer And UI/UX Desinger From Myanmar
