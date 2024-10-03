@@ -61,6 +61,8 @@ const Skills = () => {
       </div>
 
       <TechSkills />
+      <TechSkills />
+      <TechSkills />
     </section>
   );
 };

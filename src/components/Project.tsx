@@ -21,11 +21,14 @@ const Project = () => {
             <div className="relative bg-gray-600 w-full h-60">
               <Image src={project.image} fill alt="project name" className="" />
             </div>
-            <div className="p-2">
+            <div className="p-2 ">
               <h1 className="text-balance md:text-lg font-lora font-semibold my-1">
                 My Project
               </h1>
-              <div className="flex justify-between items-center mb-3">
+              <p className="font-xs md:text-sm font-poppin  font-medium line-clamp-2">
+                {project.description}
+              </p>
+              <div className="flex justify-between items-center my-3">
                 <div className="flex ">
                   {project.iconList.map((icon, idx) => (
                     <div
