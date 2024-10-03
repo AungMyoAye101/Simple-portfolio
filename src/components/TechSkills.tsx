@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React, { FC } from "react";
 
-const forntendSkil = [1, 2, 3, 4];
 interface SkillsProp {
   title: string;
   skill: {

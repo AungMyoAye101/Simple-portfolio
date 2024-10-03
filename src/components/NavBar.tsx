@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBars, FaHamburger } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa6";
 
 const NavBar = () => {
