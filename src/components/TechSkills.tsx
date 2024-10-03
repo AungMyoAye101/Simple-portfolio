@@ -6,7 +6,7 @@ const forntendSkil = [1, 2, 3, 4];
 const TechSkills = () => {
   return (
     <section>
-      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-lora font-semibold mb-3">
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-lora font-semibold mb-4">
         Front-End Skills
       </h1>
       <section className="flex flex-wrap justify-center w-full  gap-6">
@@ -24,7 +24,7 @@ const TechSkills = () => {
             <div className="mx-2 size-12 flex justify-center items-center rounded-full border-4 border-green-400">
               80%
             </div>
-            <div className="absolute  bg-red-500 w-[75%] h-full -z-10"></div>
+            <div className="absolute  bg-blue-500 w-[75%] h-full -z-10"></div>
           </div>
         ))}
       </section>
