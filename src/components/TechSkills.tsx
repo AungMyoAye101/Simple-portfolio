@@ -23,7 +23,7 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
             className="  flex justify-between items-center border border-gray-400 shadow-md rounded-lg relative overflow-hidden"
           >
             <div className="ml-2 my-2">
-              <div className="size-10 flex items-center justify-center  rounded-full bg-gray-100  shadow-md">
+              <div className="size-10 flex items-center justify-center  rounded-lg bg-gray-100  shadow-md">
                 <Image src={skill.icon} width={30} height={30} alt="icons" />
               </div>
               <p className="font-poppin font-medium text-sm mt-1 text-white">
