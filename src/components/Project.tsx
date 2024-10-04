@@ -6,10 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Project = () => {
   return (
-    <section
-      className="py-16 px-4 md:px-10  min-h-screen flex flex-col items-center gap-8 "
-      id="project"
-    >
+    <section className="section-container" id="project">
       <h1 className="heading">My Recent Projects</h1>
       <main className="w-full max-w-5xl flex flex-col gap-8  ">
         {projects.map((project, i) => (

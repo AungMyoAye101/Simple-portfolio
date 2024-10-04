@@ -5,10 +5,7 @@ import { backEnd, frontEnd, others } from "@/data";
 
 const Skills = () => {
   return (
-    <section
-      className="py-16 px-10 flex flex-col items-center gap-12 min-h-screen relative overflow-hidden"
-      id="skill"
-    >
+    <section className="section-container" id="skill">
       <div className="flex flex-col items-center gap-6">
         <h1 className="heading">My Skills</h1>
       </div>

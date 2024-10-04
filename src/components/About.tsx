@@ -3,10 +3,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="min-h-screen py-16 " id="about">
+    <section className="min-h-screen py-20 " id="about">
       <h1 className="heading">About Me</h1>
-      <div className="flex flex-col md:flex-row justify-center items-center  gap-10 mt-10  p-8 mx-auto">
-        <div className="">
+      <div className="flex flex-col md:flex-row justify-center  gap-8 py-8 max-w-4xl mx-auto ">
+        <div className=" relative w-full md:w-[40%]  ">
           <Image
             src={"/profile.png"}
             width={400}
@@ -15,7 +15,7 @@ const About = () => {
             className="size-96 border-4 border-gray-400 rounded-xl"
           />
         </div>
-        <div className=" w-full md:w-[40%] flex flex-col gap-4 items-start">
+        <div className=" w-[55%] flex flex-col gap-3 items-start">
           <h2 className="font-lora text-xl md:text-2xl font-semibold">
             Hi &#33; I am Aung Myo Aye{" "}
           </h2>
@@ -23,17 +23,15 @@ const About = () => {
             A full stack developer and UI/UX Desinger from Myanmar.I&apos;m
             currenty learning python and dijango. Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Nisi, ab assumenda aliquid sed quas
-            harum molestiae distinctio tenetur debitis in accusamus, iure eum
-            numquam deserunt libero voluptate esse, exercitationem minima.
+            harum molestiae distinctio tenetur debitis in accusamus.
           </p>
           <p className="text-xs md:text-sm font-poppin">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
-            cumque id! Natus excepturi dolorem molestias doloremque, modi
-            repellat voluptatem vero adipisci reprehenderit? Quae, laudantium.
+            cumque id! Natus excepturi dolorem molestias doloremque.
           </p>
           <a
             href="mailto:aungmyoaye101@gmail.com"
-            className="px-4 py-3 font-lora rounded-lg shadow-lg border bg-yellow-400 shadow-yellow-100 self-end "
+            className="px-3 py-2 font-lora rounded-lg shadow-lg border-2  border-yellow-400 self-end mt-6  "
           >
             Download Resume
           </a>
