@@ -1,58 +1,159 @@
 export const projects = [
   {
     image: "/p1.svg",
-    title: "My Project Name",
+    title: "Ecommerce Website",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
     sourceCode: "example.com",
     siteLink: "example.com",
-
-    iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
+    iconList: [
+      {
+        icon: "/react.svg",
+        name: "React Js",
+      },
+      {
+        icon: "/nextjs.svg",
+        name: "Next Js",
+      },
+      {
+        icon: "/mongodb.svg",
+        name: "Mongo Db",
+      },
+      {
+        icon: "/nodejs.svg",
+        name: "Node Js",
+      },
+    ],
   },
   {
     image: "p2.svg",
-    title: "My Project Name",
+    title: "Car Rental",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
     sourceCode: "example.com",
     siteLink: "example.com",
-    iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
+    iconList: [
+      {
+        icon: "/react.svg",
+        name: "React Js",
+      },
+      {
+        icon: "/nextjs.svg",
+        name: "Next Js",
+      },
+      {
+        icon: "/mongodb.svg",
+        name: "Mongo Db",
+      },
+      {
+        icon: "/nodejs.svg",
+        name: "Node Js",
+      },
+    ],
   },
   {
     image: "p3.svg",
-    title: "My Project Name",
+    title: "Movie Search",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium?",
     sourceCode: "example.com",
     siteLink: "example.com",
-    iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
+    iconList: [
+      {
+        icon: "/react.svg",
+        name: "React Js",
+      },
+      {
+        icon: "/nextjs.svg",
+        name: "Next Js",
+      },
+      {
+        icon: "/mongodb.svg",
+        name: "Mongo Db",
+      },
+      {
+        icon: "/nodejs.svg",
+        name: "Node Js",
+      },
+    ],
   },
   {
     image: "/p4.svg",
-    title: "My Project Name",
+    title: "Promptopia",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium?",
     sourceCode: "example.com",
     siteLink: "example.com",
-    iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
+    iconList: [
+      {
+        icon: "/react.svg",
+        name: "React Js",
+      },
+      {
+        icon: "/nextjs.svg",
+        name: "Next Js",
+      },
+      {
+        icon: "/mongodb.svg",
+        name: "Mongo Db",
+      },
+      {
+        icon: "/nodejs.svg",
+        name: "Node Js",
+      },
+    ],
   },
   {
     image: "/p1.svg",
     title: "My Project Name",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium?Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
     sourceCode: "example.com",
     siteLink: "example.com",
-    iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
+    iconList: [
+      {
+        icon: "/react.svg",
+        name: "React Js",
+      },
+      {
+        icon: "/nextjs.svg",
+        name: "Next Js",
+      },
+      {
+        icon: "/mongodb.svg",
+        name: "Mongo Db",
+      },
+      {
+        icon: "/nodejs.svg",
+        name: "Node Js",
+      },
+    ],
   },
   {
-    image: "/p2.svg",
-    title: "My Project Name",
+    image: "/p4.svg",
+    title: "Promptopia",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium?",
     sourceCode: "example.com",
     siteLink: "example.com",
-    iconList: ["/react.svg", "/nextjs.svg", "/nodejs.svg", "/mongodb.svg"],
+    iconList: [
+      {
+        icon: "/react.svg",
+        name: "React Js",
+      },
+      {
+        icon: "/nextjs.svg",
+        name: "Next Js",
+      },
+      {
+        icon: "/mongodb.svg",
+        name: "Mongo Db",
+      },
+      {
+        icon: "/nodejs.svg",
+        name: "Node Js",
+      },
+    ],
   },
 ];
 
