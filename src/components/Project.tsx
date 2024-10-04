@@ -2,6 +2,7 @@ import React from "react";
 import { projects } from "@/data";
 import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 const Project = () => {
   return (
@@ -12,35 +13,42 @@ const Project = () => {
       <h1 className="font-lora text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center ">
         My Recent Projects
       </h1>
-      <main className="grid md:grid-cols-2 lg:grid-cols-3 w-full gap-8 ">
+      <main className="w-full max-w-5xl flex flex-col gap-8  ">
         {projects.map((project, i) => (
           <div
             key={i}
-            className=" border border-gray-400 rounded-lg shadow-md overflow-hidden min-w-80 md:w-full mx-auto"
+            className=" flex flex-col md:flex-row  justify-between  p-0 md:p-4 gap-4 border border-gray-400 rounded-lg shadow-md overflow-hidden "
           >
-            <div className="relative bg-gray-600 w-full h-60">
+            <div className="relative w-full  md:w-[50%] bg-gray-600 h-44  md:h-64 rounded-lg overflow-hidden">
               <Image src={project.image} fill alt="project name" className="" />
             </div>
-            <div className="p-2 ">
-              <h1 className="text-balance md:text-lg font-lora font-semibold my-1">
+            <div className="space-y-2 px-2  ">
+              <h1 className="text-xl md:text-2xl font-lora font-semibold">
                 My Project
               </h1>
-              <p className="font-xs md:text-sm font-poppin  font-medium line-clamp-2">
+              <p className="text-sm md:text-base font-poppin  font-medium line-clamp-2 md:line-clamp-none">
                 {project.description}
               </p>
-              <div className="flex justify-between items-center my-3">
-                <div className="flex ">
-                  {project.iconList.map((icon, idx) => (
-                    <div
-                      key={idx}
-                      className={`size-10 flex justify-center items-center rounded-full border border-gray-500 ${
-                        idx > 0 && "-ml-2"
-                      }`}
-                    >
-                      <Image src={icon} width={25} height={25} alt="icons" />
-                    </div>
-                  ))}
-                </div>
+              <div className="flex ">
+                {project.iconList.map((icon, idx) => (
+                  <div
+                    key={idx}
+                    className={`size-8 md;size-10 flex justify-center items-center rounded-full border border-gray-500 ${
+                      idx > 0 && "-ml-2"
+                    }`}
+                  >
+                    <Image src={icon} width={20} height={20} alt="icons" />
+                  </div>
+                ))}
+              </div>
+              <div className="flex justify-between items-center pb-3">
+                <a
+                  href="#"
+                  className="text-lora font-medium text-sm md:text-base flex items-center gap-1 "
+                >
+                  <span>View Source Code</span>
+                  <FaGithub />
+                </a>
                 <a
                   href="#"
                   className="text-lora font-medium text-sm md:text-base flex items-center gap-1 "
