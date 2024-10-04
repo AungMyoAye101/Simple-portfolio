@@ -19,12 +19,22 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
       <section className="flex flex-wrap items-center  gap-6  ">
         {skill.map((skill, i) => (
           <div className=" relative flex flex-col items-center p-4 w-28 rounded-md shadow-md gap-2 border border-emerald-400">
-            <div className="size-14 flex justify-center items-center bg-gray-50 rounded-full border border-teal-400">
+            <div className="size-14 flex justify-center items-center bg-white rounded-full b ">
               <Image src={skill.icon} width={40} height={40} alt={skill.name} />
             </div>
 
-            <p className="font-poppin font-medium text-sm ">{skill.name}</p>
-            <div className="absolute bottom-0 -z-10 w-full bg-rose-300 h-20 "></div>
+            <p className="font-poppin font-medium text-sm text-white">
+              {skill.name}
+            </p>
+            <div
+              className={`absolute bottom-0 -z-10 w-full  h-[65%] ${
+                skill.count > 79
+                  ? "bg-emerald-400"
+                  : skill.count > 60
+                  ? "bg-cyan-400"
+                  : "bg-rose-400"
+              } `}
+            ></div>
           </div>
           // <div
           //   key={i}
