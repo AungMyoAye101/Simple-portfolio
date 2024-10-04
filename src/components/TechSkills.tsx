@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 
 interface SkillsProp {
   title: string;
@@ -18,14 +20,24 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
       </h1>
       <section className="flex flex-wrap items-center  gap-6  ">
         {skill.map((skill, i) => (
-          <div className=" relative flex flex-col items-center p-4 w-28 rounded-md shadow-md gap-2 border border-emerald-400">
-            <div className="size-14 flex justify-center items-center bg-white rounded-full b ">
-              <Image src={skill.icon} width={40} height={40} alt={skill.name} />
+          <div className="group relative flex flex-col items-center p-4 w-28 rounded-md shadow-md gap-2 border border-emerald-400 ">
+            <div className="size-14 flex justify-center items-center overflow-hidden bg-white rounded-full b ">
+              <Image
+                src={skill.icon}
+                width={40}
+                height={40}
+                alt={skill.name}
+                className="group-hover:hidden"
+              />
+              <div className="hidden group-hover:block  font-poppin ">
+                {skill.count}%
+              </div>
             </div>
 
             <p className="font-poppin font-medium text-sm text-white">
               {skill.name}
             </p>
+
             <div
               className={`absolute bottom-0 -z-10 w-full  h-[65%] ${
                 skill.count > 79
