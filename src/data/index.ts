@@ -79,6 +79,26 @@ export const frontEnd = {
       name: "React Js",
       count: 80,
     },
+    {
+      icon: "/react.svg",
+      name: "JavaScript",
+      count: 80,
+    },
+    {
+      icon: "/react.svg",
+      name: "Vue Js",
+      count: 60,
+    },
+    {
+      icon: "/react.svg",
+      name: "React Js",
+      count: 70,
+    },
+    {
+      icon: "/react.svg",
+      name: "React Js",
+      count: 80,
+    },
   ],
 };
 
