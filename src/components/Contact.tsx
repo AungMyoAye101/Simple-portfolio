@@ -72,7 +72,7 @@ const Contact = () => {
             className="input-style h-28 "
           />
         </div>
-        <button className="px-6 py-2 rounded-lg shadow-md border border-purple-400 col-span-2 font-lora text-lg hover:scale-105 hover:shadow-lg transition-all ease-out duration-200 ">
+        <button className="px-6 py-2 rounded-lg shadow-md border-2 border-purple-400 col-span-2 font-lora text-lg hover:scale-105 hover:shadow-lg transition-all ease-out duration-200 ">
           Send
         </button>
       </div>

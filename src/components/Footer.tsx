@@ -5,14 +5,14 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <section className="flex flex-col items-center gap-4">
+    <section className="flex flex-col items-center gap-4 ">
       <a
         href="#"
-        className="bg-green-400 p-3 rounded-full animate-bounce  shadow-md  shadow-emerald-200"
+        className="bg-green-400 p-3 rounded-full animate-bounce   shadow-md  shadow-emerald-200"
       >
         <FaArrowUp className="text-lg text-white " />
       </a>
-      <footer className="w-full py-12 px-4 md:px-10 flex items-center justify-between ">
+      <footer className="w-full py-12  px-10 rounded-t-md flex items-center justify-between bg-gray-400 ">
         <div className="text-xl font-poppin font-semibold ">
           Aung Myo Aye - Portfolio
         </div>
