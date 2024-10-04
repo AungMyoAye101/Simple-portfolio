@@ -6,30 +6,17 @@ import { FaFacebookF } from "react-icons/fa";
 const Footer = () => {
   return (
     <section className="flex flex-col items-center gap-4">
-      <a href="#" className="bg-gray-700 p-3 rounded-full animate-bounce ">
+      <a
+        href="#"
+        className="bg-green-400 p-3 rounded-full animate-bounce  shadow-md  shadow-emerald-200"
+      >
         <FaArrowUp className="text-lg text-white " />
       </a>
-      <footer className="border-t border-t-gray-300 w-full py-12 px-4 md:px-10 flex items-center justify-between bg-gray-600">
-        <div className="text-xl font-poppin font-semibold text-white">
+      <footer className="w-full py-12 px-4 md:px-10 flex items-center justify-between ">
+        <div className="text-xl font-poppin font-semibold ">
           Aung Myo Aye - Portfolio
         </div>
-        {/* <ul className="flex gap-2">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Skills</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul> */}
+
         <div className="flex gap-4">
           <a
             href="https://github.com/AungMyoAye101"
