@@ -10,9 +10,7 @@ const Skills = () => {
       id="skill"
     >
       <div className="flex flex-col items-center gap-6">
-        <h1 className="font-lora text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
-          My Skills
-        </h1>
+        <h1 className="heading">My Skills</h1>
       </div>
       {/* My Skills  */}
       <div className="flex flex-wrap justify-center gap-4">

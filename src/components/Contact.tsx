@@ -7,9 +7,7 @@ const Contact = () => {
       id="contact"
     >
       <div className="space-y-4">
-        <h1 className="font-poppin font-bold text-2xl sm:text3xl md:text-4xl lg:text-5xl text-center">
-          Contact Me
-        </h1>
+        <h1 className="heading">Contact Me</h1>
         <h2 className="font-lora font-semibold text-xl md:text-2xl ">
           Feel free to reach out by sending an email.
         </h2>

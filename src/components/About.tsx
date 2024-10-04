@@ -4,9 +4,7 @@ import React from "react";
 const About = () => {
   return (
     <section className="min-h-screen py-16 " id="about">
-      <h1 className="font-poppin font-bold text-2xl sm:text3xl md:text-4xl lg:text-5xl text-center">
-        About Me
-      </h1>
+      <h1 className="heading">About Me</h1>
       <div className="flex flex-col md:flex-row justify-center items-center  gap-10 mt-10  p-8 mx-auto">
         <div className="">
           <Image
