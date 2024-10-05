@@ -73,6 +73,10 @@ const Contact = () => {
           Send
         </button>
       </div>
+      <p className="text-base  font-lora font-medium">
+        Let's work together to bring your ideas to life. Reach out and let's
+        build something amazing
+      </p>
     </section>
   );
 };

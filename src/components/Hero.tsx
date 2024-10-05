@@ -8,12 +8,13 @@ const Hero = () => {
         <h4 className="font-lora text-base md:text-lg font-medium">
           Hi &#33; I am Aung Myo Aye
         </h4>
-        <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-loose">
-          A Full Stack Web Developer And UI/UX Desinger From Myanmar
+        <h1 className="font-poppin text-2xl  md:text-3xl lg:text-4xl font-bold leading-loose">
+          A full-stack developer and UI/UX designer passionate about creating
+          efficient, scalable web solutions.
         </h1>
         <p className="font-poppin text-balance w-[90%] text-base md:text-xl font-light ">
-          I bring ideas to life through clean and user-friendly interfaces.
-          Let&apos;s create something extraordinary together!
+          Crafting modern, responsive web applications with a touch of
+          creativity.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <a
@@ -31,31 +32,13 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-full md:w-[40vw] ">
-        <div className="relative size-64 sm:size-72 md:size-96  mx-auto ">
+        <div className="relative size-60 sm:size-72 md:size-96  mx-auto ">
           <Image
             src={"/profile.png"}
             fill
             alt="Aung Myo Aye's profile photo"
             className="object-cover object-center  rounded-xl border border-gray-300 "
           />
-          <div className="p-2 rounded-lg z-20 shadow-md border border-gray-300  absolute -left-20 top-[45%] animate-pulse">
-            <Image
-              src={"/mongodb.svg"}
-              width={40}
-              height={60}
-              alt="icon "
-              className=" object-cover object-center "
-            />
-          </div>
-          <div className="p-2 rounded-lg z-20 shadow-md border border-gray-300  absolute -right-20 top-[45%]  animate-pulse">
-            <Image
-              src={"/react.svg"}
-              width={40}
-              height={60}
-              alt="icon "
-              className=" object-cover "
-            />
-          </div>
         </div>
       </div>
     </section>
