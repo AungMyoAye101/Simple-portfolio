@@ -1,12 +1,22 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa6";
+import SideBar from "./SideBar";
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
+  const handleClick = () => {
+    setOpen((pre) => !pre);
+  };
   return (
     <div className="fixed top-0 left-0 right-0 bg-white z-40 bg-opacity-85 max-w-6xl mx-auto">
       <nav className="flex justify-between items-center px-4 md:px-10 py-2 backdrop-blur-sm">
-        <div className="block md:hidden rounded-full border border-gray-300 p-2 shadow-md cursor-pointer">
+        <SideBar open={open} />
+        <div
+          className="block md:hidden rounded-full border border-gray-300 p-2 shadow-md cursor-pointer"
+          onClick={handleClick}
+        >
           <FaBars />
         </div>
         <div>
