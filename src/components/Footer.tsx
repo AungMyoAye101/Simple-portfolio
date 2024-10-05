@@ -12,7 +12,7 @@ const Footer = () => {
       >
         <FaArrowUp className="text-lg text-white " />
       </a>
-      <footer className="w-full py-12  px-10 rounded-t-md flex flex-col md:flex-row gap-8 items-center justify-between bg-gray-400 ">
+      <footer className="w-full py-12  px-10 rounded-t-md flex flex-wrap gap-4 items-center justify-between bg-gray-400 ">
         <div className="text-xl font-poppin font-semibold ">
           Aung Myo Aye - Portfolio
         </div>

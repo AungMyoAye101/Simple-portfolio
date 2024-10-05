@@ -14,10 +14,10 @@ const Project = () => {
             key={i}
             className=" flex flex-col md:flex-row  justify-between  p-0 md:p-4 gap-4 border border-gray-400 rounded-lg shadow-md overflow-hidden "
           >
-            <div className="relative w-full  md:w-[45%] bg-gray-600 h-44  md:h-64 rounded-lg overflow-hidden">
+            <div className="relative w-full  md:w-[45%] bg-gray-600 h-44 sm:h-80  md:h-64 rounded-lg overflow-hidden">
               <Image src={project.image} fill alt="project name" className="" />
             </div>
-            <div className="flex flex-col justify-between px-2  w-[50%]">
+            <div className="flex flex-col gap-2 justify-between px-2 w-full md:w-[50%]">
               <div className="space-y-4">
                 <h1 className="text-xl md:text-2xl font-lora font-semibold">
                   {project.title}
@@ -25,11 +25,11 @@ const Project = () => {
                 <p className="text-sm md:text-base font-poppin  font-medium line-clamp-2 md:line-clamp-none">
                   {project.description}
                 </p>
-                <div className="flex gap-2 ">
+                <div className="flex flex-wrap gap-2 ">
                   {project.iconList.map((icon, idx) => (
                     <div
                       key={idx}
-                      className="flex gap-1 items-center p-1 shadow-md rounded-md border border-gray-200"
+                      className="flex  gap-1 items-center p-1 shadow-md rounded-md border border-gray-200"
                     >
                       <Image
                         src={icon.icon}

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { FaBars } from "react-icons/fa";
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaBars, FaCross } from "react-icons/fa";
+import { FaLocationArrow, FaXmark } from "react-icons/fa6";
 import SideBar from "./SideBar";
 
 const NavBar = () => {
@@ -17,7 +17,7 @@ const NavBar = () => {
           className="block md:hidden rounded-full border border-gray-300 p-2 shadow-md cursor-pointer"
           onClick={handleClick}
         >
-          <FaBars />
+          {open ? <FaBars /> : <FaXmark />}
         </div>
         <div>
           <h1 className=" font-lora text-2xl md:text-3xl font-bold text-gray-600">
