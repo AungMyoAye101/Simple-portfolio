@@ -10,19 +10,23 @@ const Skills = () => {
         <h1 className="heading">My Skills</h1>
       </div>
       {/* My Skills  */}
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-6">
         <div className="max-w-80 px-4 py-6 rounded-xl shadow-md border-2 border-gray-300 ">
-          <Image src={"/react.svg"} width={40} height={40} alt="icons" />
+          <Image
+            src={"/react.svg"}
+            width={40}
+            height={40}
+            alt="icons"
+            className="mb-4"
+          />
 
-          <div className="space-y-2 mt-2">
+          <div className="space-y-3 mt-2">
             <h1 className="font-poppin text-lg md:text-xl font-semibold">
-              Fornt-End Development
+              UI & UX Design
             </h1>
-            <p className=" text-sm md:text-base text-balance">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              quaerat beatae minima architecto numquam, autem animi dolore,
-              aliquam expedita fugiat voluptatibus voluptate sequi voluptas!
-              Soluta, aperiam. Ab excepturi laudantium saepe!
+            <p className=" para-heading">
+              UI/UX design expertise with a focus on user-friendly,
+              mobile-responsive interfaces using Figma.
             </p>
           </div>
         </div>
@@ -30,13 +34,11 @@ const Skills = () => {
           <Image src={"/nextjs.svg"} width={40} height={40} alt="icons" />
           <div className="space-y-2 mt-2">
             <h1 className="font-poppin text-lg md:text-xl font-semibold">
-              Back-End Development
+              Full-Stack Development
             </h1>
-            <p className=" text-sm md:text-base text-balance">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              quaerat beatae minima architecto numquam, autem animi dolore,
-              aliquam expedita fugiat voluptatibus voluptate sequi voluptas!
-              Soluta, aperiam. Ab excepturi laudantium saepe!
+            <p className=" para-heading ">
+              Proficient in full-stack development using technologies such as
+              React, Next.js, Vue.js, Node.js, Express, and MongoDB.
             </p>
           </div>
         </div>
@@ -46,11 +48,9 @@ const Skills = () => {
             <h1 className="font-poppin text-lg md:text-xl font-semibold">
               Database & Others
             </h1>
-            <p className=" text-sm md:text-base text-balance">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              quaerat beatae minima architecto numquam, autem animi dolore,
-              aliquam expedita fugiat voluptatibus voluptate sequi voluptas!
-              Soluta, aperiam. Ab excepturi laudantium saepe!
+            <p className=" para-heading">
+              Experienced in designing and developing complex applications with
+              database management using Prisma, MySQL, and MongoDB.
             </p>
           </div>
         </div>

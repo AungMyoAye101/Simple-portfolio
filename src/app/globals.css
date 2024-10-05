@@ -14,3 +14,7 @@
 .heading {
   @apply font-poppin text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-4;
 }
+
+.para-heading {
+  @apply text-base md:text-lg font-lora font-medium;
+}
