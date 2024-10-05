@@ -27,7 +27,7 @@ const SideBar = ({ open }: { open: boolean }) => {
     >
       <motion.div
         variants={varients}
-        className="absolute top-0 left-0 bottom-0 flex flex-col justify-center items-center w-[40vw] bg-white h-screen px-4   "
+        className="absolute top-0 left-0 bottom-0 flex flex-col justify-center items-center w-[50vw] bg-white h-screen px-1  "
       >
         <a
           href="#"
