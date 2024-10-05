@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { FaBars, FaCross } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { FaLocationArrow, FaXmark } from "react-icons/fa6";
 import SideBar from "./SideBar";
 
