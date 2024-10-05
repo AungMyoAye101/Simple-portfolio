@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 
 interface SkillsProp {
   title: string;
