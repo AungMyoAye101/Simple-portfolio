@@ -14,7 +14,7 @@ const Skills = () => {
         {skills.map(({ id, image, title, description }) => (
           <div
             key={id}
-            className="max-w-80 px-4 py-6 rounded-xl shadow-md border-2 border-gray-300 "
+            className="max-w-72 px-4 py-6 rounded-xl shadow-md border-2 border-gray-300 "
           >
             <Image
               src={image}
