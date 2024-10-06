@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { BorderBeam } from "./ui/BorderBeam";
 
 const Hero = () => {
   return (
@@ -16,18 +17,21 @@ const Hero = () => {
           Crafting modern, responsive web applications with a touch of
           creativity.
         </p>
+
         <div className="flex flex-wrap gap-4 justify-center">
           <a
             href="mailto:aungmyoaye101@gmail.com"
-            className="px-4 py-3 font-poppin rounded-lg shadow-lg bg-yellow-400 animate-pulse"
+            className="px-4 py-3 font-poppin rounded-lg shadow-lg  relative"
           >
             Get In Touch
+            <BorderBeam duration={4} borderWidth={2} />
           </a>
           <a
             href="mailto:aungmyoaye101@gmail.com"
-            className="px-4 py-3 font-poppin rounded-lg shadow-lg border border-yellow-400  "
+            className="px-4 py-3 font-poppin rounded-lg shadow-lg relative  "
           >
             Download Resume
+            <BorderBeam duration={5} borderWidth={2} />
           </a>
         </div>
       </div>
