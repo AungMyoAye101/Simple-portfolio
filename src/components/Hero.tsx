@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col-reverse md:flex-row justify-center items-center gap-10  p-10">
+    <section className="min-h-screen flex flex-col-reverse md:flex-row justify-center items-center gap-10 py-20 px-4 md:px-10">
       <div className="w-full md:w-[50vw]  flex flex-col gap-4 items-center text-center md:text-start md:items-start ">
         <h4 className="font-lora text-base md:text-lg font-medium">
           Hi &#33; I am Aung Myo Aye

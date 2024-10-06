@@ -10,7 +10,7 @@ const Skills = () => {
         <h1 className="heading">My Skills</h1>
       </div>
       {/* My Skills  */}
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center items-center w-full gap-4  md:gap-6">
         {skills.map(({ id, image, title, description }) => (
           <div
             key={id}
