@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import TechSkills from "./TechSkills";
 import { backEnd, frontEnd, others, skills } from "@/data";
+import { MagicCard } from "./ui/MagicCard";
+import { BorderBeam } from "./ui/BorderBeam";
 
 const Skills = () => {
   return (
@@ -12,25 +14,27 @@ const Skills = () => {
       {/* My Skills  */}
       <div className="flex flex-wrap justify-center items-center w-full gap-4  md:gap-6">
         {skills.map(({ id, image, title, description }) => (
-          <div
+          <MagicCard
             key={id}
-            className="max-w-72 px-4 py-6 rounded-xl shadow-md border-2 border-gray-300 "
+            className="max-w-72 h-80 rounded-xl shadow-md relative "
           >
-            <Image
-              src={image}
-              width={40}
-              height={40}
-              alt="icons"
-              className="mb-4"
-            />
+            <div className="px-4 py-6">
+              <Image
+                src={image}
+                width={40}
+                height={40}
+                alt="icons"
+                className="mb-4"
+              />
 
-            <div className="space-y-3 mt-2">
-              <h1 className="font-poppin text-lg md:text-xl font-semibold">
-                {title}
-              </h1>
-              <p className=" para-heading">{description}</p>
+              <div className="space-y-3 mt-2">
+                <h1 className="font-poppin text-lg md:text-xl font-semibold">
+                  {title}
+                </h1>
+                <p className=" para-heading">{description}</p>
+              </div>
             </div>
-          </div>
+          </MagicCard>
         ))}
       </div>
 
