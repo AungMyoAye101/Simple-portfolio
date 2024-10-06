@@ -31,6 +31,7 @@ const SideBar = ({ handleClick }: { handleClick: () => void }) => {
       <a
         href="#skill"
         className="w-full font-lora font-semibold text-lg border border-gray-300 py-2 text-center"
+        onClick={handleClick}
       >
         Skills
       </a>
@@ -43,12 +44,14 @@ const SideBar = ({ handleClick }: { handleClick: () => void }) => {
       <a
         href="#about"
         className="w-full font-lora font-semibold text-lg border border-gray-300 py-2 text-center"
+        onClick={handleClick}
       >
         About
       </a>
       <a
         href="#contact"
         className="w-full font-lora font-semibold text-lg border border-gray-300 py-2 text-center"
+        onClick={handleClick}
       >
         Contact
       </a>
