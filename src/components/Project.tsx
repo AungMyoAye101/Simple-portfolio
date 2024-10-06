@@ -14,11 +14,11 @@ const Project = () => {
             key={i}
             className=" flex flex-col md:flex-row  justify-between  p-0 md:p-4 gap-4 rounded-lg shadow-xl overflow-hidden "
           >
-            <div className="relative w-full  md:w-[45%] bg-gray-600 h-44 sm:h-80  md:h-64 rounded-lg overflow-hidden">
+            <div className="relative w-full  md:w-[45%] bg-gray-600 h-48 sm:h-80  md:h-64 rounded-lg overflow-hidden">
               <Image src={project.image} fill alt="project name" className="" />
             </div>
             <div className="flex flex-col gap-2 justify-between px-2 w-full md:w-[50%]">
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <h1 className="text-xl md:text-2xl font-lora font-semibold">
                   {project.title}
                 </h1>

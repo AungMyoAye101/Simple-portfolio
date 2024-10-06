@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        lavender: "#E6E6FA",
+        primary: "#007BFF",
       },
       fontFamily: {
         poppin: "Poppins",

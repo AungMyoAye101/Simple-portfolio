@@ -8,11 +8,11 @@ const Hero = () => {
         <h4 className="font-lora text-base md:text-lg font-medium">
           Hi &#33; I am Aung Myo Aye
         </h4>
-        <h1 className="font-poppin text-2xl  md:text-3xl lg:text-4xl font-bold leading-loose">
+        <h1 className=" text-primary font-poppin text-2xl  md:text-3xl lg:text-4xl font-bold leading-loose">
           A full-stack developer and UI/UX designer passionate about creating
           efficient, scalable web solutions.
         </h1>
-        <p className="font-poppin text-balance w-[90%] text-base md:text-xl font-light ">
+        <p className="font-poppin  w-[90%] text-base md:text-xl font-light ">
           Crafting modern, responsive web applications with a touch of
           creativity.
         </p>
