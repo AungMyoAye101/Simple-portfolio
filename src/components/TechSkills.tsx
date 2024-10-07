@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React, { FC } from "react";
-import { BorderBeam } from "./ui/BorderBeam";
 
 interface SkillsProp {
   title: string;

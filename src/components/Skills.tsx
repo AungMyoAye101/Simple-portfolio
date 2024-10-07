@@ -3,7 +3,7 @@ import React from "react";
 import TechSkills from "./TechSkills";
 import { backEnd, frontEnd, others, skills } from "@/data";
 import { MagicCard } from "./ui/MagicCard";
-import { BorderBeam } from "./ui/BorderBeam";
+
 import { FaCode } from "react-icons/fa";
 
 const Skills = () => {

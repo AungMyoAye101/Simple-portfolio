@@ -8,11 +8,11 @@ const Footer = () => {
     <section className="flex flex-col items-center gap-4 ">
       <a
         href="#"
-        className="bg-cyan-400 p-3 rounded-full animate-bounce   shadow-md  shadow-cyan-200"
+        className="bg-cyan-400 p-3 rounded-full animate-bounce   shadow-md  shadow-cyan-300"
       >
         <FaArrowUp className="text-lg text-white " />
       </a>
-      <footer className="w-full py-12  px-10 rounded-t-md flex flex-wrap gap-6 items-center justify-center md:justify-between ">
+      <footer className="w-full py-12  px-10 rounded-t-md flex flex-wrap gap-6 items-center justify-center md:justify-between bg-neutral-900">
         <div className="text-xl font-poppin font-semibold ">
           Aung Myo Aye - Portfolio
         </div>
