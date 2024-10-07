@@ -23,7 +23,7 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
         {skill.map((skill, i) => (
           <div
             key={i}
-            className="group relative flex  items-center  w-36  rounded-md shadow-md bg-neutral-100 gap-1 border-2 border-cyan-300
+            className="group relative flex  items-center  w-36  rounded-md shadow-md gap-1 border-2 border-cyan-300
               "
           >
             <div className="relative z-30 size-11 p-1  flex justify-center items-center overflow-hidden rounded-md bg-black  m-1">
@@ -41,7 +41,7 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
               </div>
             </div>
 
-            <p className="relative z-30 font-poppin font-semibold text-sm text-black mr-1">
+            <p className="relative z-30 font-poppin font-semibold text-sm mr-1">
               {skill.name}
             </p>
 
@@ -53,9 +53,7 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
                   ? "bg-cyan-400"
                   : "bg-rose-400"
               } `}
-            >
-              {/* <div className=" relative bottom-0 w-full h-0  group-hover:h-full bg-red-900 transition-all duration-500 ease-out  "></div> */}
-            </div>
+            ></div>
           </div>
         ))}
       </section>

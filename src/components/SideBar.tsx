@@ -34,7 +34,7 @@ const SideBar = ({ handleClick }: { handleClick: () => void }) => {
       initial="close"
       animate="open"
       exit="close"
-      className="absolute top-0 left-0 bottom-0 flex flex-col justify-center items-center w-96 bg-white h-screen px-1  "
+      className="absolute top-0 left-0 bottom-0 flex flex-col justify-center items-center gap-2 w-96 bg-white dark:bg-neutral-900 h-screen px-1  "
     >
       <motion.a
         variants={childVarients}

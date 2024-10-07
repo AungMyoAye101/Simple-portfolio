@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import { Providers } from "./Providers";
 
 export const metadata: Metadata = {
   title: "Aung Myo Aye's Portfolio",
@@ -15,12 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth 	snap-mandatory">
-      <body className="bg-neutral-100">
-        <div className="max-w-6xl mx-auto">
-          <NavBar />
-          {children}
-          <Footer />
-        </div>
+      <body>
+        <Providers>
+          <div className="max-w-6xl mx-auto">
+            <NavBar />
+            {children}
+            <Footer />
+          </div>
+        </Providers>
       </body>
     </html>
   );

@@ -11,8 +11,8 @@ const NavBar = () => {
     setOpen((pre) => !pre);
   };
   return (
-    <div className="fixed top-0 left-0 right-0 bg-neutral-50 z-40 bg-opacity-85  mx-auto">
-      <nav className="z-40 flex justify-between items-center px-4 md:px-10 py-2 backdrop-blur-sm">
+    <div className="fixed top-0 left-0 right-0 bg-neutral-50 dark:bg-neutral-900 z-40 bg-opacity-85  mx-auto">
+      <nav className="z-40 flex justify-between items-center px-4 md:px-10 py-3 backdrop-blur-sm">
         <div
           className="block md:hidden rounded-full border border-gray-300 p-2 shadow-md cursor-pointer relative z-50"
           onClick={handleClick}
@@ -23,7 +23,7 @@ const NavBar = () => {
           {open && <SideBar handleClick={handleClick} />}
         </AnimatePresence>
         <div>
-          <h1 className=" font-lora text-2xl md:text-3xl font-bold text-gray-600">
+          <h1 className=" font-lora text-2xl md:text-3xl font-bold text-cyan-600">
             AMA <span className="hidden md:inline"> -Portfolio</span>
           </h1>
         </div>
