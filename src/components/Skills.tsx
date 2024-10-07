@@ -12,11 +12,11 @@ const Skills = () => {
         <h1 className="heading">My Skills</h1>
       </div>
       {/* My Skills  */}
-      <div className="flex flex-wrap justify-center items-center w-full gap-6  md:gap-10">
+      <div className="flex  justify-center items-center gap-6  md:gap-10">
         {skills.map(({ id, image, title, description }) => (
           <MagicCard
             key={id}
-            className="max-w-72 h-80 p-6 rounded-xl shadow-md relative "
+            className="  w-80 h-72 py-6 px-4 rounded-xl shadow-md shadow-sky-300 relative border border-sky-500 "
           >
             <Image
               src={image}

@@ -8,14 +8,22 @@ const varients = {
   open: {
     x: "0%",
     transition: {
-      duration: 1,
+      when: "beforechild",
     },
   },
   close: {
     x: "-100%",
     transition: {
-      type: "spring",
+      when: "afterchild",
     },
+  },
+};
+const childVarients = {
+  open: {
+    opacity: 0,
+  },
+  close: {
+    opacity: 1,
   },
 };
 
@@ -25,15 +33,19 @@ const SideBar = ({ handleClick }: { handleClick: () => void }) => {
       variants={varients}
       initial="close"
       animate="open"
+      exit="close"
       className="absolute top-0 left-0 bottom-0 flex flex-col justify-center items-center w-96 bg-white h-screen px-1  "
     >
-      <a
+      <motion.a
+        variants={childVarients}
+        initial="open"
+        animate="close"
         href="#"
         className="w-full font-lora font-semibold text-lg border border-gray-300 py-2 text-center"
         onClick={handleClick}
       >
         Home
-      </a>
+      </motion.a>
       <a
         href="#skill"
         className="w-full font-lora font-semibold text-lg border border-gray-300 py-2 text-center"
