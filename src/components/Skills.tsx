@@ -13,13 +13,13 @@ const Skills = () => {
         <h1 className="heading">My Skills</h1>
       </div>
       {/* My Skills  */}
-      <div className="flex  justify-center items-center gap-6  md:gap-10">
+      <div className="flex flex-wrap justify-center items-center gap-6  md:gap-10">
         {skills.map(({ id, image, title, description }) => (
           <MagicCard
             key={id}
             className="  w-80 h-72 py-6 px-4 rounded-xl shadow-md shadow-sky-300 relative border border-sky-500 "
           >
-            <FaCode />
+            <Image src={image} width={60} height={40} alt="title" />
 
             <div className="space-y-3 mt-2">
               <h1 className="font-poppin text-lg md:text-xl font-semibold">

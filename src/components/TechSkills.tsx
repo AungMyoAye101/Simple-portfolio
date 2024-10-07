@@ -19,11 +19,11 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
       <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-lora font-semibold ">
         {title}
       </h1>
-      <section className="flex flex-wrap items-center justify-center md:justify-start gap-4   ">
+      <section className="flex flex-wrap items-center justify-center md:justify-start gap-5  ">
         {skill.map((skill, i) => (
           <div
             key={i}
-            className="group relative flex  items-center  w-40  rounded-md shadow-md bg-purple-100 gap-2 border-2 border-cyan-300
+            className="group relative flex  items-center  w-40  rounded-md shadow-md bg-neutral-100 gap-2 border-2 border-cyan-300
               "
           >
             <div className="relative z-30 size-12 flex justify-center items-center overflow-hidden rounded-md bg-black  m-2">
