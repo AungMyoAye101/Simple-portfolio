@@ -66,8 +66,8 @@ export const projects = [
         name: "Next Js",
       },
       {
-        icon: "/mongodb.svg",
-        name: "Mongo Db",
+        icon: "/mysql.svg",
+        name: "MySQL ",
       },
       {
         icon: "/nodejs.svg",
@@ -92,8 +92,8 @@ export const projects = [
         name: "Next Js",
       },
       {
-        icon: "/mongodb.svg",
-        name: "Mongo Db",
+        icon: "/mysql.svg",
+        name: "MySQl",
       },
       {
         icon: "/nodejs.svg",

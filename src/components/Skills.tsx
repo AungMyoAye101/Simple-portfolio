@@ -4,6 +4,7 @@ import TechSkills from "./TechSkills";
 import { backEnd, frontEnd, others, skills } from "@/data";
 import { MagicCard } from "./ui/MagicCard";
 import { BorderBeam } from "./ui/BorderBeam";
+import { FaCode } from "react-icons/fa";
 
 const Skills = () => {
   return (
@@ -18,13 +19,7 @@ const Skills = () => {
             key={id}
             className="  w-80 h-72 py-6 px-4 rounded-xl shadow-md shadow-sky-300 relative border border-sky-500 "
           >
-            <Image
-              src={image}
-              width={40}
-              height={40}
-              alt="icons"
-              className="mb-4"
-            />
+            <FaCode />
 
             <div className="space-y-3 mt-2">
               <h1 className="font-poppin text-lg md:text-xl font-semibold">
