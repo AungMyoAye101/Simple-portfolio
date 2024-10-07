@@ -23,10 +23,10 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
         {skill.map((skill, i) => (
           <div
             key={i}
-            className="group relative flex  items-center  w-40  rounded-md shadow-md bg-neutral-100 gap-2 border-2 border-cyan-300
+            className="group relative flex  items-center  w-36  rounded-md shadow-md bg-neutral-100 gap-1 border-2 border-cyan-300
               "
           >
-            <div className="relative z-30 size-12 flex justify-center items-center overflow-hidden rounded-md bg-black  m-2">
+            <div className="relative z-30 size-11 p-1  flex justify-center items-center overflow-hidden rounded-md bg-black  m-1">
               <Image
                 src={skill.icon}
                 width={40}
@@ -41,7 +41,7 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
               </div>
             </div>
 
-            <p className="relative z-30 font-poppin font-semibold text-sm text-black mr-2">
+            <p className="relative z-30 font-poppin font-semibold text-sm text-black mr-1">
               {skill.name}
             </p>
 
