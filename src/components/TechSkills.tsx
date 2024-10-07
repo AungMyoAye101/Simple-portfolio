@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { FC } from "react";
+import { BorderBeam } from "./ui/BorderBeam";
 
 interface SkillsProp {
   title: string;
@@ -20,9 +21,9 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
       </h1>
       <section className="flex flex-wrap items-center  gap-6  ">
         {skill.map((skill, i) => (
-          <div
+          <NeonGradientCard
             key={i}
-            className="group relative flex flex-col items-center p-4 w-28 rounded-md shadow-md gap-2 border border-emerald-400 "
+            className="group relative flex flex-col items-center justify-center w-32 h-36 rounded-md shadow-md gap-2  "
           >
             <div className="size-14 flex justify-center items-center overflow-hidden bg-white rounded-full b ">
               <Image
@@ -32,7 +33,15 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
                 alt={skill.name}
                 className="group-hover:hidden"
               />
-              <div className="hidden group-hover:block  font-poppin ">
+              <div
+                className={`hidden group-hover:block  font-poppin ${
+                  skill.count > 79
+                    ? "text-emerald-400"
+                    : skill.count > 60
+                    ? "text-cyan-400"
+                    : "text-rose-400"
+                } `}
+              >
                 {skill.count}%
               </div>
             </div>
@@ -50,7 +59,7 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
                   : "bg-rose-400"
               } `}
             ></div>
-          </div>
+          </NeonGradientCard>
         ))}
       </section>
     </section>

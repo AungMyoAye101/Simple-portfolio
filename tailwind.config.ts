@@ -58,8 +58,14 @@ const config: Config = {
       },
       animation: {
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
+        "background-position-spin":
+          "background-position-spin 3000ms infinite alternate",
       },
       keyframes: {
+        "background-position-spin": {
+          "0%": { backgroundPosition: "top center" },
+          "100%": { backgroundPosition: "bottom center" },
+        },
         "border-beam": {
           "100%": {
             "offset-distance": "100%",
