@@ -7,9 +7,15 @@ import React from "react";
 const varients = {
   open: {
     x: "0%",
+    transition: {
+      duration: 1,
+    },
   },
   close: {
     x: "-100%",
+    transition: {
+      type: "spring",
+    },
   },
 };
 

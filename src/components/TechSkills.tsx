@@ -19,11 +19,17 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
       <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-lora font-semibold mb-4">
         {title}
       </h1>
-      <section className="flex flex-wrap items-center  gap-6  ">
+      <section className="flex flex-wrap items-center justify-center gap-6  ">
         {skill.map((skill, i) => (
-          <NeonGradientCard
+          <div
             key={i}
-            className="group relative flex flex-col items-center justify-center w-32 h-36 rounded-md shadow-md gap-2  "
+            className={`group relative flex flex-col items-center justify-center w-32 h-36 rounded-md shadow-md gap-2 border ${
+              skill.count > 79
+                ? "border-emerald-400"
+                : skill.count > 60
+                ? "border-cyan-400"
+                : "border-rose-400"
+            }  `}
           >
             <div className="size-14 flex justify-center items-center overflow-hidden bg-white rounded-full b ">
               <Image
@@ -59,7 +65,7 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
                   : "bg-rose-400"
               } `}
             ></div>
-          </NeonGradientCard>
+          </div>
         ))}
       </section>
     </section>

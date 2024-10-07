@@ -12,27 +12,25 @@ const Skills = () => {
         <h1 className="heading">My Skills</h1>
       </div>
       {/* My Skills  */}
-      <div className="flex flex-wrap justify-center items-center w-full gap-4  md:gap-6">
+      <div className="flex flex-wrap justify-center items-center w-full gap-6  md:gap-10">
         {skills.map(({ id, image, title, description }) => (
           <MagicCard
             key={id}
-            className="max-w-72 h-80 rounded-xl shadow-md relative "
+            className="max-w-72 h-80 p-6 rounded-xl shadow-md relative "
           >
-            <div className="px-4 py-6">
-              <Image
-                src={image}
-                width={40}
-                height={40}
-                alt="icons"
-                className="mb-4"
-              />
+            <Image
+              src={image}
+              width={40}
+              height={40}
+              alt="icons"
+              className="mb-4"
+            />
 
-              <div className="space-y-3 mt-2">
-                <h1 className="font-poppin text-lg md:text-xl font-semibold">
-                  {title}
-                </h1>
-                <p className=" para-heading">{description}</p>
-              </div>
+            <div className="space-y-3 mt-2">
+              <h1 className="font-poppin text-lg md:text-xl font-semibold">
+                {title}
+              </h1>
+              <p className=" para-heading">{description}</p>
             </div>
           </MagicCard>
         ))}
