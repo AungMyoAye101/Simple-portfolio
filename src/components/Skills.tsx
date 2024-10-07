@@ -4,8 +4,6 @@ import TechSkills from "./TechSkills";
 import { backEnd, frontEnd, others, skills } from "@/data";
 import { MagicCard } from "./ui/MagicCard";
 
-import { FaCode } from "react-icons/fa";
-
 const Skills = () => {
   return (
     <section className="section-container" id="skill">
