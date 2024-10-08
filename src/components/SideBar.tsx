@@ -15,13 +15,15 @@ const varients = {
   close: {
     x: "-100%",
     transition: {
-      when: "afterchild",
+      when: "afterChildren",
       staggerChildren: 0.1,
     },
   },
 };
 const childVarients = {
-  open: { opacity: 1 },
+  open: {
+    opacity: 1,
+  },
   close: { opacity: 0 },
 };
 
@@ -32,14 +34,14 @@ const SideBar = ({ handleClick }: { handleClick: () => void }) => {
       initial="close"
       animate="open"
       exit="close"
-      className="absolute top-0 left-0 bottom-0 flex flex-col justify-center items-center gap-2 w-96 bg-white dark:bg-neutral-900 h-screen px-4  "
+      className="absolute top-0 left-0 bottom-0 flex flex-col justify-center items-center gap-3 w-96 bg-white dark:bg-neutral-900 h-screen px-4  "
     >
       {NavLinks.map((link, i) => (
         <motion.a
           variants={childVarients}
           whileHover={{ scale: 0.9 }}
           href={link.link}
-          className="w-full font-lora font-semibold text-lg border border-gray-300 py-2 text-center"
+          className="w-full font-lora font-semibold text-lg border border-cyan-400 py-2 text-center rounded-md hover:bg-cyan-300 hover:text-gray-900"
           onClick={handleClick}
           key={i}
         >
