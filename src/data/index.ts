@@ -208,14 +208,9 @@ export const frontEnd = {
   title: "Frontend Skills",
   skills: [
     {
-      icon: "/react.svg",
+      icon: "/javascript.svg",
       name: "JavaScript",
       count: 80,
-    },
-    {
-      icon: "/react.svg",
-      name: "Vue Js",
-      count: 60,
     },
     {
       icon: "/react.svg",
@@ -223,28 +218,33 @@ export const frontEnd = {
       count: 70,
     },
     {
-      icon: "/react.svg",
-      name: "React Js",
-      count: 80,
-    },
-    {
-      icon: "/react.svg",
-      name: "JavaScript",
-      count: 80,
-    },
-    {
-      icon: "/react.svg",
+      icon: "/vue.svg",
       name: "Vue Js",
       count: 60,
     },
     {
-      icon: "/react.svg",
-      name: "React Js",
+      icon: "/jquery.svg",
+      name: "Jquery",
+      count: 60,
+    },
+    {
+      icon: "/tailwindcss.svg",
+      name: "Tailwindcss",
+      count: 80,
+    },
+    {
+      icon: "/sass.svg",
+      name: "SASS ",
+      count: 60,
+    },
+    {
+      icon: "/bootstrap.svg",
+      name: "bootstrap",
       count: 70,
     },
     {
-      icon: "/react.svg",
-      name: "React Js",
+      icon: "/nextjs.svg",
+      name: "Next Js",
       count: 80,
     },
   ],
@@ -264,14 +264,14 @@ export const backEnd = {
       count: 70,
     },
     {
-      icon: "/react.svg",
-      name: "React Js",
+      icon: "/python.svg",
+      name: "Python",
       count: 80,
     },
     {
-      icon: "/react.svg",
-      name: "React Js",
-      count: 90,
+      icon: "/laravel.svg",
+      name: "Laravel",
+      count: 60,
     },
   ],
 };
@@ -285,18 +285,18 @@ export const others = {
       count: 60,
     },
     {
-      icon: "/react.svg",
-      name: "React Js",
-      count: 75,
+      icon: "/mysql.svg",
+      name: "MySQL",
+      count: 60,
     },
     {
-      icon: "/react.svg",
-      name: "React Js",
+      icon: "/postgresql.svg",
+      name: "Postgresql",
       count: 40,
     },
     {
-      icon: "/react.svg",
-      name: "React Js",
+      icon: "/prisma.svg",
+      name: "Prisma",
       count: 50,
     },
   ],
