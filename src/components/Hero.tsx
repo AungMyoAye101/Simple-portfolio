@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="flex flex-wrap gap-4 justify-center">
           <a
             href="mailto:aungmyoaye101@gmail.com"
-            className="px-4 py-3 font-poppin rounded-lg shadow-lg  relative bg-cyan-400"
+            className="px-4 py-3 font-poppin rounded-lg shadow-lg  text-black bg-cyan-400 border-2 border-cyan-400 "
           >
             Get In Touch
           </a>

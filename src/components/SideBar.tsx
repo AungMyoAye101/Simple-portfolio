@@ -1,5 +1,6 @@
 "use client";
 
+import { NavLinks } from "@/data";
 import { motion } from "framer-motion";
 
 import React from "react";
@@ -15,16 +16,13 @@ const varients = {
     x: "-100%",
     transition: {
       when: "afterchild",
+      staggerChildren: 0.1,
     },
   },
 };
 const childVarients = {
-  open: {
-    opacity: 0,
-  },
-  close: {
-    opacity: 1,
-  },
+  open: { opacity: 1 },
+  close: { opacity: 0 },
 };
 
 const SideBar = ({ handleClick }: { handleClick: () => void }) => {
@@ -34,45 +32,20 @@ const SideBar = ({ handleClick }: { handleClick: () => void }) => {
       initial="close"
       animate="open"
       exit="close"
-      className="absolute top-0 left-0 bottom-0 flex flex-col justify-center items-center gap-2 w-96 bg-white dark:bg-neutral-900 h-screen px-1  "
+      className="absolute top-0 left-0 bottom-0 flex flex-col justify-center items-center gap-2 w-96 bg-white dark:bg-neutral-900 h-screen px-4  "
     >
-      <motion.a
-        variants={childVarients}
-        initial="open"
-        animate="close"
-        href="#"
-        className="w-full font-lora font-semibold text-lg border border-gray-300 py-2 text-center"
-        onClick={handleClick}
-      >
-        Home
-      </motion.a>
-      <a
-        href="#skill"
-        className="w-full font-lora font-semibold text-lg border border-gray-300 py-2 text-center"
-        onClick={handleClick}
-      >
-        Skills
-      </a>
-      <a
-        href="#project"
-        className="w-full font-lora font-semibold text-lg border border-gray-300 py-2 text-center"
-      >
-        Projects
-      </a>
-      <a
-        href="#about"
-        className="w-full font-lora font-semibold text-lg border border-gray-300 py-2 text-center"
-        onClick={handleClick}
-      >
-        About
-      </a>
-      <a
-        href="#contact"
-        className="w-full font-lora font-semibold text-lg border border-gray-300 py-2 text-center"
-        onClick={handleClick}
-      >
-        Contact
-      </a>
+      {NavLinks.map((link, i) => (
+        <motion.a
+          variants={childVarients}
+          whileHover={{ scale: 0.9 }}
+          href={link.link}
+          className="w-full font-lora font-semibold text-lg border border-gray-300 py-2 text-center"
+          onClick={handleClick}
+          key={i}
+        >
+          {link.name}
+        </motion.a>
+      ))}
     </motion.div>
   );
 };

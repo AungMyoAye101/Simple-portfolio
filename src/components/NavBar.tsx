@@ -14,7 +14,7 @@ const NavBar = () => {
     <div className="fixed top-0 left-0 right-0 bg-neutral-50 dark:bg-neutral-900 z-40 bg-opacity-85  mx-auto">
       <nav className="z-40 flex justify-between items-center px-4 md:px-10 py-3 backdrop-blur-sm">
         <div
-          className="block md:hidden rounded-full border border-gray-300 p-2 shadow-md cursor-pointer relative z-50"
+          className="block md:hidden rounded-full text-cyan-400 border border-cyan-400 p-2 shadow-md cursor-pointer relative z-50"
           onClick={handleClick}
         >
           {open ? <FaXmark /> : <FaBars />}

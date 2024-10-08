@@ -1,3 +1,26 @@
+export const NavLinks = [
+  {
+    link: "/",
+    name: "Home",
+  },
+  {
+    link: "#skills",
+    name: "Skills",
+  },
+  {
+    link: "#projects",
+    name: "Projects",
+  },
+  {
+    link: "#about",
+    name: "About",
+  },
+  {
+    link: "#contact",
+    name: "Contact",
+  },
+];
+
 export const skills = [
   {
     id: 1,
