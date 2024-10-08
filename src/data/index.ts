@@ -8,7 +8,7 @@ export const NavLinks = [
     name: "Skills",
   },
   {
-    link: "#projects",
+    link: "#project",
     name: "Projects",
   },
   {

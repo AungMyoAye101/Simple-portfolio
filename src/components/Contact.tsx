@@ -27,7 +27,7 @@ const Contact = () => {
           />
         </div>
         <div className="flex flex-col gap-1">
-          <label htmlFor="LastName">Last Name</label>
+          <label htmlFor="LastName">Last Name (optional)</label>
           <input
             type="text"
             id="LastName"
@@ -46,7 +46,17 @@ const Contact = () => {
           />
         </div>
         <div className="flex flex-col gap-1">
-          <label
+          <label htmlFor="description">Description</label>
+          <select className="input-style text-neutral-400" id="description">
+            <option value="">Enter your description</option>
+            <option value="Want to hire">Want to hire</option>
+            <option value="Want to create a project">
+              Want to create a project
+            </option>
+
+            <option value="Just talk">Just talk</option>
+          </select>
+          {/* <label
             htmlFor="Description"
             className="text-sm md:text-base font-lora "
           >
@@ -57,7 +67,7 @@ const Contact = () => {
             id="Description"
             placeholder="Enter your Description"
             className="input-style"
-          />
+          /> */}
         </div>
         <div className="flex flex-col gap-1 col-span-2 ">
           <label htmlFor="text" className="text-sm md:text-base font-lora ">

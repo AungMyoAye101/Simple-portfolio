@@ -6,7 +6,7 @@ const About = () => {
     <section className="min-h-screen py-20 px-4 " id="about">
       <h1 className="heading">About Me</h1>
       <div className="flex flex-col md:flex-row justify-between  gap-8 py-8 ">
-        <div className=" relative w-full md:w-[45%] h-[65vh] border-2 border-cyan-400 rounded z-20">
+        <div className=" relative w-[90%] md:w-[45%] h-[40vh] md:h-[65vh] border-2 border-cyan-400 rounded z-20 mx-auto">
           <Image
             src={"/elizabeth.png"}
             fill
