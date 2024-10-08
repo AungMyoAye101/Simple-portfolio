@@ -243,6 +243,11 @@ export const frontEnd = {
       count: 70,
     },
     {
+      icon: "/typescript.svg",
+      name: "Typescript",
+      count: 70,
+    },
+    {
       icon: "/nextjs.svg",
       name: "Next Js",
       count: 80,
@@ -287,6 +292,11 @@ export const others = {
     {
       icon: "/mysql.svg",
       name: "MySQL",
+      count: 60,
+    },
+    {
+      icon: "/prisma-3.svg",
+      name: "Prisma",
       count: 60,
     },
     {
