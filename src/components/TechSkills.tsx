@@ -31,7 +31,7 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
                 width={40}
                 height={40}
                 alt={skill.name}
-                className="group-hover:hidden "
+                className="group-hover:hidden object-contain"
               />
               <div
                 className={`hidden group-hover:block  font-poppin text-white`}

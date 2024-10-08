@@ -295,9 +295,19 @@ export const others = {
       count: 40,
     },
     {
-      icon: "/prisma.svg",
-      name: "Prisma",
-      count: 50,
+      icon: "/figma.svg",
+      name: "Figma",
+      count: 90,
+    },
+    {
+      icon: "/framer-motion.svg",
+      name: "Framer Motion",
+      count: 40,
+    },
+    {
+      icon: "/wordpress.svg",
+      name: "Wordpress",
+      count: 40,
     },
   ],
 };
