@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { projects } from "@/data";
 import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
@@ -7,6 +7,11 @@ import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Project = () => {
+  const [show, setShow] = useState(false);
+
+  const showToggle = () => {
+    setShow(true);
+  };
   return (
     <section className="section-container" id="project">
       <h1 className="heading">My Recent Projects</h1>
@@ -22,12 +27,13 @@ const Project = () => {
             exit={{ opacity: 0 }}
             key={i}
             className="group relative flex flex-col md:flex-row  justify-between  p-0 md:p-4 gap-4 rounded-md shadow-md overflow-hidden md:border border-cyan-500 "
+            onMouseOver={showToggle}
           >
             <motion.div
               initial={{ opacity: 0.2, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{
-                duration: 1.5,
+                duration: 0.5,
                 ease: "easeIn",
               }}
               className="relative w-full  md:w-[45%] h-[30vh] md:h-[45vh] md:rounded-md overflow-hidden bg-gray-600"
@@ -45,7 +51,6 @@ const Project = () => {
               transition={{
                 ease: "easeIn",
                 staggerChildren: 1,
-                delay: 1,
               }}
               exit={{ opacity: 0 }}
               className="flex flex-col gap-2 justify-between   p-2 w-full md:w-[50%]"
@@ -85,28 +90,43 @@ const Project = () => {
               </div>
             </motion.div>
 
-            {/* <div className="opacity-0  group-hover:opacity-100  flex flex-col gap-2 p-4 py-8  justify-between items-center absolute w-full h-full bg-cyan-300 transition-all duration-500 ease-out ">
-              <p className="text-neutral-800 font-lora ">
-                {project.description}
-              </p>
-
-              <div className="w-full flex justify-between items-center text-neutral-800 ">
-                <a
-                  href="#"
-                  className="text-lora font-medium text-sm md:text-base flex items-center gap-1 "
-                >
-                  <span>Source Code</span>
-                  <FaGithub />
-                </a>
-                <a
-                  href="#"
-                  className="text-lora font-medium text-sm md:text-base flex items-center gap-1 "
-                >
-                  <span> Live Site</span>
-                  <FaLocationArrow />
-                </a>
+            {show && (
+              <div className="opacity-0  group-hover:opacity-100  flex flex-col gap-2 p-4 py-8  justify-between items-center absolute w-full h-full bg-neutral-900 text-white transition-all duration-500 ease-out ">
+                <p className="font-lora ">{project.description}</p>
+                <div className="flex flex-wrap gap-2 ">
+                  {project.iconList.map((icon, idx) => (
+                    <div
+                      key={idx}
+                      className="flex  gap-1 items-center p-1 shadow-md rounded-md border border-cyan-500"
+                    >
+                      <Image
+                        src={icon.icon}
+                        width={20}
+                        height={20}
+                        alt="icons"
+                      />
+                      <span>{icon.name}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="w-full flex justify-between items-center  ">
+                  <a
+                    href="#"
+                    className="text-lora font-medium text-sm md:text-base flex items-center gap-1 "
+                  >
+                    <span>Source Code</span>
+                    <FaGithub />
+                  </a>
+                  <a
+                    href="#"
+                    className="text-lora font-medium text-sm md:text-base flex items-center gap-1 "
+                  >
+                    <span> Live Site</span>
+                    <FaLocationArrow />
+                  </a>
+                </div>
               </div>
-            </div> */}
+            )}
           </motion.div>
         ))}
       </main>
