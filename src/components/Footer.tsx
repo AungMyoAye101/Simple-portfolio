@@ -8,7 +8,7 @@ const Footer = () => {
     <section className="flex flex-col items-center gap-4 ">
       <a
         href="#"
-        className="bg-cyan-400 p-3 rounded-full animate-bounce   shadow-md  shadow-cyan-300"
+        className="bg-cyan-400 p-3 rounded-full animate-bounce   shadow-md  "
       >
         <FaArrowUp className="text-lg text-white " />
       </a>
