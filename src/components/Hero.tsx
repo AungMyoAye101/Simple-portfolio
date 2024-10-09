@@ -23,7 +23,7 @@ const charVarients = {
 };
 
 const Hero = () => {
-  const intro = "Hi &#33; I am Aung Myo Aye";
+  const intro = "Hi! I am Aung Myo Aye";
   const heroText =
     " A full-stack developer and UI/UX designer passionate about creating efficient, scalable web solutions.";
 
@@ -59,21 +59,22 @@ const Hero = () => {
         <motion.p
           initial="hidden"
           whileInView="reveal"
-          transition={{ staggerChildren: 0.02 }}
+          transition={{ staggerChildren: 0.02, ease: "easeOut" }}
           className="font-poppin  w-[90%] text-base md:text-xl font-light "
         >
           {tagline.split("").map((char, i) => (
-            <motion.span
-              key={i}
-              variants={charVarients}
-              transition={{ duration: 1 }}
-            >
+            <motion.span key={i} variants={charVarients}>
               {char}
             </motion.span>
           ))}
         </motion.p>
 
-        <motion.div className="flex flex-wrap gap-4 justify-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 2, stiffness: 100, type: "spring" }}
+          className="flex flex-wrap gap-4 justify-center"
+        >
           <a
             href="mailto:aungmyoaye101@gmail.com"
             className="px-4 py-3 font-poppin rounded-lg shadow-lg  text-black bg-cyan-400 border-2 border-cyan-400 "
