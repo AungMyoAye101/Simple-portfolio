@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-const textVarients = {
+export const textVarients = {
   initial: {
     opacity: 0,
     x: -100,
@@ -13,7 +13,7 @@ const textVarients = {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.7,
       staggerChildren: 0.2,
       ease: "easeIn",
     },
@@ -81,7 +81,7 @@ const Hero = () => {
           </a>
         </motion.div>
       </motion.div>
-      <div className="w-full md:w-[40vw] ">
+      <div className=" relative w-full md:w-[40vw] ">
         <motion.div
           variants={imageVarients}
           initial="initial"
@@ -94,6 +94,7 @@ const Hero = () => {
             alt="Aung Myo Aye's profile photo"
             className="object-cover object-center bg-cyan-400 rounded-full"
           />
+          <div className="absolute top-50 left-50  size-[250px] sm:size-[290px] md:size-[390px]   rounded-full border border-red-400"></div>
         </motion.div>
       </div>
     </section>

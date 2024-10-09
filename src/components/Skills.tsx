@@ -1,8 +1,27 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import TechSkills from "./TechSkills";
 import { backEnd, frontEnd, others, skills } from "@/data";
 import { MagicCard } from "./ui/MagicCard";
+import { motion } from "framer-motion";
+
+export const animateText = {
+  close: {
+    opacity: 0,
+    y: 20,
+  },
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      ease: "easeIn",
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const Skills = () => {
   return (
@@ -17,14 +36,32 @@ const Skills = () => {
             key={id}
             className="  w-80 h-72 py-6 px-4 rounded-xl shadow-md shadow-sky-300 relative border border-sky-500 "
           >
-            <Image src={image} width={60} height={40} alt="title" />
+            <motion.div
+              variants={animateText}
+              initial="close"
+              whileInView="open"
+            >
+              <Image src={image} width={60} height={40} alt="title" />
 
-            <div className="space-y-3 mt-2">
-              <h1 className="font-poppin text-lg md:text-xl font-semibold">
-                {title}
-              </h1>
-              <p className=" para-heading">{description}</p>
-            </div>
+              <div className="space-y-3 mt-2">
+                <motion.h1
+                  variants={animateText}
+                  initial="close"
+                  whileInView="open"
+                  className="font-poppin text-lg md:text-xl font-semibold"
+                >
+                  {title}
+                </motion.h1>
+                <motion.p
+                  variants={animateText}
+                  initial="close"
+                  whileInView="open"
+                  className=" para-heading"
+                >
+                  {description}
+                </motion.p>
+              </div>
+            </motion.div>
           </MagicCard>
         ))}
       </div>
