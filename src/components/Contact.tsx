@@ -56,18 +56,6 @@ const Contact = () => {
 
             <option value="Just talk">Just talk</option>
           </select>
-          {/* <label
-            htmlFor="Description"
-            className="text-sm md:text-base font-lora "
-          >
-            Description
-          </label>
-          <input
-            type="text"
-            id="Description"
-            placeholder="Enter your Description"
-            className="input-style"
-          /> */}
         </div>
         <div className="flex flex-col gap-1 col-span-2 ">
           <label htmlFor="text" className="text-sm md:text-base font-lora ">

@@ -18,7 +18,7 @@ export const animateText = {
     transition: {
       delay: 0.5,
       ease: "easeIn",
-      staggerChildren: 0.1,
+      staggerChildren: 0.2,
     },
   },
 };
