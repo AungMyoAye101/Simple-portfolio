@@ -5,6 +5,41 @@ import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { textVarients } from "./Hero";
+
+const projectVarients = {
+  initial: {
+    opacity: 0,
+    scale: 0.6,
+  },
+  animation: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeIn",
+    },
+  },
+};
+
+export const textAnimate = {
+  initial: {
+    y: 20,
+    opacity: 0.5,
+    transition: {
+      ease: "easeIn",
+      delay: 1,
+    },
+  },
+  animation: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      ease: "easeIn",
+      delay: 1,
+    },
+  },
+};
 
 const Project = () => {
   const [show, setShow] = useState(false);
@@ -18,24 +53,16 @@ const Project = () => {
       <main className="w-full max-w-5xl flex flex-col gap-12  ">
         {projects.map((project, i) => (
           <motion.div
-            initial={{
-              opacity: 0,
-              scale: 0.8,
-            }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ ease: "easeOut", duration: 1 }}
-            exit={{ opacity: 0 }}
+            variants={projectVarients}
+            initial="initial"
+            whileInView="animation"
             key={i}
             className="group relative flex flex-col md:flex-row  justify-between  p-0 md:p-4 gap-4 rounded-md shadow-md overflow-hidden md:border border-cyan-500 "
             onMouseOver={showToggle}
           >
             <motion.div
-              initial={{ opacity: 0.2, scale: 0.5 }}
+              initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.5,
-                ease: "easeIn",
-              }}
               className="relative w-full  md:w-[45%] h-[30vh] md:h-[45vh] md:rounded-md overflow-hidden bg-gray-600"
             >
               <Image
@@ -45,23 +72,29 @@ const Project = () => {
                 className="object-cover"
               />
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0.8, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                ease: "easeIn",
-                staggerChildren: 1,
-              }}
-              exit={{ opacity: 0 }}
-              className="flex flex-col gap-2 justify-between   p-2 w-full md:w-[50%]"
-            >
-              <h1 className="text-xl md:text-2xl font-lora font-semibold">
+            <motion.div className="flex flex-col gap-2 justify-between   p-2 w-full md:w-[50%]">
+              <motion.h1
+                variants={textAnimate}
+                initial="initial"
+                animate="animation"
+                className="text-xl md:text-2xl font-lora font-semibold"
+              >
                 {project.title}
-              </h1>
-              <p className="text-sm md:text-base hidden md:block font-poppin  font-medium line-clamp-2 md:line-clamp-none">
+              </motion.h1>
+              <motion.p
+                variants={textAnimate}
+                initial="initial"
+                animate="animation"
+                className="text-sm md:text-base hidden md:block font-poppin  font-medium line-clamp-2 md:line-clamp-none"
+              >
                 {project.description}
-              </p>
-              <div className="hidden md:flex flex-wrap gap-2 ">
+              </motion.p>
+              <motion.div
+                variants={textAnimate}
+                initial="initial"
+                animate="animation"
+                className="hidden md:flex flex-wrap gap-2 "
+              >
                 {project.iconList.map((icon, idx) => (
                   <div
                     key={idx}
@@ -71,8 +104,13 @@ const Project = () => {
                     <span>{icon.name}</span>
                   </div>
                 ))}
-              </div>
-              <div className=" hidden md:flex justify-between items-center pb-3">
+              </motion.div>
+              <motion.div
+                variants={textAnimate}
+                initial="initial"
+                animate="animation"
+                className=" hidden md:flex justify-between items-center pb-3"
+              >
                 <a
                   href="#"
                   className="text-lora font-medium text-sm md:text-base flex items-center gap-1 "
@@ -87,10 +125,10 @@ const Project = () => {
                   <span> Check Live Site</span>
                   <FaLocationArrow />
                 </a>
-              </div>
+              </motion.div>
             </motion.div>
 
-            {show && (
+            {/* {show && (
               <div className="opacity-0  group-hover:opacity-100  flex flex-col gap-2 p-4 py-8  justify-between items-center absolute w-full h-full bg-neutral-900 text-white transition-all duration-500 ease-out ">
                 <p className="font-lora ">{project.description}</p>
                 <div className="flex flex-wrap gap-2 ">
@@ -126,7 +164,7 @@ const Project = () => {
                   </a>
                 </div>
               </div>
-            )}
+            )} */}
           </motion.div>
         ))}
       </main>

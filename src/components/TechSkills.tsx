@@ -52,7 +52,7 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{
                 delay: 0.3,
-                ease: "linear",
+                ease: "easeIn",
                 duration: 0.1,
               }}
               className="relative z-30 size-11 p-1  flex justify-center items-center overflow-hidden rounded-md bg-black  m-1"
