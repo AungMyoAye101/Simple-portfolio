@@ -4,22 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-export const textVarients = {
-  initial: {
-    opacity: 0,
-    x: -100,
-  },
-  animate: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.7,
-      staggerChildren: 0.2,
-      ease: "easeIn",
-    },
-  },
-};
-
 const imageVarients = {
   initial: {
     opacity: 0,
@@ -33,40 +17,63 @@ const imageVarients = {
   },
 };
 
+const charVarients = {
+  hidden: { opacity: 0 },
+  reveal: { opacity: 1 },
+};
+
 const Hero = () => {
+  const intro = "Hi &#33; I am Aung Myo Aye";
+  const heroText =
+    " A full-stack developer and UI/UX designer passionate about creating efficient, scalable web solutions.";
+
+  const tagline =
+    "  Crafting modern, responsive web applications with a touch of creativity.";
   return (
     <section className="min-h-screen flex flex-col-reverse md:flex-row justify-between items-center gap-10 py-20 ">
-      <motion.div
-        variants={textVarients}
-        initial="initial"
-        animate="animate"
-        className="w-full md:w-[50vw]  flex flex-col gap-4 items-center text-center md:text-start md:items-start "
-      >
+      <motion.div className="w-full md:w-[50vw]  flex flex-col gap-4 items-center text-center md:text-start md:items-start ">
         <motion.h4
-          variants={textVarients}
+          initial="hidden"
+          whileInView="reveal"
+          transition={{ staggerChildren: 0.02 }}
           className="font-lora text-base md:text-lg font-medium"
         >
-          Hi &#33; I am Aung Myo Aye
+          {intro.split("").map((char, i) => (
+            <motion.span key={i} variants={charVarients}>
+              {char}
+            </motion.span>
+          ))}
         </motion.h4>
         <motion.h1
-          variants={textVarients}
+          initial="hidden"
+          whileInView="reveal"
+          transition={{ staggerChildren: 0.02 }}
           className=" text-primary font-poppin text-2xl  md:text-3xl lg:text-4xl font-bold leading-loose"
         >
-          A full-stack developer and UI/UX designer passionate about creating
-          efficient, scalable web solutions.
+          {heroText.split("").map((char, i) => (
+            <motion.span key={i} variants={charVarients}>
+              {char}
+            </motion.span>
+          ))}
         </motion.h1>
         <motion.p
-          variants={textVarients}
+          initial="hidden"
+          whileInView="reveal"
+          transition={{ staggerChildren: 0.02 }}
           className="font-poppin  w-[90%] text-base md:text-xl font-light "
         >
-          Crafting modern, responsive web applications with a touch of
-          creativity.
+          {tagline.split("").map((char, i) => (
+            <motion.span
+              key={i}
+              variants={charVarients}
+              transition={{ duration: 1 }}
+            >
+              {char}
+            </motion.span>
+          ))}
         </motion.p>
 
-        <motion.div
-          variants={textVarients}
-          className="flex flex-wrap gap-4 justify-center"
-        >
+        <motion.div className="flex flex-wrap gap-4 justify-center">
           <a
             href="mailto:aungmyoaye101@gmail.com"
             className="px-4 py-3 font-poppin rounded-lg shadow-lg  text-black bg-cyan-400 border-2 border-cyan-400 "
