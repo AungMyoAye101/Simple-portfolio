@@ -11,8 +11,7 @@ const imageVarients = {
   animate: {
     opacity: 1,
     transition: {
-      delay: 1,
-      duration: 5,
+      duration: 3,
     },
   },
 };
@@ -48,10 +47,10 @@ const Hero = () => {
           initial="hidden"
           whileInView="reveal"
           transition={{ staggerChildren: 0.02 }}
-          className=" text-primary font-poppin text-2xl  md:text-3xl lg:text-4xl font-bold leading-loose"
+          className=" text-primary font-poppin text-2xl  md:text-3xl lg:text-4xl font-bold leading-loose "
         >
           {heroText.split("").map((char, i) => (
-            <motion.span key={i} variants={charVarients}>
+            <motion.span key={i} variants={charVarients} className="">
               {char}
             </motion.span>
           ))}
@@ -60,7 +59,7 @@ const Hero = () => {
           initial="hidden"
           whileInView="reveal"
           transition={{ staggerChildren: 0.02, ease: "easeOut" }}
-          className="font-poppin  w-[90%] text-base md:text-xl font-light "
+          className="font-poppin  w-[90%] text-base md:text-xl font-light"
         >
           {tagline.split("").map((char, i) => (
             <motion.span key={i} variants={charVarients}>
@@ -94,15 +93,19 @@ const Hero = () => {
           variants={imageVarients}
           initial="initial"
           animate="animate"
-          className="relative size-60 sm:size-72 md:size-96  mx-auto "
+          className="relative size-60 sm:size-72 md:size-96  mx-auto z-20 "
         >
           <Image
             src={"/elizabeth.png"}
             fill
             alt="Aung Myo Aye's profile photo"
-            className="object-cover object-center bg-cyan-400 rounded-full"
+            className="object-cover object-center rounded-full bg-cyan-400 "
           />
-          <div className="absolute top-50 left-50  size-[250px] sm:size-[290px] md:size-[390px]   rounded-full border border-red-400"></div>
+          {/* <div className="relative h-full w-full rounded-full animate-spin">
+            <div className="size-80 z-10 rounded-full absolute -right-10 top-[40%] bg-red-400 "></div>
+            <div className="size-80 z-10 rounded-full absolute -left-10 top-[40%] bg-orange-400 "></div>
+            <div className="size-80 z-10 rounded-full absolute -top-10 right-[10%] bg-blue-400 "></div>
+          </div> */}
         </motion.div>
       </div>
     </section>

@@ -16,7 +16,7 @@ const varients = {
     x: "-100%",
     transition: {
       when: "afterChildren",
-      staggerChildren: 0.1,
+      staggerChildren: 0.01,
     },
   },
 };
