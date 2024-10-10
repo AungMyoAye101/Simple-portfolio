@@ -56,8 +56,7 @@ const Project = () => {
             initial="initial"
             whileInView="animation"
             key={i}
-            className="group relative flex flex-col md:flex-row  justify-between  p-0 md:p-4 gap-4 rounded-md shadow-md overflow-hidden md:border border-cyan-500 "
-            onMouseOver={showToggle}
+            className="group relative flex flex-col md:flex-row  justify-between  p-0 md:p-4 gap-4 rounded-md shadow-md  md:border border-cyan-500 "
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
@@ -72,14 +71,23 @@ const Project = () => {
               />
             </motion.div>
             <motion.div className="flex flex-col gap-2 justify-between   p-2 w-full md:w-[50%]">
-              <motion.h1
-                variants={textAnimate}
-                initial="initial"
-                animate="animation"
-                className="text-xl md:text-2xl font-lora font-semibold"
-              >
-                {project.title}
-              </motion.h1>
+              <div className="flex justify-between">
+                <motion.h1
+                  variants={textAnimate}
+                  initial="initial"
+                  animate="animation"
+                  className="text-xl md:text-2xl font-lora font-semibold"
+                >
+                  {project.title}
+                </motion.h1>
+                <button
+                  className="flex md:hidden font-poppin text-sm "
+                  onClick={showToggle}
+                >
+                  See Detail
+                </button>
+              </div>
+
               <motion.p
                 variants={textAnimate}
                 initial="initial"
@@ -127,7 +135,7 @@ const Project = () => {
               </motion.div>
             </motion.div>
 
-            {/* {show && (
+            {show && (
               <div className="opacity-0  group-hover:opacity-100  flex flex-col gap-2 p-4 py-8  justify-between items-center absolute w-full h-full bg-neutral-900 text-white transition-all duration-500 ease-out ">
                 <p className="font-lora ">{project.description}</p>
                 <div className="flex flex-wrap gap-2 ">
@@ -163,7 +171,7 @@ const Project = () => {
                   </a>
                 </div>
               </div>
-            )} */}
+            )}
           </motion.div>
         ))}
       </main>
