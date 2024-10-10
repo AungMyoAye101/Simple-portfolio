@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { Providers } from "./Providers";
+import Cursor from "@/components/ui/Cursor";
 
 export const metadata: Metadata = {
   title: "Aung Myo Aye's Portfolio",
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth 	snap-mandatory">
       <body>
+        <Cursor />
         <Providers>
           <div className="max-w-6xl mx-auto">
             <NavBar />
