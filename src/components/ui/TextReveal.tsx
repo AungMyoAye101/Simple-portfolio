@@ -39,7 +39,7 @@ const TextReveal = ({
             char === "scalable" ||
             char === "real-world" ||
             char === "passionate"
-              ? "text-cyan-300"
+              ? "text-orange-400"
               : ""
           }`}
         >
