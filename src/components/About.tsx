@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import { animateText } from "./Skills";
+import TextReveal from "./ui/TextReveal";
 
 const About = () => {
   return (
@@ -39,28 +40,25 @@ const About = () => {
             variants={animateText}
             className="font-poppin text-xl md:text-2xl font-semibold"
           >
-            Hi &#33; I am Aung Myo Aye{" "}
+            Hi &#33; I am Aung Myo Aye
           </motion.h2>
-          <motion.p
-            variants={animateText}
-            className="font-lora text-base md:text-xl text-balance "
-          >
-            I am a dedicated full-stack web developer and UI/UX designer from
-            Myanmar, with a passion for building seamless digital experiences.
+          <TextReveal
+            words="I am a dedicated full-stack web developer and UI/UX designer from
+            Myanmar , with a passion for building seamless digital experiences.
             Currently, I am pursuing my studies at Yadanabon University, while
             continuously enhancing my development and design skills through
-            real-world projects.
-          </motion.p>
-          <motion.p
-            variants={animateText}
-            className="text-sm md:text-base font-lora text-balance "
-          >
-            My expertise spans across a diverse range of technologies, including
+            real-world projects."
+            className="font-lora text-base md:text-xl text-balance gap-1"
+          />
+          <TextReveal
+            words="My expertise spans across a diverse range of technologies, including
             Bootstrap, SCSS, JavaScript, React, Next.js, Node.js, Express.js,
             Tailwind, jQuery, MongoDB, and MySQL. In addition, I leverage my
             design skills using Figma to craft intuitive and user-friendly
-            interfaces
-          </motion.p>
+            interfaces"
+            className="text-sm md:text-base font-lora text-balance gap-1"
+          />
+
           <a
             href="mailto:aungmyoaye101@gmail.com"
             className="px-3 py-2 font-lora rounded-lg shadow-lg border border-cyan-400 "

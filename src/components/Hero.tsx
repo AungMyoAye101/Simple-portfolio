@@ -25,25 +25,25 @@ const charVarients = {
 const Hero = () => {
   const intro = "Hi! I am Aung Myo Aye";
   const heroText =
-    " A full-stack developer and UI/UX designer passionate about creating efficient, scalable web solutions.";
+    "A full-stack developer and UI/UX designer passionate about creating efficient, scalable web solutions.";
 
   const tagline =
-    "  Crafting modern, responsive web applications with a touch of creativity.";
+    "Crafting modern, responsive web applications with a touch of creativity.";
   return (
     <section className="min-h-screen flex flex-col-reverse md:flex-row justify-between items-center gap-10 py-20 ">
       <div className="w-full md:w-[50vw]  flex flex-col gap-4 items-center text-center md:text-start md:items-start ">
         <TextReveal
           words={intro}
-          className="font-lora text-base md:text-lg font-medium"
+          className="font-lora text-base md:text-lg font-medium gap-1"
         />
         <TextReveal
           words={heroText}
-          className=" text-primary font-poppin text-2xl  md:text-3xl lg:text-4xl font-bold leading-loose "
+          className="  font-poppin text-2xl  md:text-3xl lg:text-4xl font-bold gap-2 "
         />
 
         <TextReveal
           words={tagline}
-          className="font-poppin  w-[90%] text-base md:text-xl font-light"
+          className="font-poppin  w-[90%] text-base md:text-xl font-light gap-1"
         />
 
         <motion.div

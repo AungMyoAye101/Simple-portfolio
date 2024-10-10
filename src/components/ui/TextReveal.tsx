@@ -16,16 +16,32 @@ const TextReveal = ({
   words: string;
   className?: string;
 }) => {
-  const characters = words.split("");
+  const characters = words.split(" ");
   return (
     <motion.div
       initial="hidden"
       whileInView="reveal"
-      transition={{ staggerChildren: 0.02, ease: "easeOut" }}
-      className={className}
+      transition={{ staggerChildren: 0.09, ease: "easeOut" }}
+      className={`flex flex-wrap  ${className}`}
     >
       {characters.map((char, i) => (
-        <motion.span variants={charVarients} key={i}>
+        <motion.span
+          variants={charVarients}
+          key={i}
+          className={`${
+            char === "Aung" ||
+            char === "Myo" ||
+            char === "Aye" ||
+            char === "full-stack" ||
+            char === "UI/UX" ||
+            char === "Myanmar" ||
+            char === "Yadanabon" ||
+            char === "scalable" ||
+            char === "passionate"
+              ? "text-cyan-300"
+              : "text-neutral-50"
+          }`}
+        >
           {char}
         </motion.span>
       ))}
