@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import TextReveal from "./ui/TextReveal";
 
 const imageVarients = {
   initial: {
@@ -30,43 +31,20 @@ const Hero = () => {
     "  Crafting modern, responsive web applications with a touch of creativity.";
   return (
     <section className="min-h-screen flex flex-col-reverse md:flex-row justify-between items-center gap-10 py-20 ">
-      <motion.div className="w-full md:w-[50vw]  flex flex-col gap-4 items-center text-center md:text-start md:items-start ">
-        <motion.h4
-          initial="hidden"
-          whileInView="reveal"
-          transition={{ staggerChildren: 0.02 }}
+      <div className="w-full md:w-[50vw]  flex flex-col gap-4 items-center text-center md:text-start md:items-start ">
+        <TextReveal
+          words={intro}
           className="font-lora text-base md:text-lg font-medium"
-        >
-          {intro.split("").map((char, i) => (
-            <motion.span key={i} variants={charVarients}>
-              {char}
-            </motion.span>
-          ))}
-        </motion.h4>
-        <motion.h1
-          initial="hidden"
-          whileInView="reveal"
-          transition={{ staggerChildren: 0.02 }}
+        />
+        <TextReveal
+          words={heroText}
           className=" text-primary font-poppin text-2xl  md:text-3xl lg:text-4xl font-bold leading-loose "
-        >
-          {heroText.split("").map((char, i) => (
-            <motion.span key={i} variants={charVarients} className="">
-              {char}
-            </motion.span>
-          ))}
-        </motion.h1>
-        <motion.p
-          initial="hidden"
-          whileInView="reveal"
-          transition={{ staggerChildren: 0.02, ease: "easeOut" }}
+        />
+
+        <TextReveal
+          words={tagline}
           className="font-poppin  w-[90%] text-base md:text-xl font-light"
-        >
-          {tagline.split("").map((char, i) => (
-            <motion.span key={i} variants={charVarients}>
-              {char}
-            </motion.span>
-          ))}
-        </motion.p>
+        />
 
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -87,7 +65,7 @@ const Hero = () => {
             Download Resume
           </a>
         </motion.div>
-      </motion.div>
+      </div>
       <div className=" relative w-full md:w-[40vw] ">
         <motion.div
           variants={imageVarients}
