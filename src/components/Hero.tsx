@@ -25,7 +25,7 @@ const charVarients = {
 const Hero = () => {
   const intro = "Hi! I am Aung Myo Aye";
   const heroText =
-    "A full-stack developer and UI/UX designer passionate about creating efficient, scalable web solutions.";
+    "A Full-Stack developer and UI/UX designer passionate about creating efficient, scalable web solutions.";
 
   const tagline =
     "Crafting modern, responsive web applications with a touch of creativity.";
@@ -43,7 +43,7 @@ const Hero = () => {
 
         <TextReveal
           words={tagline}
-          className="font-poppin  w-[90%] text-base md:text-xl font-light gap-1"
+          className="font-poppin  w-[90%] text-base md:text-xl font-light gap-1 text-emerald-400"
         />
 
         <motion.div

@@ -43,7 +43,7 @@ const About = () => {
             Hi &#33; I am Aung Myo Aye
           </motion.h2>
           <TextReveal
-            words="I am a dedicated full-stack web developer and UI/UX designer from
+            words="I am a dedicated Full-Stack web developer and UI/UX designer from
             Myanmar , with a passion for building seamless digital experiences.
             Currently, I am pursuing my studies at Yadanabon University, while
             continuously enhancing my development and design skills through

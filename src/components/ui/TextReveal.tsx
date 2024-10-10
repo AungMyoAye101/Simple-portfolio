@@ -32,14 +32,15 @@ const TextReveal = ({
             char === "Aung" ||
             char === "Myo" ||
             char === "Aye" ||
-            char === "full-stack" ||
+            char === "Full-Stack" ||
             char === "UI/UX" ||
             char === "Myanmar" ||
             char === "Yadanabon" ||
             char === "scalable" ||
+            char === "real-world" ||
             char === "passionate"
               ? "text-cyan-300"
-              : "text-neutral-50"
+              : ""
           }`}
         >
           {char}
