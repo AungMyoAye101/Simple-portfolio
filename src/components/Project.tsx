@@ -9,11 +9,10 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const projectVarients = {
   initial: {
     opacity: 0,
-    scale: 0.6,
   },
   animation: {
     opacity: 1,
-    scale: 1,
+
     transition: {
       duration: 0.5,
       ease: "easeIn",
@@ -66,8 +65,9 @@ const Project = () => {
             className="group relative flex flex-col md:flex-row  justify-between  p-0 md:p-4 gap-4 rounded-md shadow-md  "
           >
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
+              initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ type: "spring", stiffness: 100, damping: 20 }}
               className="relative w-full  md:w-[45%] h-[30vh] md:h-[45vh] md:rounded-md overflow-hidden bg-gray-600"
             >
               <Image
