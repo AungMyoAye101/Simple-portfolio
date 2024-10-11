@@ -5,6 +5,8 @@ import Image from "next/image";
 import React from "react";
 import TextReveal from "./ui/TextReveal";
 
+import BgGradientBtn from "./ui/BgGradientBtn";
+
 const imageVarients = {
   initial: {
     opacity: 0,
@@ -65,6 +67,7 @@ const Hero = () => {
             Download Resume
           </a>
         </motion.div>
+        <BgGradientBtn />
       </div>
       <div className=" relative w-full md:w-[40vw] ">
         <motion.div
@@ -79,11 +82,6 @@ const Hero = () => {
             alt="Aung Myo Aye's profile photo"
             className="object-cover object-center rounded-full bg-cyan-400 "
           />
-          {/* <div className="relative h-full w-full rounded-full animate-spin">
-            <div className="size-80 z-10 rounded-full absolute -right-10 top-[40%] bg-red-400 "></div>
-            <div className="size-80 z-10 rounded-full absolute -left-10 top-[40%] bg-orange-400 "></div>
-            <div className="size-80 z-10 rounded-full absolute -top-10 right-[10%] bg-blue-400 "></div>
-          </div> */}
         </motion.div>
       </div>
     </section>
