@@ -1,10 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { projects } from "@/data";
 import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const projectVarients = {
   initial: {
@@ -41,22 +41,29 @@ export const textAnimate = {
 };
 
 const Project = () => {
+  const ref = useRef(null);
   const [show, setShow] = useState(false);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end end"],
+  });
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
 
   const showToggle = () => {
     setShow(true);
   };
   return (
-    <section className="section-container" id="project">
+    <section className="section-container relative" id="project">
       <h1 className="heading">My Recent Projects</h1>
-      <main className="w-full max-w-5xl flex flex-col gap-12  ">
+      <motion.div className=" absolute left-0 top-0 h-4  rounded-lg bg-cyan-400" />
+      <main className="w-full max-w-5xl flex flex-col gap-12 " ref={ref}>
         {projects.map((project, i) => (
           <motion.div
             variants={projectVarients}
             initial="initial"
             whileInView="animation"
             key={i}
-            className="group relative flex flex-col md:flex-row  justify-between  p-0 md:p-4 gap-4 rounded-md shadow-md  md:border border-cyan-500 "
+            className="group relative flex flex-col md:flex-row  justify-between  p-0 md:p-4 gap-4 rounded-md shadow-md  "
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
@@ -173,6 +180,35 @@ const Project = () => {
               </div>
             )}
           </motion.div>
+          // <motion.div
+          //   style={{ y }}
+          //   key={i}
+          //   className=" bg-green-500 flex justify-center items-center gap-12"
+          // >
+          //   <div className="relative w-[45%] h-[60vh] bg-sky-600">
+          //     <Image src={project.image} fill alt="project name" />
+          //   </div>
+          //   <div className="w-[50%] flex flex-col gap-10 px-10">
+          //     <h1>{project.title}</h1>
+          //     <p>{project.description}</p>
+          //     <div className="w-full flex justify-between items-center  ">
+          //       <a
+          //         href="#"
+          //         className="text-lora font-medium text-sm md:text-base flex items-center gap-1 "
+          //       >
+          //         <span>Source Code</span>
+          //         <FaGithub />
+          //       </a>
+          //       <a
+          //         href="#"
+          //         className="text-lora font-medium text-sm md:text-base flex items-center gap-1 "
+          //       >
+          //         <span> Live Site</span>
+          //         <FaLocationArrow />
+          //       </a>
+          //     </div>
+          //   </div>
+          // </motion.div>
         ))}
       </main>
 

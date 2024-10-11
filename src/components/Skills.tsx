@@ -34,7 +34,7 @@ const Skills = () => {
         {skills.map(({ id, image, title, description }) => (
           <MagicCard
             key={id}
-            className="  w-80 h-72 py-6 px-4 rounded-xl shadow-md shadow-sky-300 relative border border-sky-500 "
+            className="  w-80 h-72 py-6 px-4 rounded-xl shadow-md  relative border border-sky-500 "
           >
             <motion.div
               variants={animateText}

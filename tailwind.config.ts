@@ -57,7 +57,6 @@ const config: Config = {
         lora: "Lora",
       },
       animation: {
-        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
         "background-position-spin":
           "background-position-spin 3000ms infinite alternate",
       },
@@ -66,17 +65,6 @@ const config: Config = {
           "0%": { backgroundPosition: "top center" },
           "100%": { backgroundPosition: "bottom center" },
         },
-        "border-beam": {
-          "100%": {
-            "offset-distance": "100%",
-          },
-        },
-      },
-
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
