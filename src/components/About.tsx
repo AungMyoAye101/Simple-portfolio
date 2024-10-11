@@ -56,7 +56,7 @@ const About = () => {
             Tailwind, jQuery, MongoDB, and MySQL. In addition, I leverage my
             design skills using Figma to craft intuitive and user-friendly
             interfaces"
-            className="text-sm md:text-base font-lora text-balance gap-1 text-purple-300"
+            className="text-sm md:text-base font-lora text-balance gap-1 "
           />
 
           <a

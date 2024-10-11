@@ -27,7 +27,7 @@ const Hero = () => {
   const tagline =
     "Crafting modern, responsive web applications with a touch of creativity.";
   return (
-    <section className="min-h-screen flex flex-col-reverse md:flex-row justify-between items-center gap-10 py-20 ">
+    <section className="min-h-screen flex flex-col-reverse md:flex-row justify-between items-center gap-10 py-20 px-4 md:px-10 ">
       <div className="w-full md:w-[50vw]  flex flex-col gap-4 items-center text-center md:text-start md:items-start ">
         <TextReveal
           words={intro}

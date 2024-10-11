@@ -20,7 +20,7 @@ export default function RootLayout({
       <body>
         <Cursor />
         <Providers>
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <NavBar />
             {children}
             <Footer />
