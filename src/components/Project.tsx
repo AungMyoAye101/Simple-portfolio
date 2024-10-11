@@ -23,7 +23,7 @@ const projectVarients = {
 export const textAnimate = {
   initial: {
     y: 20,
-    opacity: 0.5,
+
     transition: {
       ease: "easeIn",
       delay: 1,
@@ -31,10 +31,12 @@ export const textAnimate = {
   },
   animation: {
     y: 0,
-    opacity: 1,
+
     transition: {
-      ease: "easeIn",
-      delay: 1,
+      type: "spring",
+      stiffness: 100,
+      damping: 20,
+      ease: "easeOut",
     },
   },
 };
@@ -82,7 +84,7 @@ const Project = () => {
                 <motion.h1
                   variants={textAnimate}
                   initial="initial"
-                  animate="animation"
+                  whileInView="animation"
                   className="text-xl md:text-2xl font-lora font-semibold"
                 >
                   {project.title}
@@ -98,7 +100,7 @@ const Project = () => {
               <motion.p
                 variants={textAnimate}
                 initial="initial"
-                animate="animation"
+                whileInView="animation"
                 className="text-sm md:text-base hidden md:block font-poppin  font-medium line-clamp-2 md:line-clamp-none"
               >
                 {project.description}
@@ -106,7 +108,7 @@ const Project = () => {
               <motion.div
                 variants={textAnimate}
                 initial="initial"
-                animate="animation"
+                whileInView="animation"
                 className="hidden md:flex flex-wrap gap-2 "
               >
                 {project.iconList.map((icon, idx) => (
@@ -122,7 +124,7 @@ const Project = () => {
               <motion.div
                 variants={textAnimate}
                 initial="initial"
-                animate="animation"
+                whileInView="animation"
                 className=" hidden md:flex justify-between items-center pb-3"
               >
                 <a
