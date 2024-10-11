@@ -19,11 +19,6 @@ const imageVarients = {
   },
 };
 
-const charVarients = {
-  hidden: { opacity: 0 },
-  reveal: { opacity: 1 },
-};
-
 const Hero = () => {
   const intro = "Hi! I am Aung Myo Aye";
   const heroText =

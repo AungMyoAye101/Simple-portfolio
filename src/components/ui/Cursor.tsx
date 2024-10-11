@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 const Cursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   useEffect(() => {
-    const mouseMove = (e: { clientX: any; clientY: any }) => {
+    const mouseMove = (e: { clientX: number; clientY: number }) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
     window.addEventListener("mousemove", mouseMove);
