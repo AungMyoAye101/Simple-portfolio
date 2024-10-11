@@ -6,6 +6,7 @@ import React from "react";
 import TextReveal from "./ui/TextReveal";
 
 import BgGradientBtn from "./ui/BgGradientBtn";
+import Button from "./ui/Button";
 
 const imageVarients = {
   initial: {
@@ -49,20 +50,13 @@ const Hero = () => {
           transition={{ delay: 2, stiffness: 100, type: "spring" }}
           className="flex flex-wrap gap-4 justify-center"
         >
-          <a
-            href="mailto:aungmyoaye101@gmail.com"
-            className="px-4 py-3 font-poppin rounded-lg shadow-lg  text-black bg-cyan-400 border-2 border-cyan-400 "
-          >
-            Get In Touch
+          <a href="mailto:aungmyoaye101@gmail.com">
+            <Button text="Get In Touch" />
           </a>
-          <a
-            href="mailto:aungmyoaye101@gmail.com"
-            className="px-4 py-3 font-poppin rounded-lg shadow-lg relative border-2 border-cyan-400  "
-          >
-            Download Resume
+          <a href="mailto:aungmyoaye101@gmail.com">
+            <Button text="Download Resume" />
           </a>
         </motion.div>
-        <BgGradientBtn />
       </div>
       <div className=" relative w-full md:w-[40vw] ">
         <motion.div

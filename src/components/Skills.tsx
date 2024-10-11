@@ -26,11 +26,11 @@ export const animateText = {
 const Skills = () => {
   return (
     <section className="section-container" id="skill">
-      <div className="flex flex-col items-center gap-6">
+      <div className="flex flex-col items-center ">
         <h1 className="heading">My Skills</h1>
       </div>
       {/* My Skills  */}
-      <div className="flex flex-wrap justify-center items-center gap-6  md:gap-10">
+      <div className="flex flex-wrap justify-center items-center gap-6  md:gap-10 h-[70vh]">
         {skills.map(({ id, image, title, description }) => (
           <MagicCard
             key={id}

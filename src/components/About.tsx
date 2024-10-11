@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { animateText } from "./Skills";
 import TextReveal from "./ui/TextReveal";
+import Button from "./ui/Button";
 
 const About = () => {
   return (
@@ -59,11 +60,8 @@ const About = () => {
             className="text-sm md:text-base font-lora text-balance gap-1 "
           />
 
-          <a
-            href="mailto:aungmyoaye101@gmail.com"
-            className="px-3 py-2 font-lora rounded-lg shadow-lg border border-cyan-400 "
-          >
-            Download Resume
+          <a href="mailto:aungmyoaye101@gmail.com">
+            <Button text="Download Resume" />
           </a>
         </motion.div>
       </div>
