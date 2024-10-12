@@ -1,5 +1,5 @@
 import React from "react";
-import { FaArrowUp, FaInstagram } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 import { FaGithub, FaLinkedin, FaLocationArrow } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 

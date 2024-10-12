@@ -4,12 +4,9 @@ import { FaBars } from "react-icons/fa";
 import { FaLocationArrow, FaXmark } from "react-icons/fa6";
 import SideBar from "./SideBar";
 import { AnimatePresence } from "framer-motion";
-import MovingGradientBorderButton from "./ui/Button";
-import { usePathname } from "next/navigation";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-  const pathName = usePathname();
 
   const handleClick = () => {
     setOpen((pre) => !pre);
