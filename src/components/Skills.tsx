@@ -30,7 +30,7 @@ const Skills = () => {
         <h1 className="heading">My Skills</h1>
       </div>
       {/* My Skills  */}
-      <div className="flex flex-wrap justify-center items-center gap-6  md:gap-10 h-[70vh]">
+      <div className="flex flex-wrap justify-center items-center gap-6  md:gap-10 min-h-[70vh]">
         {skills.map(({ id, image, title, description }) => (
           <MagicCard
             key={id}

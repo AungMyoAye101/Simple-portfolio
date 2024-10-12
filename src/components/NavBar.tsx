@@ -5,9 +5,12 @@ import { FaLocationArrow, FaXmark } from "react-icons/fa6";
 import SideBar from "./SideBar";
 import { AnimatePresence } from "framer-motion";
 import MovingGradientBorderButton from "./ui/Button";
+import { usePathname } from "next/navigation";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+  const pathName = usePathname();
+
   const handleClick = () => {
     setOpen((pre) => !pre);
   };
@@ -32,7 +35,7 @@ const NavBar = () => {
           <a href="/" className="bg-gradient-text">
             Home
           </a>
-          <a href="#skill" className="bg-gradient-text">
+          <a href={"#skill"} className="bg-gradient-text">
             Skills
           </a>
           <a href="#project" className="bg-gradient-text">

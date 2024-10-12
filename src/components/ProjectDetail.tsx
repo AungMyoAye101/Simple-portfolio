@@ -7,10 +7,10 @@ const ProjectDetail = ({ id }: { id: number }) => {
   const project = projects[id];
   return (
     <div className="flex flex-col md:flex-row gap-10 justify-center py-10 ">
-      <div className="relative w-[45%] h-[45vh] bg-purple-400 rounded-lg ">
-        <Image src={project.image} fill alt="nama" className="object-cover" />
+      <div className="relative w-full md:w-[45%] h-[45vh] bg-purple-400 rounded-lg ">
+        <Image src={project.image} fill alt="name" className="object-cover" />
       </div>
-      <div className="w-[50%] flex flex-col gap-6">
+      <div className="w-full md:w-[50%] flex flex-col gap-6">
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-poppin font-semibold ">
           {project.name}
         </h1>
