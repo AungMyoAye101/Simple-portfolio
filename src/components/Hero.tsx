@@ -48,7 +48,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ delay: 2, stiffness: 100, type: "spring" }}
-          className="flex flex-wrap gap-4 justify-center"
+          className="flex flex-wrap gap-4 justify-center items-center"
         >
           <a href="mailto:aungmyoaye101@gmail.com">
             <BgGradientBtn text="Get In Touch" />
