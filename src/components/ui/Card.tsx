@@ -15,7 +15,7 @@ const Card = ({
 }) => {
   return (
     <div className=" min-w-80 w-full rounded-lg shadow shadow-cyan-400 border-[1px] border-cyan-200 overflow-hidden">
-      <div className="relative w-full h-40   bg-purple-400">
+      <div className="relative w-full h-48   bg-gray-800">
         <Image
           src={image}
           fill

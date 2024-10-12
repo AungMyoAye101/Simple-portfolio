@@ -1,14 +1,10 @@
+import ProjectDetail from "@/components/ProjectDetail";
 import Recommed from "@/components/Recommed";
-import { projects } from "@/data";
-import Image from "next/image";
-import React from "react";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const page = ({ params }: { params: { id: number } }) => {
-  const project = projects[params.id];
   return (
     <section className="section-container">
-      <div className="flex flex-col md:flex-row gap-10 justify-center py-10 ">
+      {/* <div className="flex flex-col md:flex-row gap-10 justify-center py-10 ">
         <div className="relative w-[45%] h-[40vh] bg-purple-400 rounded-lg ">
           <Image src={project.image} fill alt="nama" className="object-cover" />
         </div>
@@ -47,7 +43,8 @@ const page = ({ params }: { params: { id: number } }) => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
+      <ProjectDetail id={params.id} />
 
       <Recommed />
     </section>
