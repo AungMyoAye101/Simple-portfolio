@@ -47,8 +47,9 @@ export const skills = [
 
 export const projects = [
   {
+    id: 1,
     image: "/p1.svg",
-    title: "Ecommerce Website",
+    name: "Ecommerce ",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
     sourceCode: "example.com",
@@ -73,8 +74,9 @@ export const projects = [
     ],
   },
   {
+    id: 2,
     image: "p2.svg",
-    title: "Car Rental",
+    name: "Car Rental",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
     sourceCode: "example.com",
@@ -99,8 +101,9 @@ export const projects = [
     ],
   },
   {
+    id: 3,
     image: "p3.svg",
-    title: "Movie Search",
+    name: "Movie Search",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium?",
     sourceCode: "example.com",
@@ -125,8 +128,9 @@ export const projects = [
     ],
   },
   {
+    id: 4,
     image: "/p4.svg",
-    title: "Promptopia",
+    name: "Promptopia",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium?",
     sourceCode: "example.com",
@@ -151,8 +155,9 @@ export const projects = [
     ],
   },
   {
+    id: 5,
     image: "/p1.svg",
-    title: "My Project Name",
+    name: "Socail App",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium?Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
     sourceCode: "example.com",
@@ -177,8 +182,9 @@ export const projects = [
     ],
   },
   {
+    id: 6,
     image: "/p4.svg",
-    title: "Promptopia",
+    name: "Promptopia",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium?",
     sourceCode: "example.com",

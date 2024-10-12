@@ -21,3 +21,7 @@
 .bg-gradient-text {
   @apply px-4 py-2 rounded hover:text-neutral-900  hover:bg-gradient-to-tr from-purple-400 to-orange-400 transition-all duration-200 ease-out;
 }
+
+button {
+  @apply font-poppin text-base font-medium;
+}
