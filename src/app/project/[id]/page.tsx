@@ -6,7 +6,7 @@ const page = ({ params }: { params: { id: number } }) => {
   const project = projects[params.id];
   return (
     <section className="section-container">
-      <div className="flex flex-col md:felx-row gap-10 justify-center items-center ">
+      <div className="flex flex-col md:flex-row gap-10 justify-center items-center ">
         <div className="w-[45%]">
           <Image
             src={`/${project.image}`}
@@ -15,7 +15,7 @@ const page = ({ params }: { params: { id: number } }) => {
             alt="nama"
           />
         </div>
-        <div className="w-[50%]">
+        <div className="w-[50%] flex flex-col gap-4">
           <h1>{project.name}</h1>
           <p>{project.description}</p>
         </div>
