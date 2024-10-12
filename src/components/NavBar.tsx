@@ -28,7 +28,7 @@ const NavBar = () => {
           </h1>
         </div>
         <div className="hidden md:flex items-center  text-xl font-lora font-semibold ">
-          <a href="#" className="bg-gradient-text">
+          <a href="/" className="bg-gradient-text">
             Home
           </a>
           <a href="#skill" className="bg-gradient-text">
