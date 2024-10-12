@@ -51,7 +51,7 @@ const Hero = () => {
           className="flex flex-wrap gap-4 justify-center"
         >
           <a href="mailto:aungmyoaye101@gmail.com">
-            <Button text="Get In Touch" />
+            <BgGradientBtn text="Get In Touch" />
           </a>
           <a href="mailto:aungmyoaye101@gmail.com">
             <Button text="Download Resume" />
