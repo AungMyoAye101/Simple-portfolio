@@ -1,6 +1,9 @@
+"use client";
+
 import { projects } from "@/data";
 
 import Card from "./ui/Card";
+import MovingGradientBorderButton from "./ui/Button";
 
 const Project = () => {
   return (
@@ -18,9 +21,7 @@ const Project = () => {
         ))}
       </main>
 
-      <button className="border border-cyan-400 rounded-md shadow-md px-6 py-3 font-poppin text-base font-medium">
-        Load More
-      </button>
+      <MovingGradientBorderButton text="Load more" />
     </section>
   );
 };

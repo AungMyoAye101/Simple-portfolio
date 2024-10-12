@@ -44,7 +44,7 @@ const TechSkills: FC<SkillsProp> = ({ title, skill }) => {
         {skill.map((skill, i) => (
           <div
             key={i}
-            className="group relative flex  items-center  w-36  rounded-md shadow-md gap-1 border-2 border-cyan-300
+            className="group relative flex  items-center  w-36  rounded-lg shadow-md gap-1 border-2 border-cyan-300
               "
           >
             <motion.div

@@ -48,10 +48,10 @@ const NavBar = () => {
         <div>
           <a
             href="mailto:aungmyoaye101@gmail.com"
-            className="flex gap-1 items-center font-medium font-poppin text-white px-3 py-2 rounded-lg shadow-md  bg-sky-500"
+            className="flex gap-1 items-center font-medium font-poppin text-white px-3 py-2 rounded-full shadow-md  bg-sky-500"
           >
             <span className="hidden lg:block"> Contact Me</span>
-            {/* <MovingGradientBorderButton text='Contact Me'/> */}
+
             <FaLocationArrow />
           </a>
         </div>
