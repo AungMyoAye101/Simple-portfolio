@@ -1,3 +1,4 @@
+import Recommed from "@/components/Recommed";
 import { projects } from "@/data";
 import Image from "next/image";
 import React from "react";
@@ -47,6 +48,8 @@ const page = ({ params }: { params: { id: number } }) => {
           </div>
         </div>
       </div>
+
+      <Recommed />
     </section>
   );
 };
