@@ -8,7 +8,7 @@ import Button from "./ui/Button";
 
 const About = () => {
   return (
-    <section className="min-h-screen py-20 px-4 " id="about">
+    <section className="min-h-screen py-20 px-4 md:px-12 " id="about">
       <h1 className="heading">About Me</h1>
       <div className="flex flex-col md:flex-row justify-between  gap-8 py-8 ">
         <motion.div
@@ -21,7 +21,7 @@ const About = () => {
             ease: "easeIn",
             duration: 0.7,
           }}
-          className=" relative w-[90%] md:w-[45%] h-[40vh] md:h-[65vh] border-2 border-cyan-400 rounded z-20 mx-auto"
+          className=" relative w-[90%] md:w-[40%] h-[40vh] md:h-[65vh] border-2 border-cyan-400 rounded z-20 mx-auto"
         >
           <Image
             src={"/elizabeth.png"}
@@ -57,7 +57,7 @@ const About = () => {
             Tailwind, jQuery, MongoDB, and MySQL. In addition, I leverage my
             design skills using Figma to craft intuitive and user-friendly
             interfaces"
-            className="text-sm md:text-base font-lora text-balance gap-1 "
+            className="text-sm font-lora text-balance gap-1 "
           />
 
           <a href="mailto:aungmyoaye101@gmail.com">

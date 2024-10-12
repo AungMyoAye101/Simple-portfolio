@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa";
 import { FaLocationArrow, FaXmark } from "react-icons/fa6";
 import SideBar from "./SideBar";
 import { AnimatePresence } from "framer-motion";
+import MovingGradientBorderButton from "./ui/Button";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -50,6 +51,7 @@ const NavBar = () => {
             className="flex gap-1 items-center font-medium font-poppin text-white px-3 py-2 rounded-lg shadow-md  bg-sky-500"
           >
             <span className="hidden lg:block"> Contact Me</span>
+            {/* <MovingGradientBorderButton text='Contact Me'/> */}
             <FaLocationArrow />
           </a>
         </div>

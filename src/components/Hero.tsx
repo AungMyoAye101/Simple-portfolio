@@ -41,7 +41,7 @@ const Hero = () => {
 
         <TextReveal
           words={tagline}
-          className="font-poppin  w-[90%] text-base md:text-xl font-light gap-1 text-purple-300"
+          className="font-poppin  w-[90%] text-base md:text-xl font-light gap-1 "
         />
 
         <motion.div
