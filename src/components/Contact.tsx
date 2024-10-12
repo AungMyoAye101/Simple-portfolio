@@ -11,14 +11,8 @@ const Contact = () => {
       </div>
 
       {/* form */}
-      <div className=" w-full md:w-[60%] sm:grid  flex flex-col gap-4 ">
-        <div className="flex flex-col gap-1">
-          <label
-            htmlFor="FirstName"
-            className="text-sm md:text-base font-lora "
-          >
-            First Name
-          </label>
+      <div className=" w-full md:w-[60%] grid gap-4 ">
+        <div className="flex flex-col gap-1 ">
           <input
             type="text"
             id="FirstName"
@@ -26,18 +20,8 @@ const Contact = () => {
             className="input-style"
           />
         </div>
-        <div className="flex flex-col gap-1">
-          <label htmlFor="LastName">Last Name (optional)</label>
-          <input
-            type="text"
-            id="LastName"
-            placeholder="Enter your Last Name"
-            className="input-style"
-          />
-        </div>
 
-        <div className="flex flex-col gap-1">
-          <label htmlFor="email">Email</label>
+        <div className="flex flex-col gap-1 ">
           <input
             type="email"
             id="email"
@@ -45,7 +29,7 @@ const Contact = () => {
             className="input-style"
           />
         </div>
-        <div className="flex flex-col gap-1">
+        {/* <div className="flex flex-col gap-1">
           <label htmlFor="description">Description</label>
           <select className="input-style text-neutral-400" id="description">
             <option value="">Enter your description</option>
@@ -56,18 +40,15 @@ const Contact = () => {
 
             <option value="Just talk">Just talk</option>
           </select>
-        </div>
-        <div className="flex flex-col gap-1 col-span-2 ">
-          <label htmlFor="text" className="text-sm md:text-base font-lora ">
-            What are your thoughts on my website?
-          </label>
+        </div> */}
+        <div className="flex flex-col gap-1  ">
           <textarea
             id="text"
             placeholder="I value your opinion"
             className="input-style h-28 "
           />
         </div>
-        <button className="px-6 py-2 rounded-lg shadow-md border-2 border-cyan-400 col-span-2 font-lora text-lg hover:scale-105 hover:shadow-lg transition-all ease-out duration-200 ">
+        <button className="px-6 py-2 rounded-lg shadow-md border-2 border-cyan-400  font-lora text-lg hover:scale-105 hover:shadow-lg transition-all ease-out duration-200 ">
           Send
         </button>
       </div>

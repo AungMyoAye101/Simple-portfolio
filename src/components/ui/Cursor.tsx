@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Cursor = () => {
@@ -14,9 +15,16 @@ const Cursor = () => {
   }, []);
   return (
     <motion.div
-      animate={{ x: position.x + 5, y: position.y + 5 }}
-      className="size-10 rounded-full border-2 border-rose-600 fixed z-50"
-    ></motion.div>
+      animate={{ x: position.x + 10, y: position.y + 10 }}
+      className="fixed z-50"
+    >
+      <Image
+        src={"/butterfly.svg"}
+        width={20}
+        height={20}
+        alt="butterfly coursor"
+      />
+    </motion.div>
   );
 };
 
