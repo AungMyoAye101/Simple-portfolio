@@ -1,10 +1,24 @@
 "use client";
 
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
+import { Variable } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+
+const variants = {
+  initial: { y: 200 },
+  animate: {
+    y: 0,
+    transition: {
+      staggerChildren: 0.1,
+      type: "spring",
+      stiffness: 50,
+      dumpind: 20,
+    },
+  },
+};
 
 const Card = ({
   id,
@@ -23,18 +37,15 @@ const Card = ({
   sourceCode: string;
   siteLink: string;
 }) => {
-  const scrollRef = useRef(null);
-  const { scrollYProgress } = useScroll();
-
   return (
-    <motion.div
-      ref={scrollRef}
-      className="relative flex flex-col md:flex-row min-w-80  min-h-[50vh] items-center justify-between gap-6  w-full rounded-lg  overflow-hidden "
-    >
+    <motion.div className="relative flex flex-col md:flex-row min-w-80  min-h-[70vh] items-center justify-between gap-6  w-full rounded-lg  overflow-hidden ">
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ type: "spring", stiffness: "10", dumping: "10" }}
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 1,
+          ease: "easeOut",
+        }}
         className="relative w-full md:w-[45%] h-[50vh]   bg-gray-800 rounded-lg"
       >
         <Image
@@ -45,16 +56,27 @@ const Card = ({
         />
       </motion.div>
       <motion.div
+        variants={variants}
+        initial="initial"
+        whileInView="animate"
         className="w-full md:w-[50%] flex flex-col gap-4 px-4 py-8"
-        style={{ opacity: scrollYProgress }}
       >
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-poppin font-semibold ">
+        <motion.h1
+          variants={variants}
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-poppin font-semibold "
+        >
           {name}
-        </h1>
-        <p className="font-lora text-lg md:text-xl text-gray-200 ">
+        </motion.h1>
+        <motion.p
+          variants={variants}
+          className="font-lora text-lg md:text-xl text-gray-200 "
+        >
           {description}
-        </p>
-        <div className="flex items-center flex-wrap gap-2">
+        </motion.p>
+        <motion.div
+          variants={variants}
+          className="flex items-center flex-wrap gap-2"
+        >
           {iconList.map((icon, i) => (
             <div
               key={i}
@@ -64,8 +86,11 @@ const Card = ({
               <span className=" font-poppin font-light">{icon.name}</span>
             </div>
           ))}
-        </div>
-        <div className="flex justify-between items-center">
+        </motion.div>
+        <motion.div
+          variants={variants}
+          className="flex justify-between items-center"
+        >
           <a
             href={siteLink}
             target="_blank"
@@ -82,7 +107,7 @@ const Card = ({
             <FaExternalLinkAlt />
             <span>Live Site</span>
           </a>
-        </div>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
