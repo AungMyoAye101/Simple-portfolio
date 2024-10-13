@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Variable } from "lucide-react";
+
 import Image from "next/image";
-import Link from "next/link";
-import React, { useRef } from "react";
+
+import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const variants = {
@@ -21,7 +21,6 @@ const variants = {
 };
 
 const Card = ({
-  id,
   image,
   name,
   description,
@@ -29,7 +28,6 @@ const Card = ({
   sourceCode,
   siteLink,
 }: {
-  id: number;
   image: string;
   name: string;
   description: string;
@@ -92,7 +90,7 @@ const Card = ({
           className="flex justify-between items-center"
         >
           <a
-            href={siteLink}
+            href={sourceCode}
             target="_blank"
             className="flex items-center gap-2 text-base md:text-lg font-poppin hover:text-purple-400"
           >
