@@ -24,12 +24,12 @@ const NavBar = () => {
           {open && <SideBar handleClick={handleClick} />}
         </AnimatePresence>
         <div>
-          <h1 className=" font-lora text-2xl md:text-3xl font-bold bg-gradient-to-tr from-orange-400 to-purple-400 bg-clip-text text-transparent">
+          <h1 className=" font-lora text-2xl md:text-3xl font-bold bg-gradient-to-r from-orange-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
             AMA <span className="hidden lg:inline"> -Portfolio</span>
           </h1>
         </div>
         <div className="hidden md:flex items-center  text-xl font-lora font-semibold ">
-          <a href="/" className="bg-gradient-text">
+          <a href="#" className="bg-gradient-text">
             Home
           </a>
           <a href={"#skill"} className="bg-gradient-text">

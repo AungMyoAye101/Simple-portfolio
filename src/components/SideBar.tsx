@@ -10,6 +10,7 @@ const varients = {
     x: "0%",
     transition: {
       when: "beforechild",
+      type: "spring",
     },
   },
   close: {
