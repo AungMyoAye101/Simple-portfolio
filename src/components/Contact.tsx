@@ -60,7 +60,10 @@ const Contact = () => {
         </motion.div>
 
         {/* form */}
-        <motion.div variants={varients} className="relative">
+        <motion.div
+          variants={varients}
+          className="relative  w-full flex justify-center"
+        >
           <motion.div
             initial={{ opacity: 1 }}
             whileInView={{ opacity: 0 }}
@@ -70,7 +73,7 @@ const Contact = () => {
             }}
             className=" absolute stroke-orange-400"
           >
-            <svg width="400px" height="400px" viewBox="0 0 24 24" version="1.1">
+            <svg width="300px" height="300px" viewBox="0 0 24 24" version="1.1">
               <motion.path
                 initial={{ pathLength: 0 }}
                 animate={inView && { pathLength: 1 }}
@@ -97,7 +100,7 @@ const Contact = () => {
                 type="text"
                 id="Name"
                 name="name"
-                placeholder="Enter your First Name"
+                placeholder="Enter your  Name"
                 className="input-style"
               />
             </div>
@@ -107,7 +110,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Enter your mail address"
+                placeholder="Enter your email address"
                 className="input-style"
               />
             </div>
