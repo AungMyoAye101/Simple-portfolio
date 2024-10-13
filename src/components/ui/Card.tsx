@@ -1,8 +1,10 @@
+"use client";
+
+import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { FaCircleInfo } from "react-icons/fa6";
 
 const Card = ({
   id,
@@ -21,17 +23,31 @@ const Card = ({
   sourceCode: string;
   siteLink: string;
 }) => {
+  const scrollRef = useRef(null);
+  const { scrollYProgress } = useScroll();
+
   return (
-    <div className="flex flex-col md:flex-row min-w-80  min-h-[50vh] items-center justify-between gap-6  w-full rounded-lg  overflow-hidden ">
-      <div className="relative w-full md:w-[45%] h-[50vh]   bg-gray-800 rounded-lg">
+    <motion.div
+      ref={scrollRef}
+      className="relative flex flex-col md:flex-row min-w-80  min-h-[50vh] items-center justify-between gap-6  w-full rounded-lg  overflow-hidden "
+    >
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ type: "spring", stiffness: "10", dumping: "10" }}
+        className="relative w-full md:w-[45%] h-[50vh]   bg-gray-800 rounded-lg"
+      >
         <Image
           src={image}
           fill
           alt={name}
           className="object-cover aspect-video"
         />
-      </div>
-      <div className="w-full md:w-[50%] flex flex-col gap-4 px-4 py-8">
+      </motion.div>
+      <motion.div
+        className="w-full md:w-[50%] flex flex-col gap-4 px-4 py-8"
+        style={{ opacity: scrollYProgress }}
+      >
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-poppin font-semibold ">
           {name}
         </h1>
@@ -67,8 +83,8 @@ const Card = ({
             <span>Live Site</span>
           </a>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
