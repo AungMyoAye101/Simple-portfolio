@@ -3,8 +3,6 @@ import SubmitButton from "./SubmitButton";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { useFormStatus } from "react-dom";
-import { redirect } from "next/navigation";
-import { useRouter } from "next/router";
 
 const Form = () => {
   const [success, setSuccess] = useState(false);

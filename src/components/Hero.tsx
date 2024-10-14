@@ -1,24 +1,12 @@
 "use client";
 
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import TextReveal from "./ui/TextReveal";
 
 import BgGradientBtn from "./ui/BgGradientBtn";
 import Button from "./ui/Button";
-
-const imageVarients = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 3,
-    },
-  },
-};
 
 const buttonVarients = {
   initial: {

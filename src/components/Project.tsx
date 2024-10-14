@@ -1,9 +1,7 @@
 "use client";
 
 import { projects } from "@/data";
-
 import Card from "./ui/Card";
-import MovingGradientBorderButton from "./ui/Button";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
