@@ -27,7 +27,7 @@ const Project = () => {
         {tab.map((t, i) => (
           <div
             key={i}
-            className="relative px-4 py-2 text-base md:text-lg font-semibold font-poppin rounded-full"
+            className="relative px-4 py-2 text-base md:text-lg font-semibold font-poppin rounded-full cursor-pointer"
             onMouseEnter={() => setActiveTab(i)}
             onClick={() => filteredProjects(t)}
           >

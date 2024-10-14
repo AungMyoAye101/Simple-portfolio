@@ -44,7 +44,7 @@ const Card = ({
           duration: 1,
           ease: "easeOut",
         }}
-        className="relative w-full md:w-[45%] h-[30vh] md:h-[50vh]   bg-gray-800 rounded-lg"
+        className="relative w-full md:w-[45%] h-[30vh] sm:h-[50vh] md:h-[40vh] lg:h-[50vh]  bg-gray-800 rounded-lg"
       >
         <Image
           src={image}
@@ -92,18 +92,20 @@ const Card = ({
           <a
             href={sourceCode}
             target="_blank"
-            className="flex items-center gap-2 text-base md:text-lg font-poppin hover:text-purple-400"
+            className="group relative flex items-center gap-2 text-base md:text-lg font-poppin hover:text-orange-400"
           >
             <FaGithub />
             <span>Source Code</span>
+            <span className=" absolute -bottom-2 h-1 bg-orange-400 w-0 group-hover:w-full rounded-lg transition-all duration-300"></span>
           </a>
           <a
             href={siteLink}
             target="_blank"
-            className="flex items-center gap-2 text-base md:text-lg font-poppin hover:text-purple-400"
+            className="group relative flex items-center gap-2 text-base md:text-lg font-poppin hover:text-orange-400"
           >
             <FaExternalLinkAlt />
             <span>Live Site</span>
+            <span className=" absolute -bottom-2 h-1 bg-orange-400 w-0 group-hover:w-full rounded-lg transition-all duration-300"></span>
           </a>
         </motion.div>
       </motion.div>
