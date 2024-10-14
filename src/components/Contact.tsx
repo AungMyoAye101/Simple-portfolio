@@ -3,6 +3,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion, useInView } from "framer-motion";
+import { useFormStatus } from "react-dom";
+import SubmitButton from "./ui/SubmitButton";
 
 const varients = {
   initial: {
@@ -20,12 +22,12 @@ const varients = {
 };
 
 const Contact = () => {
+  const { pending } = useFormStatus();
   const form = useRef<HTMLFormElement>(null);
   const ref = useRef(null);
   const inView = useInView(ref, { margin: "-100px" });
 
-  const sendEmail = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
+  const sendEmail = () => {
     if (!form.current) return;
     emailjs
       .sendForm(
@@ -93,7 +95,7 @@ const Contact = () => {
               duration: 1,
             }}
             ref={form}
-            onSubmit={sendEmail}
+            action={sendEmail}
             className=" w-full md:w-[60%] grid gap-4 "
           >
             <div className="flex flex-col gap-1 ">
@@ -101,6 +103,7 @@ const Contact = () => {
                 type="text"
                 id="Name"
                 name="name"
+                disabled={pending}
                 placeholder="Enter your  Name"
                 className="input-style"
               />
@@ -124,12 +127,13 @@ const Contact = () => {
                 className="input-style h-28 "
               />
             </div>
-            <button
+            {/* <button
               type="submit"
               className="px-6 py-2 rounded-lg shadow-md border-2 border-cyan-400  font-lora text-lg hover:scale-105 hover:shadow-lg transition-all ease-out duration-200 "
             >
-              Send
-            </button>
+              {pending ? "Submiting..." : "Submit"}
+            </button> */}
+            <SubmitButton />
           </motion.form>
         </motion.div>
         <motion.p
