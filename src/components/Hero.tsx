@@ -7,6 +7,7 @@ import TextReveal from "./ui/TextReveal";
 
 import BgGradientBtn from "./ui/BgGradientBtn";
 import Button from "./ui/Button";
+import { Scale } from "lucide-react";
 
 const buttonVarients = {
   initial: {
@@ -27,6 +28,23 @@ const buttonVarients = {
   },
 };
 
+const imageVarients = {
+  initial: {
+    opacity: 0,
+    scale: 0,
+  },
+
+  inView: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      type: "spring",
+      stiffness: 30,
+      dumping: 20,
+    },
+  },
+};
+
 const Hero = () => {
   const intro = "Hi! I am Aung Myo Aye";
   const heroText =
@@ -34,8 +52,9 @@ const Hero = () => {
 
   const tagline =
     "Crafting modern, responsive web applications with a touch of creativity.";
+
   return (
-    <section className="min-h-screen flex flex-col-reverse md:flex-row justify-between items-center gap-10 py-20 px-4 md:px-10 ">
+    <section className="min-h-screen flex flex-col-reverse md:flex-row justify-between items-center gap-10 py-20 px-4 md:px-8 ">
       <div className="w-full md:w-[50vw]  flex flex-col gap-4 items-center text-center md:text-start md:items-start ">
         <TextReveal
           words={intro}
@@ -71,9 +90,13 @@ const Hero = () => {
           </motion.a>
         </motion.div>
       </div>
-      <div className=" relative w-full md:w-[40vw] ">
+      <motion.div
+        variants={imageVarients}
+        initial="initial"
+        whileInView="inView"
+        className=" relative w-full md:w-[40vw] "
+      >
         <motion.div
-          className="relative size-60 sm:size-72 md:size-96  mx-auto z-20  bg-gradient-to-tr from-orange-500 via-purple-500 to-sky-500 rounded-full "
           animate={{
             backgroundPosition: ["0% 50%", "100% 50%"],
           }}
@@ -83,6 +106,7 @@ const Hero = () => {
             repeatType: "mirror",
             ease: "linear",
           }}
+          className="relative size-60 sm:size-72 md:size-96  mx-auto z-20  bg-gradient-to-tr from-orange-500 via-purple-500 to-sky-500 rounded-full "
           style={{
             backgroundSize: "200% 200%",
           }}
@@ -94,7 +118,7 @@ const Hero = () => {
             className="object-cover object-center rounded-full relative z-20 "
           />
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 };

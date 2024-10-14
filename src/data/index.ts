@@ -33,6 +33,7 @@ export const skills = [
 export const projects = [
   {
     id: 1,
+    type: "Full-Stack",
     image: "/p1.svg",
     name: "Ecommerce ",
     description:
@@ -60,6 +61,7 @@ export const projects = [
   },
   {
     id: 2,
+    type: "Front-End",
     image: "p2.svg",
     name: "Car Rental",
     description:
@@ -87,6 +89,7 @@ export const projects = [
   },
   {
     id: 3,
+    type: "Front-End",
     image: "p3.svg",
     name: "Movie Search",
     description:
@@ -114,6 +117,7 @@ export const projects = [
   },
   {
     id: 4,
+    type: "Full-Stack",
     image: "/p4.svg",
     name: "Promptopia",
     description:

@@ -5,20 +5,33 @@ import Card from "./ui/Card";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const filteredProjects = ["All", "Front-End", "Back-End"];
+const tab = ["All", "Front-End", "Full-Stack"];
 const Project = () => {
   const [activeTab, setActiveTab] = useState<number>(0);
+  const [projectFilter, setProjectFilter] = useState(projects);
+
+  const filteredProjects = (pjType: string) => {
+    if (pjType === "Front-End") {
+      setProjectFilter(projects.filter((pj) => pj.type === pjType));
+    } else if (pjType === "Full-Stack") {
+      setProjectFilter(projects.filter((pj) => pj.type === pjType));
+    } else {
+      setProjectFilter(projects);
+    }
+  };
+
   return (
     <section className="section-container relative" id="project">
       <h1 className="heading">My Recent Projects</h1>
       <div className="rounded-full relative flex border-2 border-orange-400">
-        {filteredProjects.map((tab, i) => (
+        {tab.map((t, i) => (
           <div
             key={i}
             className="relative px-4 py-2 text-base md:text-lg font-semibold font-poppin rounded-full"
             onMouseEnter={() => setActiveTab(i)}
+            onClick={() => filteredProjects(t)}
           >
-            <span className="relative z-10">{tab}</span>
+            <span className="relative z-10">{t}</span>
             {activeTab === i && (
               <motion.span
                 layoutId="activeTab"
@@ -31,7 +44,7 @@ const Project = () => {
       </div>
 
       <main className="flex flex-col gap-12 md:gap-16 w-full">
-        {projects.map((item) => (
+        {projectFilter.map((item) => (
           <Card
             key={item.id}
             image={item.image}
