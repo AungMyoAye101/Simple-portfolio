@@ -103,7 +103,7 @@ const Hero = () => {
             src={"/elizabeth.png"}
             fill
             alt="Aung Myo Aye's profile photo"
-            className="object-cover object-center rounded-full  "
+            className="object-cover object-center rounded-full relative z-20 "
           />
         </motion.div>
       </div>

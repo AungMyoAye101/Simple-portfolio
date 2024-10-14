@@ -26,7 +26,7 @@ const NavBar = () => {
           {open && <SideBar handleClick={handleClick} />}
         </AnimatePresence>
         <div>
-          <h1 className=" font-lora text-2xl md:text-3xl font-bold bg-gradient-to-tr from-orange-400 via-purple-400 to-sky-400 bg-clip-text text-transparent">
+          <h1 className=" font-lora text-2xl md:text-3xl font-bold bg-orange-500 bg-clip-text text-transparent">
             AMA <span className="hidden lg:inline"> -Portfolio</span>
           </h1>
         </div>
