@@ -15,7 +15,7 @@ const NavBar = () => {
   };
   return (
     <div className="fixed top-0 left-0 right-0 bg-neutral-50 dark:bg-neutral-900 z-40 bg-opacity-85  mx-auto">
-      <nav className="z-40 flex justify-between items-center px-4 md:px-16 py-3 backdrop-blur-sm">
+      <nav className="max-w-7xl mx-auto z-40 flex justify-between items-center px-4  py-3 backdrop-blur-sm">
         <div
           className="block md:hidden rounded-full text-cyan-400 border border-cyan-400 p-2 shadow-md cursor-pointer relative z-50"
           onClick={handleClick}
@@ -36,7 +36,7 @@ const NavBar = () => {
               key={link.id}
               href={link.link}
               className="px-4 py-1 relative"
-              onClick={() => setActive(link.id)}
+              onMouseEnter={() => setActive(link.id)}
             >
               <span className="relative z-10">{link.name}</span>
               {active === link.id && (

@@ -92,20 +92,20 @@ const Card = ({
           <a
             href={sourceCode}
             target="_blank"
-            className="group relative flex items-center gap-2 text-base md:text-lg font-poppin hover:text-orange-400"
+            className="group relative flex items-center gap-2 text-base md:text-lg font-poppin hover:text-purple-400"
           >
             <FaGithub />
             <span>Source Code</span>
-            <span className=" absolute -bottom-2 h-1 bg-orange-400 w-0 group-hover:w-full rounded-lg transition-all duration-300"></span>
+            <span className=" absolute -bottom-2 h-1 bg-purple-400 w-0 group-hover:w-full rounded-lg transition-all duration-300"></span>
           </a>
           <a
             href={siteLink}
             target="_blank"
-            className="group relative flex items-center gap-2 text-base md:text-lg font-poppin hover:text-orange-400"
+            className="group relative flex items-center gap-2 text-base md:text-lg font-poppin hover:text-purple-400"
           >
             <FaExternalLinkAlt />
             <span>Live Site</span>
-            <span className=" absolute -bottom-2 h-1 bg-orange-400 w-0 group-hover:w-full rounded-lg transition-all duration-300"></span>
+            <span className=" absolute -bottom-2 h-1 bg-purple-400 w-0 group-hover:w-full rounded-lg transition-all duration-300"></span>
           </a>
         </motion.div>
       </motion.div>

@@ -105,7 +105,7 @@ const Hero = () => {
             repeatType: "mirror",
             ease: "linear",
           }}
-          className="relative size-60 sm:size-72 md:size-96  mx-auto z-20  bg-gradient-to-tr from-orange-500 via-purple-500 to-sky-500 rounded-full "
+          className="relative size-60 sm:size-72 md:size-96  mx-auto z-20  bg-gradient-to-tr from-orange-500 via-purple-500 to-sky-500 rounded-full border-4 border-purple-300"
           style={{
             backgroundSize: "200% 200%",
           }}
