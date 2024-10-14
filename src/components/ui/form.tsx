@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { useFormStatus } from "react-dom";
 import { redirect } from "next/navigation";
+import { useRouter } from "next/router";
 
 const Form = () => {
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
   const { pending } = useFormStatus();
   const form = useRef<HTMLFormElement>(null);
 
@@ -22,9 +25,11 @@ const Form = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          setSuccess(true);
         },
         (error) => {
           console.log("FAILED...", error.text);
+          setError(true);
         }
       );
   };
@@ -40,6 +45,16 @@ const Form = () => {
       action={sendEmail}
       className=" w-full md:w-[60%] grid gap-4 "
     >
+      {success && (
+        <div className="px-4 py-2 font-poppin bg-green-500 rounded-lg text-center">
+          SUCCESS
+        </div>
+      )}
+      {error && (
+        <div className="px-4 py-2 font-poppin bg-red-500 rounded-lg text-center">
+          Opps; Something went worng!
+        </div>
+      )}
       <div className="flex flex-col gap-1 ">
         <input
           type="text"
@@ -69,12 +84,7 @@ const Form = () => {
           className="input-style h-28 "
         />
       </div>
-      {/* <button
-    type="submit"
-    className="px-6 py-2 rounded-lg shadow-md border-2 border-cyan-400  font-lora text-lg hover:scale-105 hover:shadow-lg transition-all ease-out duration-200 "
-  >
-    {pending ? "Submiting..." : "Submit"}
-  </button> */}
+
       <SubmitButton />
     </motion.form>
   );
