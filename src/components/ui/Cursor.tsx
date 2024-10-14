@@ -16,7 +16,7 @@ const Cursor = () => {
   return (
     <motion.div
       animate={{ x: position.x + 10, y: position.y + 10 }}
-      className="fixed z-50"
+      className="fixed z-50 stroke-orange-400"
     >
       <Image
         src={"/butterfly.svg"}

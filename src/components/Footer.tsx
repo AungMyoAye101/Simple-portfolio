@@ -14,28 +14,28 @@ const Footer = () => {
         <a
           href="https://github.com/AungMyoAye101"
           target="_blank"
-          className="p-3 border border-cyan-400  rounded-full shadow-md"
+          className="p-3 border border-cyan-400  rounded-full shadow-md hover:bg-cyan-400 hover:text-black"
         >
           <FaGithub className="text-xl " />
         </a>
         <a
           href="https://www.facebook.com/profile.php?id=61556195843942"
           target="_blank"
-          className="p-3 border border-cyan-400  rounded-full shadow-md"
+          className="p-3 border border-cyan-400  rounded-full shadow-md hover:bg-cyan-400 hover:text-black"
         >
           <FaFacebookF className="text-xl  " />
         </a>
         <a
           href=""
           target="_blank"
-          className="p-3 border border-cyan-400  rounded-full shadow-md"
+          className="p-3 border border-cyan-400  rounded-full shadow-md hover:bg-cyan-400 hover:text-black"
         >
           <FaLinkedin className="text-xl  " />
         </a>
         <a
           href="https://www.instagram.com/aungmyoaye404/"
           target="_blank"
-          className="p-3 border border-cyan-400  rounded-full shadow-md"
+          className="p-3 border border-cyan-400  rounded-full shadow-md hover:bg-cyan-400 hover:text-black"
         >
           <FaInstagram className="text-xl  " />
         </a>

@@ -26,7 +26,7 @@ const NavBar = () => {
           {open && <SideBar handleClick={handleClick} />}
         </AnimatePresence>
         <div>
-          <h1 className=" font-lora text-2xl md:text-3xl font-bold bg-gradient-to-r from-orange-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <h1 className=" font-lora text-2xl md:text-3xl font-bold bg-gradient-to-r from-orange-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
             AMA <span className="hidden lg:inline"> -Portfolio</span>
           </h1>
         </div>
@@ -51,7 +51,7 @@ const NavBar = () => {
         <div>
           <a
             href="mailto:aungmyoaye101@gmail.com"
-            className="flex gap-1 items-center font-medium font-poppin text-white px-3 py-2 rounded-full shadow-md  bg-sky-500"
+            className="flex gap-1 items-center font-medium font-poppin text-white p-2 rounded-full shadow-md  bg-sky-500"
           >
             <span className="hidden lg:block"> Contact Me</span>
 

@@ -11,6 +11,8 @@ const varients = {
     transition: {
       when: "beforechild",
       type: "spring",
+      stiffness: 50,
+      dumping: 20,
     },
   },
   close: {
@@ -35,7 +37,7 @@ const SideBar = ({ handleClick }: { handleClick: () => void }) => {
       initial="close"
       animate="open"
       exit="close"
-      className="absolute top-0 left-0 bottom-0 flex flex-col justify-center items-center gap-3 w-96 bg-white dark:bg-neutral-900 h-screen px-4  "
+      className="absolute top-0 left-0 bottom-0 flex flex-col justify-center items-center gap-3 w-full bg-white dark:bg-neutral-900 h-screen px-4  "
     >
       {NavLinks.map((link, i) => (
         <motion.a
