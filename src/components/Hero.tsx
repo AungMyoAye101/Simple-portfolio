@@ -31,9 +31,9 @@ const buttonVarients = {
     scale: 1,
     y: 0,
     transition: {
-      delay: 2,
+      delay: 1,
       ease: "easeOut",
-      staggerChildren: 0.4,
+      staggerChildren: 0.1,
       duration: 1,
     },
   },

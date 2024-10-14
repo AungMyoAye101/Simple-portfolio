@@ -36,7 +36,7 @@ const Card = ({
   siteLink: string;
 }) => {
   return (
-    <motion.div className="relative flex flex-col md:flex-row min-w-80  min-h-[70vh] items-center justify-between gap-6  w-full rounded-lg  overflow-hidden ">
+    <motion.div className="relative flex flex-col md:flex-row min-w-80  min-h-[70vh] items-center justify-between gap-4  w-full rounded-lg  overflow-hidden ">
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -44,7 +44,7 @@ const Card = ({
           duration: 1,
           ease: "easeOut",
         }}
-        className="relative w-full md:w-[45%] h-[50vh]   bg-gray-800 rounded-lg"
+        className="relative w-full md:w-[45%] h-[30vh] md:h-[50vh]   bg-gray-800 rounded-lg"
       >
         <Image
           src={image}
@@ -57,7 +57,7 @@ const Card = ({
         variants={variants}
         initial="initial"
         whileInView="animate"
-        className="w-full md:w-[50%] flex flex-col gap-4 px-4 py-8"
+        className="w-full md:w-[50%] flex flex-col gap-4 px-4 py-4"
       >
         <motion.h1
           variants={variants}
