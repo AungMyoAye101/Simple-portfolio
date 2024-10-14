@@ -1,14 +1,17 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import SubmitButton from "./SubmitButton";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { useFormStatus } from "react-dom";
+import { redirect } from "next/navigation";
 
 const Form = () => {
   const { pending } = useFormStatus();
   const form = useRef<HTMLFormElement>(null);
+
   const sendEmail = () => {
     if (!form.current) return;
+    console.log(form.current);
     emailjs
       .sendForm(
         "service_jfthy5f",
