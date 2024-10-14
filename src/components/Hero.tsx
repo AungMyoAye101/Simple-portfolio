@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import TextReveal from "./ui/TextReveal";
@@ -16,6 +16,25 @@ const imageVarients = {
     opacity: 1,
     transition: {
       duration: 3,
+    },
+  },
+};
+
+const buttonVarients = {
+  initial: {
+    opacity: 0,
+    scale: 0,
+    y: 50,
+  },
+  inView: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      delay: 2,
+      ease: "easeOut",
+      staggerChildren: 0.4,
+      duration: 1,
     },
   },
 };
@@ -45,17 +64,23 @@ const Hero = () => {
         />
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 2, stiffness: 100, type: "spring" }}
+          variants={buttonVarients}
+          initial="initial"
+          whileInView="inView"
           className="flex flex-wrap gap-4 justify-center items-center"
         >
-          <a href="mailto:aungmyoaye101@gmail.com">
+          <motion.a
+            variants={buttonVarients}
+            href="mailto:aungmyoaye101@gmail.com"
+          >
             <BgGradientBtn text="Get In Touch" />
-          </a>
-          <a href="mailto:aungmyoaye101@gmail.com">
+          </motion.a>
+          <motion.a
+            variants={buttonVarients}
+            href="mailto:aungmyoaye101@gmail.com"
+          >
             <Button text="Download Resume" />
-          </a>
+          </motion.a>
         </motion.div>
       </div>
       <div className=" relative w-full md:w-[40vw] ">

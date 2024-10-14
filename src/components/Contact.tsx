@@ -45,8 +45,9 @@ const Contact = () => {
   };
 
   return (
-    <section className="section-container" id="contact" ref={ref}>
+    <section className="section-container" id="contact">
       <motion.div
+        ref={ref}
         variants={varients}
         initial="initial"
         whileInView="animate"
