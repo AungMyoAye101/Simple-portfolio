@@ -7,7 +7,6 @@ import TextReveal from "./ui/TextReveal";
 
 import BgGradientBtn from "./ui/BgGradientBtn";
 import Button from "./ui/Button";
-import { Scale } from "lucide-react";
 
 const buttonVarients = {
   initial: {
