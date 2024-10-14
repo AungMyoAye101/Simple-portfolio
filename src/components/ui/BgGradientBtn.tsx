@@ -3,7 +3,7 @@ import React from "react";
 const BggradientBtn = ({ text }: { text: string }) => {
   return (
     <motion.button
-      className="bg-gradient-to-r from-cyan-600 via-gray-400  to-purple-600 px-6 py-2 rounded-full text-black"
+      className=" bg-gradient-to-tr from-orange-500 via-purple-500 to-sky-500 px-6 py-2 rounded-full text-black"
       animate={{
         backgroundPosition: ["0% 50%", "100% 50%"],
       }}

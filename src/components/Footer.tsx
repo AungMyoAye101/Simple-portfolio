@@ -42,7 +42,7 @@ const Footer = () => {
       </div>
       <a
         href="mailto:aungmyoaye101@gmail.com"
-        className="flex gap-1 items-center font-medium font-poppin text-white px-4 py-2 rounded-lg shadow-md  bg-cyan-500"
+        className="flex gap-1 items-center font-medium font-poppin text-white px-4 py-2 rounded-full shadow-md  bg-gradient-to-tr from-orange-500 via-purple-500 to-sky-500 hover:text-black "
       >
         <span> Contact Me</span>
         <FaLocationArrow />

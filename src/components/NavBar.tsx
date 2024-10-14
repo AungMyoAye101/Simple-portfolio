@@ -26,7 +26,7 @@ const NavBar = () => {
           {open && <SideBar handleClick={handleClick} />}
         </AnimatePresence>
         <div>
-          <h1 className=" font-lora text-2xl md:text-3xl font-bold bg-gradient-to-r from-orange-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
+          <h1 className=" font-lora text-2xl md:text-3xl font-bold bg-gradient-to-tr from-orange-400 via-purple-400 to-sky-400 bg-clip-text text-transparent">
             AMA <span className="hidden lg:inline"> -Portfolio</span>
           </h1>
         </div>
@@ -42,7 +42,7 @@ const NavBar = () => {
               {active === link.id && (
                 <motion.span
                   layoutId="active-pill"
-                  className="absolute inset-0 bg-gradient-to-r from-orange-400 via-purple-400 to-cyan-400 rounded-full"
+                  className="absolute inset-0 bg-gradient-to-tr from-orange-400 via-purple-400 to-sky-400 rounded-full"
                 ></motion.span>
               )}
             </a>
@@ -51,7 +51,7 @@ const NavBar = () => {
         <div>
           <a
             href="mailto:aungmyoaye101@gmail.com"
-            className="flex gap-1 items-center font-medium font-poppin text-white p-2 rounded-full shadow-md  bg-sky-500"
+            className="flex gap-1 items-center font-medium font-poppin text-white p-2 rounded-full shadow-md  bg-gradient-to-tr from-orange-500 via-purple-500 to-sky-500"
           >
             <span className="hidden lg:block"> Contact Me</span>
 

@@ -55,12 +55,12 @@ const Hero = () => {
         />
         <TextReveal
           words={heroText}
-          className="  font-poppin text-2xl  md:text-3xl lg:text-4xl font-bold gap-2 "
+          className="  font-poppin text-xl  md:text-3xl lg:text-4xl font-bold gap-2 justify-center  md:justify-start"
         />
 
         <TextReveal
           words={tagline}
-          className="font-poppin  w-[90%] text-base md:text-xl font-light gap-1 "
+          className="font-poppin  w-[90%] text-base md:text-xl font-light gap-1 justify-center md:justify-start"
         />
 
         <motion.div
@@ -85,16 +85,25 @@ const Hero = () => {
       </div>
       <div className=" relative w-full md:w-[40vw] ">
         <motion.div
-          variants={imageVarients}
-          initial="initial"
-          animate="animate"
-          className="relative size-60 sm:size-72 md:size-96  mx-auto z-20 "
+          className="relative size-60 sm:size-72 md:size-96  mx-auto z-20  bg-gradient-to-tr from-orange-500 via-purple-500 to-sky-500 rounded-full "
+          animate={{
+            backgroundPosition: ["0% 50%", "100% 50%"],
+          }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            repeatType: "mirror",
+            ease: "linear",
+          }}
+          style={{
+            backgroundSize: "200% 200%",
+          }}
         >
           <Image
             src={"/elizabeth.png"}
             fill
             alt="Aung Myo Aye's profile photo"
-            className="object-cover object-center rounded-full bg-cyan-400 "
+            className="object-cover object-center rounded-full  "
           />
         </motion.div>
       </div>
