@@ -19,14 +19,41 @@ const BggradientBtn = ({ text }: { text: string }) => {
         backgroundPosition: "200% 200%",
       }}
       href="#"
-      className="flex items-center  gap-1 text-lg  font-semibold font-poppin bg-gradient-to-r  from-cyan-400 via-cyan-600 to-cyan-900 rounded-full px-4 py-2"
+      className="text-lg  font-semibold font-poppin bg-gradient-to-r  from-cyan-400 via-cyan-600 to-cyan-900 rounded-full px-4 py-2"
     >
-      <motion.span initial={{ x: 0 }} whileHover={{ x: -20 }}>
-        {text}
-      </motion.span>
-      <motion.span initial={{ rotate: 0 }} whileHover={{ rotate: "180deg" }}>
-        <FaArrowAltCircleRight />
-      </motion.span>
+      <motion.div
+        initial="initial"
+        whileHover="hover"
+        className="flex items-center  gap-1 "
+      >
+        <motion.span
+          variants={{
+            initial: {
+              x: 0,
+            },
+            hover: {
+              x: -10,
+              transition: {
+                type: "spring",
+              },
+            },
+          }}
+        >
+          {text}
+        </motion.span>
+        <motion.span
+          variants={{
+            initial: {
+              rotate: 0,
+            },
+            hover: {
+              rotate: "180deg",
+            },
+          }}
+        >
+          <FaArrowAltCircleRight />
+        </motion.span>
+      </motion.div>
     </motion.a>
   );
 };
