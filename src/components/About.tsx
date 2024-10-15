@@ -58,7 +58,7 @@ const About = () => {
           variants={animateText}
           initial="close"
           whileInView="open"
-          className="w-[90%] md:w-[50%] flex flex-col gap-3 items-start justify-between mx-auto"
+          className="w-[90%] md:w-[50%] flex flex-col gap-4 items-center md:items-start justify-between mx-auto"
         >
           <motion.h2
             variants={animateText}

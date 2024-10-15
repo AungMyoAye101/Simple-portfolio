@@ -5,7 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-12  px-10 rounded-t-md flex flex-wrap gap-6 items-center justify-center md:justify-between bg-neutral-900">
+    <footer className="relative z-10 w-full py-12 px-4 md:px-6 rounded-t-lg flex flex-wrap gap-6 items-center justify-center md:justify-between bg-gradient-to-r from-neutral-800 via-neutral-700 to-neutral-900">
       <div className="text-xl font-poppin font-semibold ">
         Aung Myo Aye - Portfolio
       </div>
@@ -14,28 +14,28 @@ const Footer = () => {
         <a
           href="https://github.com/AungMyoAye101"
           target="_blank"
-          className="p-3 border border-cyan-400  rounded-full shadow-md hover:bg-cyan-400 hover:text-black"
+          className="p-3 border border-cyan-400  rounded-full shadow-md bg-neutral-900 hover:bg-cyan-400 hover:text-black"
         >
           <FaGithub className="text-xl " />
         </a>
         <a
           href="https://www.facebook.com/profile.php?id=61556195843942"
           target="_blank"
-          className="p-3 border border-cyan-400  rounded-full shadow-md hover:bg-cyan-400 hover:text-black"
+          className="p-3 border border-cyan-400  rounded-full shadow-md  bg-neutral-900 hover:bg-cyan-400 hover:text-black"
         >
           <FaFacebookF className="text-xl  " />
         </a>
         <a
           href=""
           target="_blank"
-          className="p-3 border border-cyan-400  rounded-full shadow-md hover:bg-cyan-400 hover:text-black"
+          className="p-3 border border-cyan-400  rounded-full shadow-md hover:bg-cyan-400 bg-neutral-900 hover:text-black"
         >
           <FaLinkedin className="text-xl  " />
         </a>
         <a
           href="https://www.instagram.com/aungmyoaye404/"
           target="_blank"
-          className="p-3 border border-cyan-400  rounded-full shadow-md hover:bg-cyan-400 hover:text-black"
+          className="p-3 border border-cyan-400  rounded-full shadow-md bg-neutral-900 hover:bg-cyan-400 hover:text-black"
         >
           <FaInstagram className="text-xl  " />
         </a>
