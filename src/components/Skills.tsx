@@ -30,11 +30,12 @@ const Skills = () => {
         <h1 className="heading">My Skills</h1>
       </div>
       {/* My Skills  */}
-      <div className="flex flex-wrap justify-center items-center gap-6  md:gap-10 min-h-[70vh]">
+
+      <div className="flex flex-wrap justify-center items-center gap-6  md:gap-10  mb-8">
         {skills.map(({ id, image, title, description }) => (
           <MagicCard
             key={id}
-            className="  w-80 h-72 py-6 px-4 rounded-xl shadow-md  relative border border-sky-500 "
+            className="  w-80 h-80 py-6 px-4 rounded-xl shadow-md  relative border border-cyan-500 "
           >
             <motion.div
               variants={animateText}

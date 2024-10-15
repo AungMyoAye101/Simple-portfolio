@@ -57,7 +57,7 @@ const Hero = () => {
       <div className="w-full md:w-[50vw]  flex flex-col gap-4 items-center text-center md:text-start md:items-start ">
         <TextReveal
           words={intro}
-          className="font-lora text-base md:text-lg font-medium gap-1"
+          className="font-poppin text-base md:text-lg font-medium gap-1"
         />
         <TextReveal
           words={heroText}
