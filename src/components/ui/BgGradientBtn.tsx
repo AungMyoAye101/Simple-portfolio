@@ -1,25 +1,18 @@
 import { motion } from "framer-motion";
+
 import React from "react";
+import { FaArrowAltCircleRight, FaLink } from "react-icons/fa";
+
 const BggradientBtn = ({ text }: { text: string }) => {
   return (
-    <motion.button
-      className=" bg-gradient-to-tr from-orange-500 via-purple-500 to-sky-500 px-6 py-2 rounded-full text-black"
-      animate={{
-        backgroundPosition: ["0% 50%", "100% 50%"],
-      }}
-      transition={{
-        duration: 3,
-        repeat: Infinity,
-        repeatType: "mirror",
-        ease: "linear",
-      }}
-      style={{
-        backgroundSize: "200% 200%",
-      }}
+    <a
+      href="#"
+      className="flex items-center  gap-1 text-lg  font-semibold font-poppin bg-gradient-to-r hover:bg-gradient-to-l from-orange-400 via-purple-400 to-cyan-400 rounded-full px-4 py-2"
     >
       <span>{text}</span>
-    </motion.button>
+
+      <FaArrowAltCircleRight />
+    </a>
   );
 };
-
 export default BggradientBtn;
