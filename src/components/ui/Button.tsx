@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const MovingGradientBorderButton = ({ text }: { text: string }) => {
   return (
     <motion.button
-      className="relative inline-block px-6 py-2  text-white rounded-full bg-transparent "
+      className="relative inline-block px-6 py-2  text-white hover:text-orange-500 rounded-full bg-transparent "
       // Framer Motion animation
       animate={{
         backgroundPosition: ["0% 50%", "100% 50%"], // Moving border animation
@@ -23,7 +23,7 @@ const MovingGradientBorderButton = ({ text }: { text: string }) => {
         zIndex: 1,
       }}
     >
-      <span className="absolute inset-0 bg-black rounded-full -z-10"></span>
+      <span className="absolute inset-0 bg-black rounded-full -z-10 "></span>
       {text}
     </motion.button>
   );
