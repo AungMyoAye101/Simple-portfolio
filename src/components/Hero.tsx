@@ -75,12 +75,6 @@ const Hero = () => {
           whileInView="inView"
           className="flex flex-wrap gap-4 justify-center items-center"
         >
-          {/* <motion.a
-            variants={buttonVarients}
-            href="mailto:aungmyoaye101@gmail.com"
-          >
-            <BgGradientBtn text="Get In Touch" />
-          </motion.a> */}
           <BgGradientBtn text="Get In Touch" />
           <motion.a
             variants={buttonVarients}
