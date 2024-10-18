@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import React from "react";
-import { FaArrowAltCircleRight, FaLink } from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const BggradientBtn = ({ text }: { text: string }) => {
   return (
