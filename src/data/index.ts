@@ -90,12 +90,12 @@ export const projects = [
   {
     id: 3,
     type: "Front-End",
-    image: "p3.svg",
+    image: "/movieSearch.png",
     name: "Movie Search",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium?",
-    sourceCode: "example.com",
-    siteLink: "example.com",
+      "The Movie Review Web App is a comprehensive platform for movie enthusiasts to explore and review trending movies and TV shows. This web application allows users to search for movies and TV shows, view personal details of each title, and receive personalized recommendations based on their preferences.",
+    sourceCode: "https://github.com/AungMyoAye101/next-movie",
+    siteLink: "https://movieama-aung-myo-ayes-projects.vercel.app/",
     iconList: [
       {
         icon: "/react.svg",
@@ -106,12 +106,12 @@ export const projects = [
         name: "Next Js",
       },
       {
-        icon: "/mysql.svg",
-        name: "MySQl",
+        icon: "/tailwindcss.svg",
+        name: "Tailwind CSS",
       },
       {
-        icon: "/nodejs.svg",
-        name: "Node Js",
+        icon: "/typescript.svg",
+        name: "TypeScript",
       },
     ],
   },
