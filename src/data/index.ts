@@ -118,16 +118,20 @@ export const projects = [
   {
     id: 4,
     type: "Full-Stack",
-    image: "/p4.svg",
+    image: "/promptopia.png",
     name: "Promptopia",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium?",
-    sourceCode: "example.com",
-    siteLink: "example.com",
+      "A Prompt Web App that allows users to create, manage, and discover prompts with ease. Users can create, edit, and delete their own prompts, view other user's profiles, and explore related prompts through a search bar or clickable tags. The app is built using Next.js for server-side rendering, TypeScript for robust type safety, Tailwind CSS for modern styling, and MongoDB for data persistence. Authentication is handled through Google Auth Provider for a seamless and secure user experience.",
+    sourceCode: "https://github.com/AungMyoAye101/next-prompt",
+    siteLink: "https://next-promptbyama.vercel.app/",
     iconList: [
       {
         icon: "/react.svg",
         name: "React Js",
+      },
+      {
+        icon: "/typescript.svg",
+        name: "TypeScript",
       },
       {
         icon: "/nextjs.svg",
@@ -136,10 +140,6 @@ export const projects = [
       {
         icon: "/mongodb.svg",
         name: "Mongo Db",
-      },
-      {
-        icon: "/nodejs.svg",
-        name: "Node Js",
       },
     ],
   },
