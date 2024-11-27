@@ -50,7 +50,7 @@ const Card = ({
           src={image}
           fill
           alt={name}
-          className=" aspect-video  rounded-lg"
+          className=" aspect-video object-cover  rounded-lg"
         />
       </motion.div>
       <motion.div

@@ -33,29 +33,25 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    type: "Full-Stack",
-    image: "/p1.svg",
+    type: "Front-End",
+    image: "/shop.png",
     name: "Ecommerce ",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
-    sourceCode: "example.com",
-    siteLink: "example.com",
+      "This is a comprehensive e-commerce shop application built with React, Vite, and TypeScript. The app leverages the Fake Store API for product data and includes features such as responsive design, add to cart, search by text, category filtering, and a dynamic discount pricing mechanism at checkout. The UI includes skeleton loading components for a smooth user experience.",
+    sourceCode: "https://github.com/AungMyoAye101/shop-react",
+    siteLink: "https://shop-react-iota.vercel.app/",
     iconList: [
       {
         icon: "/react.svg",
         name: "React Js",
       },
       {
-        icon: "/nextjs.svg",
-        name: "Next Js",
+        icon: "/tailwindcss.svg",
+        name: "Tailwind CSS",
       },
       {
-        icon: "/mongodb.svg",
-        name: "Mongo Db",
-      },
-      {
-        icon: "/nodejs.svg",
-        name: "Node Js",
+        icon: "/typescript.svg",
+        name: "TypeScript",
       },
     ],
   },
