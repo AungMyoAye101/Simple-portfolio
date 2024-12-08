@@ -44,14 +44,9 @@ const Card = ({
           duration: 1,
           ease: "easeOut",
         }}
-        className="relative w-full md:w-[45%] h-[30vh] sm:h-[50vh] md:h-[40vh] lg:h-[50vh]  bg-gray-800 rounded-lg border border-gray-200"
+        className="relative w-full md:w-[45%]  aspect-video   bg-gray-800 rounded-lg "
       >
-        <Image
-          src={image}
-          fill
-          alt={name}
-          className=" aspect-video object-cover  rounded-lg"
-        />
+        <Image src={image} fill alt={name} className="   rounded-lg" />
       </motion.div>
       <motion.div
         variants={variants}

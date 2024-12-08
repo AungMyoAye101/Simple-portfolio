@@ -19,7 +19,7 @@ const BggradientBtn = ({ text }: { text: string }) => {
         backgroundPosition: "200% 200%",
       }}
       href="#"
-      className="group text-lg overflow-hidden relative z-10 font-semibold font-poppin bg-gradient-to-r  from-cyan-400 via-sky-600 to-blue-900 rounded-full "
+      className="group text-lg overflow-hidden relative z-10 font-semibold font-poppin bg-gradient-to-r  from-orange-300 to-violet-500 rounded-full "
     >
       <motion.div
         initial="initial"

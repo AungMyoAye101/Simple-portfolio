@@ -86,7 +86,7 @@ export const projects = [
   {
     id: 3,
     type: "Front-End",
-    image: "/movieSearch.png",
+    image: "/movieapp.jpg",
     name: "Movie Search",
     description:
       "The Movie Review Web App is a comprehensive platform for movie enthusiasts to explore and review trending movies and TV shows. This web application allows users to search for movies and TV shows, view personal details of each title, and receive personalized recommendations based on their preferences.",
