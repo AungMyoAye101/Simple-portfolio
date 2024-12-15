@@ -59,7 +59,7 @@ export const projects = [
     id: 2,
     type: "Front-End",
     image: "p2.svg",
-    name: "Car Rental",
+    name: "Awarded Gaming Website",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit.  quidem vitae, quas libero dolor ea laudantium? ",
     sourceCode: "example.com",
@@ -70,17 +70,12 @@ export const projects = [
         name: "React Js",
       },
       {
-        icon: "/nextjs.svg",
-        name: "Next Js",
-      },
-      {
-        icon: "/mysql.svg",
-        name: "MySQL ",
-      },
-      {
-        icon: "/nodejs.svg",
-        name: "Node Js",
-      },
+        icon: "/tailwindcss.svg",
+        name: "Tailwind CSS",
+      },{
+        icon:"/typescript.svg",
+        name:"Typescript"
+      }
     ],
   },
   {
@@ -96,10 +91,6 @@ export const projects = [
       {
         icon: "/react.svg",
         name: "React Js",
-      },
-      {
-        icon: "/nextjs.svg",
-        name: "Next Js",
       },
       {
         icon: "/tailwindcss.svg",
